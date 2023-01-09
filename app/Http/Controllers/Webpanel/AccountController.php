@@ -1,0 +1,104 @@
+<?php
+
+namespace App\Http\Controllers\Webpanel;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Backend\SettingModel;
+use App\Models\Backend\User;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Functions\FunctionControl;
+use App\Models\Backend\PreRecordModel;
+
+class AccountController extends Controller
+{
+    protected $prefix = 'backend';
+    protected $name = 'manage-account';
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $datas = User::orderBy('id', 'asc')->get();
+        $project = SettingModel::first();
+        $ptt = PreRecordModel::orderBy('id', 'asc')->get();
+        return view("$this->prefix.$this->name", [
+            'datas' => $datas,
+            'project' => $project,
+            'ptt' => $ptt,
+        ]);
+    }
+
+    public function insert(Request $request, $id = null)
+    {
+        return $this->store($request, $id = null);
+    }
+
+    public function update(Request $request, $id)
+    {
+        return $this->store($request, $id);
+    }
+
+    public function store(Request $request, $id = null)
+    {
+        // dd($request);
+        try {
+            DB::beginTransaction();
+            if ($id == null) {
+                $data = new User();
+                $data->created_at = date('Y-m-d H:i:s');
+                $data->updated_at = date('Y-m-d H:i:s');
+                $password = bcrypt($request->password);
+                $data->password = $password;
+
+            } else {
+                $data = User::find($id);
+                $data->updated_at = date('Y-m-d H:i:s');
+                if($request->password != ''){
+                    $password = bcrypt($request->password);
+                    $data->password = $password;
+                }
+            }
+
+            $data->role = $request->role;
+            $data->firstname = $request->firstname;
+            $data->lastname = $request->lastname;
+            $data->username = $request->username;
+
+            if ($data->save()) {
+                DB::commit();
+                return back()->with("Success", "Submit Successfully");
+            } else {
+                return back()->with('Error', 'Failed to submit');
+            }
+        } catch (\Exception $e) {
+            dd($e);
+            $error_log = $e->getMessage();
+            $error_line = $e->getLine();
+            $type_log = 'backend';
+            $error_url = url()->current();
+            $log_id = LogsController::save_logbackend($type_log, $error_log, $error_line, $error_url);
+
+            return view("alert.alert", [
+                'url' => $error_url,
+                'title' => "เกิดข้อผิดพลาดทางโปรแกรม",
+                'text' => "กรุณาแจ้งรหัส Code : $log_id ให้ทางผู้พัฒนาโปรแกรม ",
+                'icon' => 'error'
+            ]);
+        }
+    }
+
+    public function destroy(Request $request)
+    {
+        $query = User::destroy($request->id);
+
+        if (@$query) {
+            return response()->json(true);
+        } else {
+            return response()->json(false);
+        }
+    }
+}

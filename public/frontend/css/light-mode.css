@@ -1,0 +1,285 @@
+
+body{
+    background-color: #f5f5f5;
+}
+body section{
+    background-color: #F7F7F7;
+}
+.box-login {
+    background-color: #c1c1c1;
+    padding: 50px 40px 20px 40px;
+}
+.title-status {
+    color: #000;
+}
+.form-select-layout {
+    color: #000000;
+    border: 1px solid #b1b1b1;
+
+}
+.time-play {
+    color: #838383;
+}
+.play {
+    color: #838383;
+}
+.skip-left {
+    color: #838383;
+}
+.skip-right {
+    color: #838383;
+}
+.but-mute {
+    color: #fff;
+    background-color: #838383;
+}
+.volume5 .bar {
+    background: #9d9d9d;
+}
+.skip-plus, .skip-dash {
+    color: #838383;
+}
+.modal-body {
+    background-color: #fff !important;
+}
+.text-zone-number-popup {
+    color: #838383;
+}
+.title-top {
+    color: #222;
+}
+.table>:not(caption)>*>* {
+    color: #222;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    color: #777;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #f7f7f;
+    color: var(--bs-table-striped-color);
+}
+/* .table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: #f5f5f5;
+    border: 0;
+} */
+.zone-area {
+    color: #222 !important;
+}
+.but-add {
+    color: #222 !important;
+}
+.but-add {
+    background-color: #bfbfbf;
+}
+#icon-plus-add {
+    color: #000;
+}
+#volume-icon02 {
+    color: #777 !important;
+}
+#volume-icon03 {
+    color: #777 !important;
+}
+
+.label-title {
+    color: #222;
+}
+
+.table>:not(caption)>*>* {
+    border-top: 0px solid #959595 !important;
+    border: 0;
+}
+/* .form-check-input:checked[type=checkbox] {
+    filter: invert(1) !important;
+} */
+.form-check-input:checked {
+    border-color: #ff8200;
+}
+select.form-select-layout:focus {
+    color: #0c0c0c !important;
+}
+
+.skip-left:hover, .skip-right:hover, .play:hover {
+    color: #959393;
+}
+.skip-plus:hover, .skip-dash:hover {
+    color: #959393;
+}
+
+
+
+.box-zone-light{
+    background-color: #ffffff;
+    padding: 20px 15px;
+    /* margin-top: 20px; */
+}
+.text-zone-light {
+    font-size: 14px;
+    color: #000;
+}
+.form-select-source-light {
+    display: block;
+    width: 40%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 0px 0 0 0;
+    float: left;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 0px 1.5em;
+    background-repeat: no-repeat;
+}
+.text-zone-number-light {
+    position: absolute;
+    color: #000;
+    font-size: 30px;
+    margin-left: 110px;
+    margin-top: -30px;
+    font-weight: 500;
+}
+.text-zone-volume-light {
+    position: absolute;
+    color: #000;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+.volume-icon-light {
+    font-size: 40px;
+    color: #000 !important;
+}
+.form-select-layout-light {
+    color: #000000;
+    border: 1px solid #b1b1b1;
+}
+.form-select-layout-light {
+    display: block;
+    width: 25%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 0px 1.5em;
+    background-repeat: no-repeat;
+}
+.text-zone-volume-pop-light{
+color: #000;
+}
+.btn-close {
+    background-size: 12px;
+}
+.menu-zone-light {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #f7f7f7 !important;
+  
+  }
+  .menu-layout-light {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #f7f7f7 !important;
+}
+.menu-add-layout-light {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #f7f7f7 !important;
+}
+
+.table-striped-light {
+    border: 1px solid #d3d3d3;
+}
+.table-striped-light>tbody>tr:nth-of-type(odd)>* {
+    background-color: #f5f5f5;
+    border: 0;
+}
+.tr-light{
+    background-color: #fff !important;
+}
+.tr-top-light{
+    border-bottom: 3px solid #D9D9D9;
+  }
+
+  .mt-2 .col-2-light{
+    color: #000;
+  }
+  
+
+
+
+
+@media screen and (max-width: 991px){
+.title-zone-mb {
+    color: #000 !important;
+}
+#volume-icon2 {
+    color: #3c3c3c !important;
+}
+.form-select-source2 {
+    color: #3c3c3c !important;
+    border: 1px solid #3c3c3c !important;
+    background-image: linear-gradient(45deg, transparent 50%, #3c3c3c 50%), linear-gradient(135deg, #3c3c3c 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc);
+    background-color: #f5f5f5;
+}
+.text-zone-number2 {
+    color: #585858 !important;
+}
+.title-push-mb {
+    color: #1a1a1a !important;
+}
+.title-setting-mb, .title-about-mb {
+    color: #8b8b8b;
+}
+.icon-setting {
+    filter: invert(1);
+}
+
+#box-back-source {
+    background-color: #fff !important;
+}
+
+.song-name {
+    background-color: #f7f7f7 !important;
+    color: #000;
+    border: 1px solid #bfbfbf;
+}
+#col12-mb {
+    background: #f5f5f5 !important;
+}
+#align-over {
+    background-color: #a3a1a1 !important;
+
+}
+.time-play {
+    color: #000000;
+}
+.text-zone-number-popup {
+    color: #000000;
+}
+
+}
