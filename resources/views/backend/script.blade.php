@@ -295,23 +295,23 @@ $(document).ready(function (){
 
 })
 
-setInterval(function (){
-  $.ajax({
-      type: "GET",
-      url: `{{ url("webpanel/emergency") }}`,
-      cache: false,
-      success: function(response){
-        // console.log(Date.parse(new Date()) - Date.parse(response.date));
-        if(Date.parse(new Date()) - Date.parse(response.date) == 1000){
-          queue.push(response);
-          console.log(queue);
-        }
-      },
-      error: function(error){
-        // alert(error);
-      }
-  });
-}, 1000);
+{{--setInterval(function (){--}}
+{{--  $.ajax({--}}
+{{--      type: "GET",--}}
+{{--      url: `{{ url("webpanel/emergency") }}`,--}}
+{{--      cache: false,--}}
+{{--      success: function(response){--}}
+{{--        // console.log(Date.parse(new Date()) - Date.parse(response.date));--}}
+{{--        if(Date.parse(new Date()) - Date.parse(response.date) == 1000){--}}
+{{--          queue.push(response);--}}
+{{--          console.log(queue);--}}
+{{--        }--}}
+{{--      },--}}
+{{--      error: function(error){--}}
+{{--        // alert(error);--}}
+{{--      }--}}
+{{--  });--}}
+{{--}, 1000);--}}
 
 function playEmer(){
 

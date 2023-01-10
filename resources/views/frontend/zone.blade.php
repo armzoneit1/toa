@@ -1585,7 +1585,7 @@ a:hover {
             url: fullUrl + '/musicrun/' + {{$zone->source}},
             data: {source:'{{$zone->source}}',_token:'{{csrf_token()}}'},
             success: function(response){
-                console.log(response)
+
                 response.map(function (r){
 
                     $(".song-name"+r.Id).html(r.Name);
