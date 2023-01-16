@@ -573,6 +573,7 @@
               zone_id.push(res[i].id);
             $.ajax({
                 type: "post",
+                async: false,
                 url: fullUrl + '/get_status_play/'+res[i].source,
                 data:{_token:'{{csrf_token()}}'},
                 //url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + res[i].source + '&controltype=get_status_music',
