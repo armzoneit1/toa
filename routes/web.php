@@ -43,6 +43,7 @@ Route::get('', [Webpanel\AuthController::class, 'getLogin']);
 Route::post('', [Webpanel\AuthController::class, 'postLogin']);
 Route::get('/logout', [Webpanel\AuthController::class, 'logOut']);
 Route::get('/zone-guest/{id}', [Frontend\HomeController::class, 'zone_guest'])->where(['id' => '[0-9]+']);
+Route::get('check_recordfire', [Frontend\HomeController::class, 'check_recordfire']);
 Route::get('/broadcast',function ()
 {
     broadcast(new \App\Events\playsong("OKOPKAOWO"));

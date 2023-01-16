@@ -42,31 +42,31 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-  </script>
-  <script>
-    var x = document.getElementById("myLinks");
-function myFunction() {
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('#dropbtn') && $(event.target).attr('class') !== "dropdown-item" && $(event.target).attr('class') !== "slider slider-light change_theme"
-  && $(event.target).attr('class') !== "hidden" && $(event.target).attr('id') !== "fake_click" ) {
+<script type="text/javascript">
+  $.ajaxSetup({
+      headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+  });
+</script>
+<script>
+  var x = document.getElementById("myLinks");
+  function myFunction() {
     if (x.style.display === "block") {
       x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
   }
-}
+
+  window.onclick = function(event) {
+    if (!event.target.matches('#dropbtn') && $(event.target).attr('class') !== "dropdown-item" && $(event.target).attr('class') !== "slider slider-light change_theme"
+    && $(event.target).attr('class') !== "hidden" && $(event.target).attr('id') !== "fake_click" ) {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+    }
+  }
 
   $('.change_theme').click(function(){
     $.getJSON('change_theme', function(data) {
@@ -86,17 +86,17 @@ window.onclick = function(event) {
 <script>
   var fullUrl = window.location.origin + window.location.pathname;
 
-function getNowFullDate(){
-  let date = new Date();
-  let day, month, year;
+  function getNowFullDate(){
+    let date = new Date();
+    let day, month, year;
 
-  date.getDate() < 10 ? day = '0' + date.getDate() : day = date.getDate();
-  date.getMonth() < 10 ? month = '0' + (date.getMonth() + 1) : month = date.getMonth() + 1;
-  year = date.getFullYear();
+    date.getDate() < 10 ? day = '0' + date.getDate() : day = date.getDate();
+    date.getMonth() < 10 ? month = '0' + (date.getMonth() + 1) : month = date.getMonth() + 1;
+    year = date.getFullYear();
 
-  let date_now = year + '-' + month + '-' + day;
-  return date_now;
-}
+    let date_now = year + '-' + month + '-' + day;
+    return date_now;
+  }
 
 function getNowTime(){
   let time = new Date();
@@ -255,6 +255,15 @@ let status = 'ready';
 let audio = $('.audio-pre-record');
 
 $(document).ready(function (){
+
+  $.ajax({
+      type: "GET",
+      url: '{{url("check_recordfire"}}' ,
+      success: function(response){
+        console.log(response)
+      }
+  });
+
   setTimeout(function (){
     document.querySelector('#fake_click').click();
     // emergency();

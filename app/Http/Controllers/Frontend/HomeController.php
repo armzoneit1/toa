@@ -577,4 +577,17 @@ class HomeController extends Controller
 
         return $response;
     }
+
+    public function check_recordfire(){
+        $check_date = date('Y-m-d', strtotime('-7 days'));
+        $record_outkeep = UserRecordModel::where('date','<',$check_date)->get();
+        if(!empty($record_outkeep)){
+            foreach ($record_outkeep as $key => $_outkeep) {
+                @Storage::disk('public')->delete($_outkeep->file);
+            }
+        }
+        UserRecordModel::where('date','<',$check_date)->delete();
+        return 'success';
+        // dd($check_date , $record_outlist);
+    }
 }
