@@ -19,3 +19,6 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
 Broadcast::channel("playsong",function (){
    return "asd";
 });
+Broadcast::channel("checkPlayMusic",function (){
+    return "asd";
+});

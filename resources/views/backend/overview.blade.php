@@ -660,9 +660,9 @@
                                       </div>
                                       <div class="col-lg-6 col-6" id="col6">
                                         <p class="icon-play">
-                                          <a class="skip-left" onclick="previous_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
-                                          <a class="play" onclick="playorpause_song(${res[i].source},${res[i].id})" href="javascript:void(0);"><i id="play-or-pause${res[i].id}" class="bi ${icon_play}"></i></a>
-                                          <a class="skip-right" onclick="next_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
+                                          <a class="skip-left skip-left${res[i].source}" id="skip-lefts${res[i].id}" onclick="previous_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
+                                          <a class="play play${res[i].source}" id="plays${res[i].id}" onclick="playorpause_song(${res[i].source},${res[i].id})" href="javascript:void(0);"><i id="play-or-pause${res[i].id}" class="bi ${icon_play} play-or-pause${res[i].source}"></i></a>
+                                          <a class="skip-right skip-right${res[i].source}" id="skip-right${res[i].id}" onclick="next_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
                                         </p>
                                       </div>
                                     </div>
@@ -1212,14 +1212,14 @@
             source: source
         },
       success: function(response){
-        console.log(response);
-        $.ajax({
-          type: "GET",
-          // url: fullUrl + '/current-song',
-          url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + id + '&controltype=play_control_music',
-          data: {source:source},
-          success: function(data){
-            $('#song-name'+id).text(data);
+      $.ajax({
+          type: "Get",
+          url: "http://localhost/toas/broadcast1",
+          data: {
+            source: source
+          },
+          success: function(response){
+
           }
         });
       }
@@ -1269,8 +1269,36 @@
               e.data.map(function(r){
                   $(".song-name"+r.Id).html(r.Name);
                   $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
+                  console.log(r);
+                  if(r.runmusic == 1) {
+                    $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
+                    $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
+                  }else{
+                    $(".play-or-pause" + r.Id).removeClass('bi-pause-circle-fill');
+                    $(".play-or-pause" + r.Id).addClass('bi-play-circle-fill');
+                  }
               })
           })
+      Echo.channel('checkPlayMusics')
+              .listen('checkPlayMusic', (e) => {
+                console.log(e);
+                e.data.map(function(r){
+                  $("#text-show-source"+r.id).html("Source "+r.source)
+                  $("#song-name"+r.id).removeClass()
+                  $("#song-name"+r.id).addClass("song-name song-name"+r.source)
+                  $("#time-play"+r.id).removeClass()
+                  $("#time-play"+r.id).addClass("time-play time-play"+r.source)
+                  $("#skip-lefts"+r.id).removeClass()
+                  $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
+                  $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
+                  $("#plays"+r.id).removeClass()
+                  $("#plays"+r.id).addClass("play play"+r.source)
+                  $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
+                  $("#skip-right"+r.id).removeClass()
+                  $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
+                  $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
+                })
+            })
       // Echo.channel("playsongs").bind("sss");
   </script>
 </body>

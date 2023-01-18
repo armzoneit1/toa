@@ -1590,6 +1590,13 @@ a:hover {
 
                     $(".song-name"+r.Id).html(r.Name);
                     $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
+                    if(r.runmusic == 1) {
+                        $("#play-or-pause").removeClass('bi-play-circle-fill');
+                        $("#play-or-pause").addClass('bi-pause-circle-fill');
+                    }else{
+                        $("#play-or-pause").removeClass('bi-pause-circle-fill');
+                        $("#play-or-pause").addClass('bi-play-circle-fill');
+                    }
                 });
             }
         });

@@ -58,6 +58,10 @@ Route::group(['middleware' => ['Admin']], function () {
             {
                 broadcast(new \App\Events\playsong("OKOPKAOWO"));
             });
+            Route::get('/broadcast1',function ()
+            {
+                broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
+            });
         });
 
         Route::prefix('pre-record')->group(function () {

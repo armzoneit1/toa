@@ -9,4 +9,11 @@ axios.get('http://localhost/toa/broadcast').then((response) => {
 .catch((error) => {
   // handle errors
 });
-},500);
+  axios.get('http://localhost/toa/broadcast/sou').then((response) => {
+    // handle success
+    console.log("running1...");
+  })
+      .catch((error) => {
+        // handle errors
+      });
+},1000);

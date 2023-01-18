@@ -48,6 +48,12 @@ Route::get('/broadcast',function ()
 {
     broadcast(new \App\Events\playsong("OKOPKAOWO"));
 });
+
+Route::get('/broadcast1',function ()
+{
+    broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
+});
+
 Route::group(['middleware' => ['Login']], function () {
 
     require('web-backend.php');
@@ -90,6 +96,10 @@ Route::group(['middleware' => ['Login']], function () {
             Route::get('/{id}/broadcast',function ()
             {
                 broadcast(new \App\Events\playsong("OKOPKAOWO"));
+            });
+            Route::get('/{id}/broadcast1',function ()
+            {
+                broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
             });
         });
 

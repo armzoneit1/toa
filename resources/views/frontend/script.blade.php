@@ -50,7 +50,7 @@ window.onclick = function(event) {
   $(document).ready(function (){
     $.ajax({
         type: "GET",
-        url: '{{url("check_recordfire"}}' ,
+        url: '{{url("check_recordfire")}}' ,
         success: function(response){
           console.log(response)
         }
