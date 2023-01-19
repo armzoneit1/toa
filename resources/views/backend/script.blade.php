@@ -304,23 +304,21 @@ $(document).ready(function (){
 
 })
 
-{{--setInterval(function (){--}}
-{{--  $.ajax({--}}
-{{--      type: "GET",--}}
-{{--      url: `{{ url("webpanel/emergency") }}`,--}}
-{{--      cache: false,--}}
-{{--      success: function(response){--}}
-{{--        // console.log(Date.parse(new Date()) - Date.parse(response.date));--}}
-{{--        if(Date.parse(new Date()) - Date.parse(response.date) == 1000){--}}
-{{--          queue.push(response);--}}
-{{--          console.log(queue);--}}
-{{--        }--}}
-{{--      },--}}
-{{--      error: function(error){--}}
-{{--        // alert(error);--}}
-{{--      }--}}
-{{--  });--}}
-{{--}, 1000);--}}
+setInterval(function (){
+    $.ajax({
+        type: "GET",
+        url: `{{ url("webpanel/emergency") }}`,
+        cache: false,
+        success: function(response){
+        // console.log(Date.parse(new Date()) - Date.parse(response.date));
+        if(Date.parse(new Date()) - Date.parse(response.date) == 1000){
+            queue.push(response);
+            console.log(queue);
+        }
+        },
+        error: function(error){}
+    });
+}, 1000);
 
 function playEmer(){
 
@@ -345,18 +343,18 @@ function playEmer(){
   }, queue[0].length + 6000);
 
   setTimeout(function (){
-    $.ajax({
-        type: "GET",
-        url: '{("webpanel/emergency/"'+ queue[0].id +')}' ,
-        success: function(response){
-          if(response){
-            console.log('Deleted')
-          }
-        },
-        error: function(error){
-          alert(error);
-        }
-    });
+    // $.ajax({
+    //     type: "GET",
+    //     url: '{("webpanel/emergency/"'+ queue[0].id +')}' ,
+    //     success: function(response){
+    //       if(response){
+    //         console.log('Deleted')
+    //       }
+    //     },
+    //     error: function(error){
+    //       alert(error);
+    //     }
+    // });
     queue.shift();
   }, queue[0].length + 7000);
 

@@ -808,30 +808,11 @@ tr {
                     <td id="start_id{{ $data->id }}">{{ $data->task_start }}</td>
                     <td id="end_id{{ $data->id }}">@if($data->task_end == null) - @else {{ $data->task_end }} @endif</td>
                     <td id="repeat_id{{ $data->id }}">{{ $data->task_repeat }}</td>
-                    @php
-                      $loop = DB::table('tb_pre_record_repeat')->where('record_id', $data->id)->orderBy('id','asc')->get();
-                      $last = count(end($loop));
-                    @endphp
                     <td id="loop_id{{ $data->id }}">{{ $data->task_loop }}</td>
-                      {{-- @foreach($loop as $key => $row)
-                        @php
-                          if($data->task_repeat == "Specified"){
-                            $repeat = DB::table('tb_task_loop_repeat')->find($row->repeat_id);
-                          }
-                          else{
-                            $repeat = DB::table('tb_day')->find($row->day_id);
-                          }
-                        @endphp
-                          @if($last == 7) Every day @break
-                          @else @if($key != $last-1) {{ $repeat->name }} ,
-                                @else {{ $repeat->name }}
-                                @endif
-                          @endif
-                      @endforeach --}}
                     <td>
                       <p>
                       {{-- <audio src="{{ asset($data->file) }}" class="audio-pre-record" id="audio{{ $data->id }}" hidden></audio> --}}
-                      <a href="javascript:void(0);" id="toggle-edit-modal{{ $data->id }}" onclick="checkEdit({{ $data->id }})" data-bs-toggle="modal" data-bs-target="#edit-record{{ $data->id }}"><i class="bi bi-pencil-square" id="volume-icon02"></i></a>                      
+                      <a href="javascript:void(0);" id="toggle-edit-modal{{ $data->id }}" onclick="checkEdit({{ $data->id }})" data-bs-toggle="modal" data-bs-target="#edit-record{{ $data->id }}"><i class="bi bi-pencil-square" id="volume-icon02"></i></a>
                       <a href="javascript:void(0);" onclick='deleteItem({{ $data->id }})'><i class="bi bi-trash-fill" id="volume-icon03"></i></a></p>
                     </td>
                   </tr>
@@ -1021,7 +1002,7 @@ tr {
       let formData = new FormData(this);
       $('.modal').modal('hide');
       // for (var pair of formData.entries()) {
-      //   console.log(pair[0]+ ', ' + pair[1]); 
+      //   console.log(pair[0]+ ', ' + pair[1]);
       // }
       $.ajax({
         type: "POST",
@@ -1051,8 +1032,8 @@ tr {
                               <td id="end_id${res.id}">`; if(res.task_end == null) html += `-`; else html += `${res.task_end}`; html += `</td>
                               <td id="repeat_id${res.id}">${res.task_repeat}</td>
                               <td id="loop_id${res.id}">${res.task_loop}</td>
-                              <td>    
-                                <p>       
+                              <td>
+                                <p>
                                   <a href="javascript:void(0);" id="toggle-edit-modal${res.id}" onclick="checkEdit(${res.id})" data-bs-toggle="modal" data-bs-target="#edit-record${res.id}"><i class="bi bi-pencil-square" id="volume-icon02"></i></a>
                                   {{-- <a href="javascript:void(0);" onclick="playAudio(${res.id});"><i class="bi bi-volume-off-fill volume-icon02" id="sound${res.id}"></i></a>  --}}
                                   <a href="javascript:void(0);" onclick='deleteItem(${res.id})'><i class="bi bi-trash-fill" id="volume-icon03"></i></a>
@@ -1148,7 +1129,7 @@ tr {
                               <p id="rec-loop_id${res.id}">${res.task_loop}</p>
                               <audio src="{{ asset('${res.file}') }}" class="audio-pre-record" id="rec-audio${res.id}" hidden></audio>
                             </div>`;
-                
+
                 div3.append(html3);
                 array_all.push([res.id,1]);
                 array.push(res.id);
@@ -1173,7 +1154,7 @@ tr {
         let formData = new FormData(this);
         $('.modal').modal('hide');
         // for (var pair of formData.entries()) {
-        //   console.log(pair[0]+ ', ' + pair[1]); 
+        //   console.log(pair[0]+ ', ' + pair[1]);
         // }
         $.ajax({
           type: "POST",
@@ -1182,7 +1163,7 @@ tr {
           processData: false,
           contentType: false,
           success: function(response){
-            if(response.Success){              
+            if(response.Success){
               $.ajax({
                 type: "GET",
                 url: fullUrl + '/latest/' + id,
@@ -1265,13 +1246,13 @@ tr {
                               </div>`;
                   div2.append(html2);
                   $("#toggle-edit-modal"+id).attr('data-bs-toggle','modal');
-                  
+
                   let div = $('#latest-record');
                   if(res.task_active == 1){
                     $('#task_active'+id).prop('checked',true)
                   }
                   $('#'+id).text();
-                  $('#name_id'+id).text(res.task_name);                
+                  $('#name_id'+id).text(res.task_name);
                   if(res.task_date == null){
                     $('#date_id'+id).text('-');
                   }
@@ -1294,7 +1275,7 @@ tr {
                   $('#repeat_id'+id).text(res.task_repeat);
                   $('#loop_id'+id).text(res.task_loop);
 
-                  $('#rec-name_id'+id).text(res.task_name);                
+                  $('#rec-name_id'+id).text(res.task_name);
                   if(res.task_date == null){
                     $('#rec-date_id'+id).text('-');
                   }

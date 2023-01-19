@@ -437,7 +437,7 @@
   float: right;
   position: relative;
   display: inline-block;
-} 
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -525,7 +525,7 @@
               <input type="checkbox" class="hidden" id="audio_setting2"  {{ ( !empty(Auth::check()) ? (Auth::user()->theme == 'B' ? 'checked' : '') : '')  }}>
               <div class="slider slider-light change_theme" style="cursor: pointer" id="slider">Light</div>
             </label>
-            </div>  
+            </div>
           </a>
           <a class="dropdown-item" href="{{ url('/logout') }}">Log Out</a>
           </div>
@@ -533,7 +533,7 @@
       </div>
     </div>
 
-  
+
   </nav>
   <main>
 
@@ -598,7 +598,7 @@
                 <input type="range" min="0" max="100" value="{{ $row->volume }}" id="volume-val{{ $row->id }}" class="volume-range">
                 <i class="bi bi-volume-off-fill" id="volume-icon2"></i>
                 <p class="text-zone-volume">Vol</p>
-                
+
                 <div class="bar-hoverbox">
                   <div class="bar">
                     <div class="bar-fill"></div>
@@ -608,7 +608,7 @@
 
         </div>
       </div>
-    @endforeach 
+    @endforeach
 </div>
 
 </div>
@@ -623,7 +623,7 @@
           <h4 class="title-emer-mb">Emergency</h4>
         </div>
         <div class="col-md-5" id="col5-mb">
-          <h4 class="icon-sound sound-size"><i class="bi bi-mic"></i></h4> 
+          <h4 class="icon-sound sound-size"><i class="bi bi-mic"></i></h4>
         </div>
       </div>
     </a>
@@ -634,7 +634,7 @@
 <section class="section-img-over-mobile" id="section_2">
   <div class="container" >
     <div class="row" id="push-to-talk">
-      <div class="col-md-6 col7-mb" id="setting-mb7">  
+      <div class="col-md-6 col7-mb" id="setting-mb7">
         <a href="#setting" data-bs-toggle="modal" data-bs-target="#setting">
           <h4 class="title-setting-mb">Setting <img class="icon-setting" src="{{ asset('frontend/images/icon-setting.png') }}"></h4>
         </a>
@@ -662,16 +662,18 @@
   var zone = {{ json_encode($id) }};
 
   $(document).ready(function (){
-    let myTimeout = setTimeout(function(){
-      $('body').click();
-    }, 300);
+    for (var i = 0; i < 15; i++) {
+        setTimeout(function () {
+            $('body').click();
+        }, i * 1000)
+    }
 
     setInterval(() => {
       $.ajax({
         type: "GET",
         url: fullUrl + '/zone/' + layout_id,
-        success: function(res){     
-          res.forEach(function(e){   
+        success: function(res){
+          res.forEach(function(e){
             if(e.volume != $('#volume-val'+e.id).val()){
               let i = e.id;
               const range = document.querySelector("#volume"+i+" input[type=range]");
@@ -695,8 +697,8 @@
             }
             if(e.source != $('#source-zone'+e.id).val()){
               $('#source-zone'+e.id).val(e.source);
-            }            
-          });    
+            }
+          });
         }
       });
     }, 1000);

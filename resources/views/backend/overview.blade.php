@@ -750,105 +750,51 @@
       // });
   }
 
+  function barShow(){
+    for (var i = 0; i < 15; i++) {
+        setTimeout(function () {
+          $('body').click();
+        }, i * 1000)
+    }
+  }
+
   $(document).ready(function (){
+
+    barShow()
 
     $('#select-layout').on('change', function(){
       retrieveData();
-      let myTimeout = setTimeout(function(){
-        $('body').click();
-      }, 300);
+      barShow()
     })
 
-    {{--setInterval(() => {--}}
-    {{--  $.ajax({--}}
-    {{--    type: "GET",--}}
-    {{--    url: fullUrl + '/zone/' + $('#select-layout').val(),--}}
-    {{--    success: function(res){--}}
-    {{--      res.forEach(function(e,i){--}}
-    {{--        if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){--}}
-    {{--          setVolumeOnPage(e.volume,e.id);--}}
-    {{--          setVolumeOnModal(e.volume,e.id);--}}
-    {{--          // if(document.querySelector("#volume-val"+e.id).value == 0){--}}
-    {{--          //   document.querySelector("#mute"+e.id).style.backgroundColor = '#e91303';--}}
-    {{--          // }--}}
-    {{--          // else{--}}
-    {{--          //   document.querySelector("#mute"+e.id).style.backgroundColor = '#c3c3c3';--}}
-    {{--          // }--}}
-    {{--        }--}}
-    {{--        if(e.source != $('#source-zone'+e.id).val()){--}}
-    {{--          $('#source-zone'+e.id).val(e.source);--}}
-    {{--          console.log($('#source-number'+e.id) , e.id);--}}
-    {{--        }--}}
+    setInterval(() => {
+      $.ajax({
+        type: "GET",
+        url: fullUrl + '/zone/' + $('#select-layout').val(),
+        success: function(res){
+          res.forEach(function(e,i){
+            if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){
+              setVolumeOnPage(e.volume,e.id);
+              setVolumeOnModal(e.volume,e.id);
+            }
+            if(e.source != $('#source-zone'+e.id).val()){
+              $('#source-zone'+e.id).val(e.source);
+            }
 
-    {{--        let source_check = $('#zone-source'+e.id).text();--}}
-
-    {{--        if(e.source != source_check){--}}
-    {{--          if(e.source == 0){--}}
-    {{--            $('#text-show-source'+e.id).text('None');--}}
-    {{--          }--}}
-    {{--          else{--}}
-    {{--            $('#text-show-source'+e.id).text('Source '+ e.source);--}}
-    {{--          }--}}
-    {{--          $('#zone-source'+e.id).text(e.source);--}}
-    {{--        }--}}
-    {{--      });--}}
-    {{--    }--}}
-    {{--  });--}}
-    {{--    $.ajax({--}}
-    {{--        type: "GET",--}}
-    {{--        url: fullUrl + '/zone/' + $('#select-layout').val(),--}}
-    {{--        success: function (res) {--}}
-    {{--            res.map(function(datas) {--}}
-
-    {{--                $.ajax({--}}
-    {{--                    type: "POST",--}}
-    {{--                    url: fullUrl + '/musicrun/' + datas.source,--}}
-    {{--                    data: {source:datas.source,_token:'{{csrf_token()}}'},--}}
-    {{--                    success: function(response){--}}
-    {{--                        response.map(function (r){--}}
-    {{--                            $("#song-name"+datas.id).html(r.Name);--}}
-    {{--                            $("#time-play"+datas.id).html(r.DurationTimePlay+"/"+r.DurationTime);--}}
-    {{--                        });--}}
-    {{--                    }--}}
-    {{--                });--}}
-    {{--            });--}}
-    {{--        }--}}
-    {{--    });--}}
-    {{--  // $.ajax({--}}
-    {{--  //   type: "GET",--}}
-    {{--  //   url: fullUrl + '/zone/' + $('#select-layout').val(),--}}
-    {{--  //   success: function(res){--}}
-    {{--  //     for(let i = 0; i < res.length; i++){--}}
-    {{--  //       $.ajax({--}}
-    {{--  //         type: "GET",--}}
-    {{--  //         url: fullUrl + '/current-song',--}}
-    {{--  //         data: {source:res[i].source},--}}
-    {{--  //         success: function(data){--}}
-    {{--  //           $('#song-name'+res[i].id).text(data);--}}
-    {{--  //         }--}}
-    {{--  //       });--}}
-    {{--  //     }--}}
-
-    {{--  //   }--}}
-    {{--  // });--}}
-    {{--}, 1000);--}}
-    $.ajax({
-      type: "GET",
-      url: fullUrl + '/zone/' + $('#select-layout').val(),
-      success: function(res){
-        for(let i = 0; i < res.length; i++){
-          // $.ajax({
-          //   type: "GET",
-          //   // url: fullUrl + '/current-song',
-          //   url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + res[i].source + '&controltype=play_control_music',
-          //   // data: {source:res[i].source},
-          //   success: function(data){
-          //     $('#song-name'+res[i].id).text(data);
-          //   }
-          // });
+            let source_check = $('#zone-source'+e.id).text();
+            if(e.source != source_check){
+              if(e.source == 0){
+                $('#text-show-source'+e.id).text('None');
+              }
+              else{
+                $('#text-show-source'+e.id).text('Source '+ e.source);
+              }
+              $('#zone-source'+e.id).text(e.source);
+            }
+          });
         }
-      }
-    });
+      });
+    }, 1000);
   })
 </script>
 <script>
@@ -873,21 +819,17 @@
             fill.style.background = "#ff8200";
           }
 
-          // if(value == 0){
-          //   document.querySelector("#mute"+i).style.backgroundColor = '#e91303';
-          // }
-
           fill.style.width = value + "%";
           range.setAttribute("value", value)
           text.textContent = Number(value).toFixed(0) + "%";
           range.dispatchEvent(new Event("change"))
         }
 
-        // Дефолт
+
         setValue(range.value);
 
         const calculateFill = (e) => {
-          // Отнимаем ширину двух 15-пиксельных паддингов из css
+
           let offsetX = e.offsetX
 
           if (e.type === "touchmove") {
@@ -1029,33 +971,33 @@
   }
 
   $(document).ready(function(){
-    // setInterval(() => {
-    //   zone_id.forEach(id => {
-    //     const nodeMap = document.querySelector("#volume"+id+" input[type=range]").attributes;
-    //     let volume = Number(nodeMap.getNamedItem("value").value);
-    //
-    //     const nodeMap_modal = document.querySelector("#volume-modal"+id+" input[type=range]").attributes;
-    //     let volume_modal = Number(nodeMap_modal.getNamedItem("value").value);
-    //
-    //     if(volume_modal > 0){
-    //       document.querySelector("#mute"+id).style.backgroundColor = '#c3c3c3';
-    //     }
-    //     else{
-    //       document.querySelector("#mute"+id).style.backgroundColor = '#e91303';
-    //     }
-    //
-    //     if(volume != volume_modal){
-    //       document.querySelector("#apply"+id).style.backgroundColor = '#ff8200';
-    //       document.querySelector("#apply"+id).disabled = false;
-    //     }
-    //     else{
-    //       document.querySelector("#apply"+id).style.backgroundColor = '#c3c3c3';
-    //       document.querySelector("#apply"+id).disabled = true;
-    //     }
-    //
-    //   });
-    //
-    // }, 500);
+    setInterval(() => {
+      zone_id.forEach(id => {
+        const nodeMap = document.querySelector("#volume"+id+" input[type=range]").attributes;
+        let volume = Number(nodeMap.getNamedItem("value").value);
+
+        const nodeMap_modal = document.querySelector("#volume-modal"+id+" input[type=range]").attributes;
+        let volume_modal = Number(nodeMap_modal.getNamedItem("value").value);
+
+        if(volume_modal > 0){
+          document.querySelector("#mute"+id).style.backgroundColor = '#c3c3c3';
+        }
+        else{
+          document.querySelector("#mute"+id).style.backgroundColor = '#e91303';
+        }
+
+        if(volume != volume_modal){
+          document.querySelector("#apply"+id).style.backgroundColor = '#ff8200';
+          document.querySelector("#apply"+id).disabled = false;
+        }
+        else{
+          document.querySelector("#apply"+id).style.backgroundColor = '#c3c3c3';
+          document.querySelector("#apply"+id).disabled = true;
+        }
+
+      });
+
+    }, 500);
   })
 
   function applyVolume(id){
@@ -1063,14 +1005,6 @@
     let volume = Number(nodeMap.getNamedItem("value").value);
 
     let new_volume = volume == 0 ? -70 : (volume - 100)/5;
-
-    // if(volume > 30){
-    //   new_volume = volume - 100;
-    //   new_volume = Number(new_volume.toFixed());
-    // }
-    // else{
-    //   new_volume = -70;
-    // }
 
     $.ajax({
       type: "POST",

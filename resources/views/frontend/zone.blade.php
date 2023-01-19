@@ -1074,7 +1074,7 @@ a:hover {
       @if(Session::get('qrcode_zone') == true)  <span class="title-over-top">{{ $zone->name }}</span>
       @else
       <li class="nav-item" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false" style="height: 32px;">
-        <a href="{{ url('/overview') }}" class="navbar-brand mx-auto mx-lg-0">
+        <a href="{{ url()->previous() }}" class="navbar-brand mx-auto mx-lg-0">
           <!-- <i class="bi-bullseye brand-logo"></i>
                       <span class="brand-text">Leadership <br> Event</span> -->
                       <i class="bi bi-arrow-left"></i>
@@ -1157,25 +1157,6 @@ a:hover {
 
                           <div class="col-lg-12 col-12" id="">
                           <h4 class="title-status" id="source-number">@if($zone->source == 0) None @else Source {{ $zone->source }} @endif</h4>
-                          {{-- <select class="form-select form-select-source2" id="source-zone" onchange="selectSource({{ $zone->id }})" aria-label="Default select example">
-                            <option @if($zone->source == 1) selected @endif value="1">Source 1</option>
-                            <option @if($zone->source == 2) selected @endif value="2">Source 2</option>
-                            <option @if($zone->source == 3) selected @endif value="3">Source 3</option>
-                            <option @if($zone->source == 4) selected @endif value="4">Source 4</option>
-                            <option @if($zone->source == 5) selected @endif value="5">Source 5</option>
-                            <option @if($zone->source == 6) selected @endif value="6">Source 6</option>
-                            <option @if($zone->source == 7) selected @endif value="7">Source 7</option>
-                            <option @if($zone->source == 8) selected @endif value="8">Source 8</option>
-                            <option @if($zone->source == 9) selected @endif value="9">Source 9</option>
-                            <option @if($zone->source == 10) selected @endif value="10">Source 10</option>
-                            <option @if($zone->source == 11) selected @endif value="11">Source 11</option>
-                            <option @if($zone->source == 12) selected @endif value="12">Source 12</option>
-                            <option @if($zone->source == 13) selected @endif value="13">Source 13</option>
-                            <option @if($zone->source == 14) selected @endif value="14">Source 14</option>
-                            <option @if($zone->source == 15) selected @endif value="15">Source 15</option>
-                            <option @if($zone->source == 16) selected @endif value="16">Source 16</option>
-                            <option @if($zone->source == 0) selected @endif value="0">None</option>
-                          </select> --}}
                           <p id="song-name" class="song-name song-name{{$zone->source}}">Song Name</p>
                           </div>
 
@@ -1625,14 +1606,6 @@ a:hover {
     let volume = Number(nodeMap.getNamedItem("value").value);
 
     let new_volume = volume == 0 ? -70 : (volume - 100)/5;
-
-    // if(volume > 30){
-    //   new_volume = volume - 100;
-    //   new_volume = Number(new_volume.toFixed());
-    // }
-    // else{
-    //   new_volume = -70;
-    // }
 
     $.ajax({
       type: "POST",

@@ -458,7 +458,7 @@ a:hover {
   float: right;
   position: relative;
   display: inline-block;
-} 
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -554,13 +554,13 @@ a:hover {
         <span class="title-project-name">{{ $project }}</span>
         <a href="javascript:void(0);" onclick="myFunction()"><i class="bi bi-three-dots-vertical" id="dropbtn" style="color: white"></i></a>
         <div class="dropdown-content" id="myLinks">
-          <a class="dropdown-item">Theme   
+          <a class="dropdown-item">Theme
             <div class="container2">
               <label class="switch2">
                 <input type="checkbox" class="hidden" id="audio_setting2"  {{ ( !empty(Auth::check()) ? (Auth::user()->theme == 'B' ? 'checked' : '') : '')  }}>
                 <div class="slider slider-light change_theme" style="cursor: pointer" id="slider">Light</div>
               </label>
-            </div>  
+            </div>
           </a>
           <a class="dropdown-item" href="{{ url('/logout') }}">Log Out</a>
           </div>
@@ -600,7 +600,7 @@ a:hover {
 </section>
 
   </main>
-        
+
   <!-- JAVASCRIPT FILES -->
   @include('frontend/script')
   <script>
@@ -619,7 +619,7 @@ a:hover {
           url: fullUrl + '/' + id,
           success: function(response){
             // document.getElementById("layout-img").src = response;
-            let div = $('#layout-img'); 
+            let div = $('#layout-img');
             let img = `<img class="img-overview-zone-mb" id="layout" src="{{ asset('${response}') }}">'`;
             $.ajax({
                 type: "GET",
@@ -630,19 +630,19 @@ a:hover {
                     let top = data[i].y_value;
                     let left = data[i].x_value;
                     img += `<a href="{{ url('/zone/${data[i].id}') }}"><button class="btn-img" id="btn-img-zone${data[i].id}" style="top:${top}%;left:${left}%;background-color:${data[i].color}">${data[i].name}</button></a>`;
-                  } 
-                  div.html(img);                
+                  }
+                  div.html(img);
                 }
             });
           }
-      });  
+      });
 
       $.ajax({
           type: "GET",
           url: fullUrl + '/zone/' + id,
           success: function(response){
             let zone = $('#show-zone'); let zone_data = ``;
-            count = response.length;        
+            count = response.length;
             for(let i = 0; i < response.length; i++){
               array.push(response[i].id);
               let random_volume = Math.floor(Math.random() * 101);
@@ -661,7 +661,7 @@ a:hover {
                                     <option `; if(response[i].source == 5){ zone_data += `selected`; } zone_data += ` value="5">Source 5</option>
                                     <option `; if(response[i].source == 6){ zone_data += `selected`; } zone_data += ` value="6">Source 6</option>
                                     <option `; if(response[i].source == 7){ zone_data += `selected`; } zone_data += ` value="7">Source 7</option>
-                                    <option `; if(response[i].source == 8){ zone_data += `selected`; } zone_data += ` value="8">Source 8</option>                                    
+                                    <option `; if(response[i].source == 8){ zone_data += `selected`; } zone_data += ` value="8">Source 8</option>
                                     <option `; if(response[i].source == 9){ zone_data += `selected`; } zone_data += ` value="9">Source 9</option>
                                     <option `; if(response[i].source == 10){ zone_data += `selected`; } zone_data += ` value="10">Source 10</option>
                                     <option `; if(response[i].source == 11){ zone_data += `selected`; } zone_data += ` value="11">Source 11</option>
@@ -679,7 +679,7 @@ a:hover {
                                   <input type="range" min="0" max="100" value="${response[i].volume}" id="volume-val${response[i].id}" class="volume-range">
                                   <i class="bi bi-volume-off-fill" id="volume-icon2"></i>
                                   <p class="text-zone-volume2">Vol</p>
-                                  
+
                                   <div class="bar-hoverbox">
                                     <div class="bar">
                                       <div class="bar-fill"></div>
@@ -692,9 +692,11 @@ a:hover {
             zone.html(zone_data);
           }
       });
-      let myTimeout = setTimeout(function(){
-        $('body').click();
-      }, 300);
+      for (var i = 0; i < 15; i++) {
+          setTimeout(function () {
+            $('body').click();
+          }, i * 1000)
+      }
     }
 </script>
 <script>
@@ -737,8 +739,8 @@ a:hover {
       $.ajax({
         type: "GET",
         url: fullUrl + '/zone/' + layout_id,
-        success: function(res){     
-          res.forEach(function(e){   
+        success: function(res){
+          res.forEach(function(e){
             if(e.volume != $('#volume-val'+e.id).val()){
               let i = e.id;
               const range = document.querySelector("#volume"+i+" input[type=range]");
@@ -762,13 +764,13 @@ a:hover {
             }
             if(e.source != $('#source-zone'+e.id).val()){
               $('#source-zone'+e.id).val(e.source);
-            }            
-          });    
+            }
+          });
         }
       });
     }, 1000);
-  })  
-</script>  
+  })
+</script>
 <script>
   document.addEventListener("click", () => {
     array.forEach(i => {
