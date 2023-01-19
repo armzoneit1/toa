@@ -64,8 +64,7 @@ Route::group(['middleware' => ['Login']], function () {
             Route::get('/', [Frontend\HomeController::class, 'home']);
             Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
             Route::get('/check-new', [Frontend\HomeController::class, 'checkHome']);
-
-
+            Route::post('/select-source/{id}', [Frontend\HomeController::class, 'selectSource']);
         });
 
         Route::get('change_theme', [Webpanel\SetController::class, 'change_theme']);
@@ -76,31 +75,6 @@ Route::group(['middleware' => ['Login']], function () {
             Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
             Route::get('/check-new', [Frontend\HomeController::class, 'checkNewComing']);
             Route::post('/select-source/{id}', [Frontend\HomeController::class, 'selectSource']);
-
-
-        });
-
-        Route::prefix('zone')->group(function () {
-            Route::get('/{id}', [Frontend\HomeController::class, 'zone'])->where(['id' => '[0-9]+']);
-            Route::get('/{id}/volume', [Frontend\HomeController::class, 'zone'])->where(['id' => '[0-9]+']);
-            Route::post('/{id}/volume', [Frontend\HomeController::class, 'adjustVolume'])->where(['id' => '[0-9]+']);
-            Route::get('/{id}/this-zone', [Frontend\HomeController::class, 'getZoneById'])->where(['id' => '[0-9]+']);
-            Route::get('/{id}/apply-volume', [Frontend\HomeController::class, 'save'])->where(['id' => '[0-9]+']);
-            Route::post('/{id}/select-source', [Frontend\HomeController::class, 'selectSource'])->where(['id' => '[0-9]+']);
-            Route::get('/{id}/current-song', [Frontend\HomeController::class, 'getCurrentSong']);
-            Route::post('/{id}/get_status_play/{source}', [Frontend\HomeController::class, 'getplayandpause']);
-            Route::post('/{id}/forwardmusic/{source}', [Frontend\HomeController::class, 'forwardmusic']);
-            Route::post('/{id}/backwardmusic/{source}', [Frontend\HomeController::class, 'backwardmusic']);
-            Route::post('/{id}/musicrun/{source}', [Frontend\HomeController::class, 'musicrunnow']);
-            Route::post('/{id}/song-status', [Frontend\HomeController::class, 'songStatus']);
-            Route::get('/{id}/broadcast',function ()
-            {
-                broadcast(new \App\Events\playsong("OKOPKAOWO"));
-            });
-            Route::get('/{id}/broadcast1',function ()
-            {
-                broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
-            });
         });
 
         Route::prefix('push-to-talk')->group(function () {
@@ -110,5 +84,28 @@ Route::group(['middleware' => ['Login']], function () {
         });
     });
 
+});
+
+Route::prefix('zone')->group(function () {
+    Route::get('/{id}', [Frontend\HomeController::class, 'zone'])->where(['id' => '[0-9]+']);
+    Route::get('/{id}/volume', [Frontend\HomeController::class, 'zone'])->where(['id' => '[0-9]+']);
+    Route::post('/{id}/volume', [Frontend\HomeController::class, 'adjustVolume'])->where(['id' => '[0-9]+']);
+    Route::get('/{id}/this-zone', [Frontend\HomeController::class, 'getZoneById'])->where(['id' => '[0-9]+']);
+    Route::get('/{id}/apply-volume', [Frontend\HomeController::class, 'save'])->where(['id' => '[0-9]+']);
+    Route::post('/{id}/select-source', [Frontend\HomeController::class, 'selectSource'])->where(['id' => '[0-9]+']);
+    Route::get('/{id}/current-song', [Frontend\HomeController::class, 'getCurrentSong']);
+    Route::post('/{id}/get_status_play/{source}', [Frontend\HomeController::class, 'getplayandpause']);
+    Route::post('/{id}/forwardmusic/{source}', [Frontend\HomeController::class, 'forwardmusic']);
+    Route::post('/{id}/backwardmusic/{source}', [Frontend\HomeController::class, 'backwardmusic']);
+    Route::post('/{id}/musicrun/{source}', [Frontend\HomeController::class, 'musicrunnow']);
+    Route::post('/{id}/song-status', [Frontend\HomeController::class, 'songStatus']);
+    Route::get('/{id}/broadcast',function ()
+    {
+        broadcast(new \App\Events\playsong("OKOPKAOWO"));
+    });
+    Route::get('/{id}/broadcast1',function ()
+    {
+        broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
+    });
 });
 

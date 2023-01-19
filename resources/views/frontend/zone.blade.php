@@ -1071,7 +1071,8 @@ a:hover {
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      @if(Session::get('qrcode_zone') == true)  <span class="title-over-top">{{ $zone->name }}</span>
+      {{-- @if(Session::get('qrcode_zone') == true)  <span class="title-over-top">{{ $zone->name }}</span> --}}
+      @if(empty(Auth::check()))  <span class="title-over-top">{{ $zone->name }}</span>
       @else
       <li class="nav-item" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false" style="height: 32px;">
         <a href="{{ url()->previous() }}" class="navbar-brand mx-auto mx-lg-0">
