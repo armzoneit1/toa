@@ -217,7 +217,7 @@
   .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 0rem;
+    padding: 10px 20px !important;
     background-color: #363636;
     margin: 0;
   }
