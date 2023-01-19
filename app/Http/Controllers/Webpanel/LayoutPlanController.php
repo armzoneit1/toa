@@ -38,7 +38,7 @@ class LayoutPlanController extends Controller
     }
 
     public function genQrcode($id){
-        $zone = \QrCode::size(300)->format('png')->generate(url("zone/$id"));
+        $zone = \QrCode::size(300)->format('png')->generate("https://192.168.14.18/toa/zone/$id");
         return $zone;
     }
 
