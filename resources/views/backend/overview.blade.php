@@ -207,9 +207,11 @@
     color: #fff;
   }
 
-  .img-zone {
+  .img-zone{
+    width: 100%;
     height: 100%;
     object-fit: contain;
+    vertical-align: middle;
   }
 
   .modal-body {
