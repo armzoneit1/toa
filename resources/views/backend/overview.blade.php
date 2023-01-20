@@ -773,26 +773,28 @@
         type: "GET",
         url: fullUrl + '/zone/' + $('#select-layout').val(),
         success: function(res){
-          res.forEach(function(e,i){
-            if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){
-              setVolumeOnPage(e.volume,e.id);
-              setVolumeOnModal(e.volume,e.id);
-            }
-            if(e.source != $('#source-zone'+e.id).val()){
-              $('#source-zone'+e.id).val(e.source);
-            }
+            if(typeof res == 'object'){
+                res.forEach(function(e,i){
+                    if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){
+                    setVolumeOnPage(e.volume,e.id);
+                    setVolumeOnModal(e.volume,e.id);
+                    }
+                    if(e.source != $('#source-zone'+e.id).val()){
+                    $('#source-zone'+e.id).val(e.source);
+                    }
 
-            let source_check = $('#zone-source'+e.id).text();
-            if(e.source != source_check){
-              if(e.source == 0){
-                $('#text-show-source'+e.id).text('None');
-              }
-              else{
-                $('#text-show-source'+e.id).text('Source '+ e.source);
-              }
-              $('#zone-source'+e.id).text(e.source);
+                    let source_check = $('#zone-source'+e.id).text();
+                    if(e.source != source_check){
+                    if(e.source == 0){
+                        $('#text-show-source'+e.id).text('None');
+                    }
+                    else{
+                        $('#text-show-source'+e.id).text('Source '+ e.source);
+                    }
+                    $('#zone-source'+e.id).text(e.source);
+                    }
+                });
             }
-          });
         }
       });
     }, 1000);

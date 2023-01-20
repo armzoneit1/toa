@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class Login 
+class Login
 {
     /**
      * Handle an incoming request.
@@ -16,7 +16,7 @@ class Login
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check() || $request->url() == url("zone/$request->id") || $request->url() == url("zone/$request->id/volume") || $request->url() == url("zone/$request->id/this-zone")){
+        if(Auth::check()){
             return $next($request);
         }
         return redirect('');

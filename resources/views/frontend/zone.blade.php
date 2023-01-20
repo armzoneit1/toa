@@ -1258,9 +1258,11 @@ a:hover {
 
   <script>
     $(document).ready(function (){
-      let myTimeout = setTimeout(function(){
-        $('body').click();
-      }, 300);
+        for (var i = 0; i < 5; i++) {
+            setTimeout(function () {
+                $('body').click();
+            }, i * 1000)
+        }
     })
 
     document.addEventListener("click", () => {

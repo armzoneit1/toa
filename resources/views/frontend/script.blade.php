@@ -15,8 +15,8 @@
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-  </script> 
-@if(Session::get('qrcode_zone') != true)
+  </script>
+@if(!empty(Auth::check()))
 <script>
 var x = document.getElementById("myLinks");
 function myFunction() {
@@ -56,6 +56,6 @@ window.onclick = function(event) {
         }
     });
   });
-  
+
 </script>
 @endif
