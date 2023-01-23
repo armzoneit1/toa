@@ -729,32 +729,12 @@
         let div2 = $('#show-zone');
         div2.html('');
       }
-      let myTimeout = setTimeout(function(){
-        $('body').click();
-      }, 600);
-
-      // $.ajax({
-      //   type: "GET",
-      //   url: fullUrl + '/zone/' + $('#select-layout').val(),
-      //   success: function(res){
-      //     for(let i = 0; i < res.length; i++){
-      //       $.ajax({
-      //         type: "GET",
-      //         url: fullUrl + '/current-song',
-      //         data: {source:res[i].source},
-      //         success: function(data){
-      //           $('#song-name'+res[i].id).text(data);
-      //         }
-      //       });
-      //     }
-      //   }
-      // });
   }
 
   function barShow(){
     for (var i = 0; i < 15; i++) {
         setTimeout(function () {
-          $('body').click();
+          $('#fake_click').click();
         }, i * 1000)
     }
   }

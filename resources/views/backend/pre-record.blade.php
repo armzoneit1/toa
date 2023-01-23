@@ -783,13 +783,13 @@ tr {
                 <tr class="tr-light tr-top tr-top-light">
                   <th>Select</th>
                   <th>Task Name</th>
-                  <th>Date</th>
-                  <th>Duration (M)</th>
+                  <th class="text-center">Date</th>
+                  <th class="text-center">Duration (M)</th>
                   <th>Start Time</th>
                   <th>End Time</th>
                   <th>Repeat</th>
                   <th>Loop</th>
-                  <th>Action</th>
+                  <th class="text-center">Action</th>
                 </tr>
               </thead>
               <tbody id="latest-record">
@@ -803,17 +803,17 @@ tr {
                       </div>
                     </td>
                     <td id="name_id{{ $data->id }}">{{ $data->task_name }}</td>
-                    <td id="date_id{{ $data->id }}">@if($data->task_date == null) - @else {{ $data->task_date }} @endif</td>
+                    <td class="text-center" id="date_id{{ $data->id }}">@if($data->task_date == null) - @else {{ $data->task_date }} @endif</td>
                     <td class="text-center" id="duration_id{{ $data->id }}">@if($data->task_duration == null) - @else {{ $data->task_duration }} @endif</td>
                     <td id="start_id{{ $data->id }}">{{ $data->task_start }}</td>
                     <td id="end_id{{ $data->id }}">@if($data->task_end == null) - @else {{ $data->task_end }} @endif</td>
                     <td id="repeat_id{{ $data->id }}">{{ $data->task_repeat }}</td>
                     <td id="loop_id{{ $data->id }}">{{ $data->task_loop }}</td>
                     <td>
-                      <p>
-                      {{-- <audio src="{{ asset($data->file) }}" class="audio-pre-record" id="audio{{ $data->id }}" hidden></audio> --}}
-                      <a href="javascript:void(0);" id="toggle-edit-modal{{ $data->id }}" onclick="checkEdit({{ $data->id }})" data-bs-toggle="modal" data-bs-target="#edit-record{{ $data->id }}"><i class="bi bi-pencil-square" id="volume-icon02"></i></a>
-                      <a href="javascript:void(0);" onclick='deleteItem({{ $data->id }})'><i class="bi bi-trash-fill" id="volume-icon03"></i></a></p>
+                    <p>
+                        <a href="javascript:void(0);" id="toggle-edit-modal{{ $data->id }}" onclick="checkEdit({{ $data->id }})" data-bs-toggle="modal" data-bs-target="#edit-record{{ $data->id }}"><i class="bi bi-pencil-square" id="volume-icon02"></i></a>
+                        <a href="javascript:void(0);" onclick='deleteItem({{ $data->id }})'><i class="bi bi-trash-fill" id="volume-icon03"></i></a>
+                    </p>
                     </td>
                   </tr>
                 @endforeach
