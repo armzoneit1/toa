@@ -1,1 +1,8 @@
-[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 12:03:32
+[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:17:15
+[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:17:36
+[Error] System : Thread was being aborted. DateTime:24/1/2023 15:17:59
+[Error] System :  DateTime:24/1/2023 15:17:59
+[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:18:15
+[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:18:36
+[Error] System : Thread was being aborted. DateTime:24/1/2023 15:18:47
+[Error] System :  DateTime:24/1/2023 15:18:47
