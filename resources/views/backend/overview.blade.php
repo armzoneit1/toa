@@ -780,6 +780,55 @@
     }, 1000);
   })
 </script>
+  <script src="{{asset("js/app.js")}}" ></script>
+  <script>
+    Echo.channel('playsongs')
+            .listen('playsong', (e) => {
+              console.log(e);
+              if(e.data != null) {
+                e.data.map(function (r) {
+                  $(".song-name" + r.Id).html(r.Name);
+                  $(".time-play" + r.Id).html(r.DurationTimePlay + "/" + r.DurationTime);
+                  console.log(r);
+                  if (r.runmusic == 1) {
+                    $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
+                    $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
+                  } else {
+                    $(".play-or-pause" + r.Id).removeClass('bi-pause-circle-fill');
+                    $(".play-or-pause" + r.Id).addClass('bi-play-circle-fill');
+                  }
+                })
+              }else{
+                for (var i = 1; i <= 16; i++) {
+                  $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+                  $(".time-play" + i).html("00:00/00:00");
+                }
+              }
+            }).error(function(e) {
+      console.log(e);
+    })
+    Echo.channel('checkPlayMusics')
+            .listen('checkPlayMusic', (e) => {
+              console.log(e);
+              e.data.map(function(r){
+                $("#text-show-source"+r.id).html("Source "+r.source)
+                $("#song-name"+r.id).removeClass()
+                $("#song-name"+r.id).addClass("song-name song-name"+r.source)
+                $("#time-play"+r.id).removeClass()
+                $("#time-play"+r.id).addClass("time-play time-play"+r.source)
+                $("#skip-lefts"+r.id).removeClass()
+                $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
+                $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
+                $("#plays"+r.id).removeClass()
+                $("#plays"+r.id).addClass("play play"+r.source)
+                $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
+                $("#skip-right"+r.id).removeClass()
+                $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
+                $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
+              })
+            })
+    // Echo.channel("playsongs").bind("sss");
+  </script>
 <script>
   document.addEventListener("click", () => {
     zone_id.forEach(i => {
@@ -1179,54 +1228,6 @@
   }
 
 </script>
-<script src="{{asset("js/app.js")}}" ></script>
-  <script>
-      Echo.channel('playsongs')
-          .listen('playsong', (e) => {
-            console.log(e);
-            if(e.data != null) {
-              e.data.map(function (r) {
-                $(".song-name" + r.Id).html(r.Name);
-                $(".time-play" + r.Id).html(r.DurationTimePlay + "/" + r.DurationTime);
-                console.log(r);
-                if (r.runmusic == 1) {
-                  $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
-                  $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
-                } else {
-                  $(".play-or-pause" + r.Id).removeClass('bi-pause-circle-fill');
-                  $(".play-or-pause" + r.Id).addClass('bi-play-circle-fill');
-                }
-              })
-            }else{
-              for (var i = 1; i <= 16; i++) {
-                $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
-                $(".time-play" + i).html("00:00/00:00");
-              }
-            }
-          }).error(function(e) {
-            console.log(e);
-      })
-      Echo.channel('checkPlayMusics')
-              .listen('checkPlayMusic', (e) => {
-                console.log(e);
-                e.data.map(function(r){
-                  $("#text-show-source"+r.id).html("Source "+r.source)
-                  $("#song-name"+r.id).removeClass()
-                  $("#song-name"+r.id).addClass("song-name song-name"+r.source)
-                  $("#time-play"+r.id).removeClass()
-                  $("#time-play"+r.id).addClass("time-play time-play"+r.source)
-                  $("#skip-lefts"+r.id).removeClass()
-                  $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
-                  $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
-                  $("#plays"+r.id).removeClass()
-                  $("#plays"+r.id).addClass("play play"+r.source)
-                  $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
-                  $("#skip-right"+r.id).removeClass()
-                  $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
-                  $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
-                })
-            })
-      // Echo.channel("playsongs").bind("sss");
-  </script>
+
 </body>
 </html>
