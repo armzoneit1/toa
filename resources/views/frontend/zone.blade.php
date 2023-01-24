@@ -1167,7 +1167,7 @@ a:hover {
                             <div class="col-lg-6 col-6" id="col6-mb">
                               <p class="icon-play">
                                   <a class="skip-left" href="javascript:void(0);" onclick="previous_song({{$zone->source}})"><i class="bi bi-skip-backward-fill"></i></a>
-                                  <a class="play" href="javascript:void(0);" onclick="playorpause_song({{$zone->source}},{{$zone->id}})"><i id="play-or-pause" class="bi bi-play-circle-fill"></i></a>
+                                  <a class="play" href="javascript:void(0);" onclick="playorpause_song({{$zone->source}},{{$zone->id}})"><i id="play-or-pause{{$zone->source}}" class="bi bi-play-circle-fill"></i></a>
                                   <a class="skip-right" href="javascript:void(0);" onclick="next_song({{$zone->source}})"><i class="bi bi-skip-forward-fill"></i></a></p>
                             </div>
                           </div>
@@ -1488,6 +1488,7 @@ a:hover {
               else{
                   $("#play-or-pause").removeClass();
                   $("#play-or-pause").addClass("bi bi-play-circle-fill");
+
               }
           }
       });
@@ -1569,17 +1570,20 @@ a:hover {
             url: fullUrl + '/musicrun/' + {{$zone->source}},
             data: {source:'{{$zone->source}}',_token:'{{csrf_token()}}'},
             success: function(response){
-
+                console.log(response);
                 response.map(function (r){
 
                     $(".song-name"+r.Id).html(r.Name);
                     $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
+                    debugger;
                     if(r.runmusic == 1) {
-                        $("#play-or-pause").removeClass('bi-play-circle-fill');
-                        $("#play-or-pause").addClass('bi-pause-circle-fill');
+                        $("#play-or-pause"+r.Id).removeClass('bi-play-circle-fill');
+                        $("#play-or-pause"+r.Id).addClass('bi-pause-circle-fill');
                     }else{
-                        $("#play-or-pause").removeClass('bi-pause-circle-fill');
-                        $("#play-or-pause").addClass('bi-play-circle-fill');
+
+
+                        $("#play-or-pause"+r.Id).removeClass('bi-pause-circle-fill');
+                        $("#play-or-pause"+r.Id).addClass('bi-play-circle-fill');
                     }
                 });
             }

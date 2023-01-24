@@ -1183,19 +1183,29 @@
   <script>
       Echo.channel('playsongs')
           .listen('playsong', (e) => {
-              e.data.map(function(r){
-                  $(".song-name"+r.Id).html(r.Name);
-                  $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
-                  console.log(r);
-                  if(r.runmusic == 1) {
-                    $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
-                    $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
-                  }else{
-                    $(".play-or-pause" + r.Id).removeClass('bi-pause-circle-fill');
-                    $(".play-or-pause" + r.Id).addClass('bi-play-circle-fill');
-                  }
+            console.log(e);
+            if(e.data != null) {
+              e.data.map(function (r) {
+                $(".song-name" + r.Id).html(r.Name);
+                $(".time-play" + r.Id).html(r.DurationTimePlay + "/" + r.DurationTime);
+                console.log(r);
+                if (r.runmusic == 1) {
+                  $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
+                  $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
+                } else {
+                  $(".play-or-pause" + r.Id).removeClass('bi-pause-circle-fill');
+                  $(".play-or-pause" + r.Id).addClass('bi-play-circle-fill');
+                }
               })
-          })
+            }else{
+              for (var i = 1; i <= 16; i++) {
+                $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+                $(".time-play" + i).html("00:00/00:00");
+              }
+            }
+          }).error(function(e) {
+            console.log(e);
+      })
       Echo.channel('checkPlayMusics')
               .listen('checkPlayMusic', (e) => {
                 console.log(e);
