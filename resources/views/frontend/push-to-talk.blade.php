@@ -609,7 +609,7 @@ a:hover {
     width: 60px;
     height: 100px;
     display: inline-block;
-    
+
 }
 
 .txt_btn {
@@ -740,7 +740,7 @@ a:hover {
   float: right;
   position: relative;
   display: inline-block;
-} 
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -777,13 +777,13 @@ a:hover {
         <span class="title-project-name">{{ $project }}</span>
         <a href="javascript:void(0);" onclick="myFunction()"><i class="bi bi-three-dots-vertical" id="dropbtn" style="color: white"></i></a>
         <div class="dropdown-content" id="myLinks">
-          <a class="dropdown-item">Theme   
+          <a class="dropdown-item">Theme
             <div class="container2">
               <label class="switch2">
                 <input type="checkbox" class="hidden" id="audio_setting2" checked>
                 <div class="slider slider-light" style="cursor: pointer" id="slider">Light</div>
               </label>
-            </div>  
+            </div>
           </a>
           <a class="dropdown-item" href="{{ url('/logout') }}">Log Out</a>
           </div>
@@ -811,12 +811,12 @@ a:hover {
                 @for($i = 0; $i < 160; $i++)
                   <div class='bar'></div>
                 @endfor
-              </div>       
-              <span id="timer">0:00</span>      
-              <p id="msg_box1"></p>     
+              </div>
+              <span id="timer">0:00</span>
+              <p id="msg_box1"></p>
               <p id="msg_box2"></p>
           </div>
-        </div> 
+        </div>
     {{-- <h4 class="icon-sound sound-size"><i class="bi bi-mic"></i></h4>  --}}
 
     <!-- / Change the number 160 to adjust the length -->
@@ -869,13 +869,13 @@ a:hover {
                         </ul>
                     </div>
 
-                        
+
                     <div class="col-lg-5 col-12 ms-lg-auto">
                         <div class="copyright-text-wrap d-flex align-items-center">
-                            <p class="copyright-text ms-lg-auto me-4 mb-0">Copyright © 2022 Leadership Event Co., Ltd. 
-                            
-                            <br>All Rights Reserved. 
-          
+                            <p class="copyright-text ms-lg-auto me-4 mb-0">Copyright © 2022 Leadership Event Co., Ltd.
+
+                            <br>All Rights Reserved.
+
           					<br><br>Design: <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
 
                             <a href="#section_1" class="bi-arrow-up arrow-icon custom-link"></a>
@@ -997,7 +997,7 @@ if ( navigator.mediaDevices.getUserMedia ) {
         audio.pause();
         audio.currentTime = 0;
       }
-      
+
       navigator.mediaDevices.getUserMedia( { audio: true } ).then( function ( stream ) {
         mediaRecorder = new MediaRecorder( stream );
         mediaRecorder.start();
@@ -1011,7 +1011,7 @@ if ( navigator.mediaDevices.getUserMedia ) {
           setTimer(time);
           danceStart();
         }
-        
+
         if ( navigator.vibrate ) navigator.vibrate( 150 );
 
         mediaRecorder.ondataavailable = function ( event ) {
@@ -1023,18 +1023,16 @@ if ( navigator.mediaDevices.getUserMedia ) {
 
             blob = new Blob( chunks, type );
             audioSrc = window.URL.createObjectURL( blob );
-            // console.log(blob);
-            console.log(audioSrc);
             audio.src = audioSrc;
-            
+
             chunks = [];
-        }     
+        }
       } );
       // .catch( function ( error ) {
       //     if ( location.protocol != 'https:' ) {
       //       msg_box.innerHTML = lang.mic_error + '<br>'  + lang.use_https;
       //     } else {
-      //       msg_box.innerHTML = error; 
+      //       msg_box.innerHTML = error;
       //     }
       //     button.disabled = true;
       // });
@@ -1042,14 +1040,14 @@ if ( navigator.mediaDevices.getUserMedia ) {
 
     var t;
     var fullUrl = window.location.origin + window.location.pathname;
-  
+
     function stop() {
         danceStop();
         clearTimer();
         mediaRecorder.stop();
         button.classList.remove( 'recording' );
         btn_status = 'inactive';
-      
+
         if ( navigator.vibrate ) navigator.vibrate( [ 200, 100, 200 ] );
 
         var now = Math.ceil( new Date().getTime() / 1000 );
@@ -1097,7 +1095,7 @@ if ( navigator.mediaDevices.getUserMedia ) {
         ctx.quadraticCurveTo(x + width, y, x + width - radius, y);
         ctx.lineTo(x + radius, y);
         ctx.quadraticCurveTo(x, y, x, y + radius);
-        
+
         ctx.fillStyle = fill;
         ctx.fill();
     }
@@ -1120,7 +1118,7 @@ if ( navigator.mediaDevices.getUserMedia ) {
       const dataTransfer = new DataTransfer();
       dataTransfer.items.add(file);
       input.files = dataTransfer.files;
-      console.log(input.files[0].name);
+      // console.log(input.files[0].name);
       document.getElementById('form-record').submit();
     }
 
@@ -1128,7 +1126,7 @@ if ( navigator.mediaDevices.getUserMedia ) {
     if ( location.protocol != 'https:' ) {
       msg_box.innerHTML = lang.mic_error + '<br>'  + lang.use_https;
     } else {
-      msg_box.innerHTML = lang.mic_error; 
+      msg_box.innerHTML = lang.mic_error;
     }
     button.disabled = true;
 }
@@ -1154,6 +1152,14 @@ function danceStop(){
     });
   }
 }
+
+$(document).ready(function(){
+  setInterval(() => {
+    if(mediaRecorder.state == 'inactive'){
+      clearTimer();
+    }
+  }, 1000);
+})
 
 </script>
 
