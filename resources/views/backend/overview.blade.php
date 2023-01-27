@@ -38,6 +38,14 @@
                 $("#text-show-source"+r.id).html("Source "+r.source)
                 $("#song-name"+r.id).removeClass()
                 $("#song-name"+r.id).addClass("song-name song-name"+r.source)
+                if(r.source == 0){
+                  $(".song-name"+r.source).html("กรุณาเลือก source ก่อน");
+                  $(".time-play"+r.source).html("00:00 / 00:00");
+                }
+                if(r.source >= 9 && r.source <= 16){
+                  $(".song-name"+r.source).html("Local Input");
+                  $(".time-play"+r.source).html("00:00 / 00:00");
+                }
                 $("#time-play"+r.id).removeClass()
                 $("#time-play"+r.id).addClass("time-play time-play"+r.source)
                 $("#skip-lefts"+r.id).removeClass()
@@ -697,16 +705,18 @@
                                   </div>
                                   <div class="col-lg-6 col-6 box-source-pop" id="col6">`;
                                     if(res[i].source == 0){
+                                      zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">กรุณาเลือก source ก่อน</p>`;
                                       zone += `<h4 class="title-status" id="text-show-source${res[i].id}">None</h4>`;
                                     }
                                     else{
                                       zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
+                                      zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">Song Name</p>`;
+
                                     }
-                           zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">Song Name</p>
-                                    <div class="d-none" id="zone-source${res[i].id}">${res[i].source}</div>
+                           zone += `<div class="d-none" id="zone-source${res[i].id}">${res[i].source}</div>
                                     <div class="row" id="time-play-top">
                                       <div class="col-lg-6 col-6" id="col6">
-                                        <p class="time-play time-play${res[i].source}" id="time-play${res[i].id}">00:00 / 00:15</p>
+                                        <p class="time-play time-play${res[i].source}" id="time-play${res[i].id}">00:00 / 00:00</p>
                                       </div>
                                       <div class="col-lg-6 col-6" id="col6">
                                         <p class="icon-play">
