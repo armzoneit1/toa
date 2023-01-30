@@ -588,7 +588,6 @@
 
 <script>
   var fullUrl = window.location.origin + window.location.pathname;
-  let count;
   let zone_id = [];
 
   function retrieveData(){
@@ -624,161 +623,163 @@
           url: fullUrl + '/zone/' + $('#select-layout').val(),
           success: function(res){
             let zone = '<h4 class="title-status">Status</h4>';
-            count = res.length;
             zone_id = [];
-            for(let i = 0; i < res.length; i++){
-            //   let random_volume = Math.floor(Math.random() * 101);
-              zone_id.push(res[i].id);
-            $.ajax({
-                type: "post",
-                async: false,
-                url: fullUrl + '/get_status_play/'+res[i].source,
-                data:{_token:'{{csrf_token()}}'},
-                //url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + res[i].source + '&controltype=get_status_music',
-                // data: {source:res[i].source},
-                success: function(data){
-              zone += `<div class="box-zone box-zone-light">
-                            <a href="javascript:void(0);">
-                              <p class="text-zone text-zone-light" onclick="volumeModal(${res[i].id});" data-bs-toggle="modal" data-bs-target="#modal-zone${res[i].id}">${res[i].name}</p>
-                            </a>
-                            <div class="form-group">
-                              <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                              <select class="form-select form-select-source form-select-source-light " onchange="selectSource(${res[i].id})" id="source-zone${res[i].id}" aria-label="Default select example">
-                                <option `; if(res[i].source == 1){ zone += `selected`; } zone += ` value="1">Source 1</option>
-                                <option `; if(res[i].source == 2){ zone += `selected`; } zone += ` value="2">Source 2</option>
-                                <option `; if(res[i].source == 3){ zone += `selected`; } zone += ` value="3">Source 3</option>
-                                <option `; if(res[i].source == 4){ zone += `selected`; } zone += ` value="4">Source 4</option>
-                                <option `; if(res[i].source == 5){ zone += `selected`; } zone += ` value="5">Source 5</option>
-                                <option `; if(res[i].source == 6){ zone += `selected`; } zone += ` value="6">Source 6</option>
-                                <option `; if(res[i].source == 7){ zone += `selected`; } zone += ` value="7">Source 7</option>
-                                <option `; if(res[i].source == 8){ zone += `selected`; } zone += ` value="8">Source 8</option>
-                                <option `; if(res[i].source == 9){ zone += `selected`; } zone += ` value="9">Source 9</option>
-                                <option `; if(res[i].source == 10){ zone += `selected`; } zone += ` value="10">Source 10</option>
-                                <option `; if(res[i].source == 11){ zone += `selected`; } zone += ` value="11">Source 11</option>
-                                <option `; if(res[i].source == 12){ zone += `selected`; } zone += ` value="12">Source 12</option>
-                                <option `; if(res[i].source == 13){ zone += `selected`; } zone += ` value="13">Source 13</option>
-                                <option `; if(res[i].source == 14){ zone += `selected`; } zone += ` value="14">Source 14</option>
-                                <option `; if(res[i].source == 15){ zone += `selected`; } zone += ` value="15">Source 15</option>
-                                <option `; if(res[i].source == 16){ zone += `selected`; } zone += ` value="16">Source 16</option>
-                                <option `; if(res[i].source == 0){ zone += `selected`; } zone += ` value="0">None</option>
-                              </select>
-                            </div>
-                            <div class="volume" id="volume${res[i].id}" style="position:relative">
-                              <input type="range" min="0" max="100" id="volume-val${res[i].id}" value="${res[i].volume}" class="volume-range">
-                              <i class="bi bi-volume-off-fill volume-icon-light" id="volume-icon"></i>
-                              <p class="text-zone-volume text-zone-volume-light">Volume</p>
-                              <p class="text-zone-number text-zone-number-light" id="show-text-volume${res[i].id}">${res[i].volume}%</p>
-                              <div class="bar-hoverbox" style="cursor:default">
-                                <div class="bar">
-                                  <div class="bar-fill"></div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>`;
-                    var icon_play = "";
-
-
-                        if(data == "Play")
-                        {
-                            icon_play = "bi-pause-circle-fill";
-                        }else{
-                            icon_play = "bi-play-circle-fill";
-                        }
-                        console.log(icon_play);
-
-                console.log(icon_play);
-              zone += `<div class="modal fade" id="modal-zone${res[i].id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                        tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalToggleLabel">${res[i].name}</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-
-                              <div class="container" id="con-zone1">
-                                <div class="row">
-                                  <div class="col-lg-6 col-6" id="col6">
-                                    <img class="img-zone" src="{{ asset('${res[i].image}') }}">
-                                  </div>
-                                  <div class="col-lg-6 col-6 box-source-pop" id="col6">`;
-                                    if(res[i].source == 0){
-                                      zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">กรุณาเลือก source ก่อน</p>`;
-                                      zone += `<h4 class="title-status" id="text-show-source${res[i].id}">None</h4>`;
-                                    }
-                                    else{
-                                      zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
-                                      zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">Song Name</p>`;
-
-                                    }
-                           zone += `<div class="d-none" id="zone-source${res[i].id}">${res[i].source}</div>
-                                    <div class="row" id="time-play-top">
-                                      <div class="col-lg-6 col-6" id="col6">
-                                        <p class="time-play time-play${res[i].source}" id="time-play${res[i].id}">00:00 / 00:00</p>
-                                      </div>
-                                      <div class="col-lg-6 col-6" id="col6">
-                                        <p class="icon-play">
-                                          <a class="skip-left skip-left${res[i].source}" id="skip-lefts${res[i].id}" onclick="previous_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
-                                          <a class="play play${res[i].source}" id="plays${res[i].id}" onclick="playorpause_song(${res[i].source},${res[i].id})" href="javascript:void(0);"><i id="play-or-pause${res[i].id}" class="bi ${icon_play} play-or-pause${res[i].source}"></i></a>
-                                          <a class="skip-right skip-right${res[i].source}" id="skip-right${res[i].id}" onclick="next_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
-                                        </p>
-                                      </div>
-                                    </div>
-
-                                    <div class="row volumelevel">
-                                      <div class="col-lg-6 col-6 pb-2" id="col6" style="align-self:flex-end">
-                                        <p class="text-zone-volume-pop text-zone-volume-pop-light">Volume</p>
-                                      </div>
-                                      <div class="col-lg-6 col-6" id="col6">
-                                        <p class="text-zone-number-popup" id="text-zone-number-popup${res[i].id}">${res[i].volume}%</p>
-                                      </div>
-                                    </div>
-                                    <div class="volume" id="volume-modal${res[i].id}">
-                                      <input type="range" min="0" max="100" value="${res[i].volume}" id="vol_val" class="volume-range">
-                                      <!-- <i class="bi bi-volume-off-fill" id="volume-icon"></i> -->
-
-                                      <div class="bar-hoverbox">
-                                        <div class="bar">
-                                          <div class="bar-fill"></div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="row flex" id="time-play-top">
-                                      <div class="col-lg-4 col-4" id="col4">
-                                        <a href="javascript:void(0);" class="volume-mute" onclick="mute(${res[i].id})">
-                                          <p id="mute${res[i].id}" class="but-mute">MUTE</p>
-                                        </a>
-                                      </div>
-                                      <div class="col-lg-4 col-4" id="col4">
-                                        <p class="icon-plud-dash">
-                                        <a class="skip-dash"  href="javascript:void(0);" class="volume-up" onclick="turnDown(${res[i].id})" onmousedown="keepVolumeDown(${res[i].id})" onmouseup="clearDown()" onmouseleave="clearDown()"><i class="bi bi-dash-circle-fill"></i></a>
-                                          <a class="skip-plus" href="javascript:void(0);" class="volume-down" onclick="turnUp(${res[i].id})" onmousedown="keepVolumeUp(${res[i].id})" onmouseup="clearUp()" onmouseleave="clearUp()"><i class="bi bi-plus-circle-fill"></i></a>
-                                        </p>
-                                      </div>
-                                      <div class="col-lg-4 col-4" id="col4">
-                                        <button id="apply${res[i].id}" class="but-apply" onclick="applyVolume(${res[i].id})" disabled>Apply</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-                      </div>`;
-                    let div = $('#show-zone');
-                    div.html(zone);
-                    }
-
-                });
-
+            if(res.length == 0){
+                let div = $('#show-zone');
+                div.html('');
             }
+            else{
+                for(let i = 0; i < res.length; i++){
+                zone_id.push(res[i].id);
+                    $.ajax({
+                        type: "post",
+                        async: false,
+                        url: fullUrl + '/get_status_play/'+res[i].source,
+                        data:{_token:'{{csrf_token()}}'},
+                        //url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + res[i].source + '&controltype=get_status_music',
+                        // data: {source:res[i].source},
+                        success: function(data){
+                    zone += `<div class="box-zone box-zone-light">
+                                    <a href="javascript:void(0);">
+                                    <p class="text-zone text-zone-light" onclick="volumeModal(${res[i].id});" data-bs-toggle="modal" data-bs-target="#modal-zone${res[i].id}">${res[i].name}</p>
+                                    </a>
+                                    <div class="form-group">
+                                    <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                                    <select class="form-select form-select-source form-select-source-light " onchange="selectSource(${res[i].id})" id="source-zone${res[i].id}" aria-label="Default select example">
+                                        <option `; if(res[i].source == 1){ zone += `selected`; } zone += ` value="1">Source 1</option>
+                                        <option `; if(res[i].source == 2){ zone += `selected`; } zone += ` value="2">Source 2</option>
+                                        <option `; if(res[i].source == 3){ zone += `selected`; } zone += ` value="3">Source 3</option>
+                                        <option `; if(res[i].source == 4){ zone += `selected`; } zone += ` value="4">Source 4</option>
+                                        <option `; if(res[i].source == 5){ zone += `selected`; } zone += ` value="5">Source 5</option>
+                                        <option `; if(res[i].source == 6){ zone += `selected`; } zone += ` value="6">Source 6</option>
+                                        <option `; if(res[i].source == 7){ zone += `selected`; } zone += ` value="7">Source 7</option>
+                                        <option `; if(res[i].source == 8){ zone += `selected`; } zone += ` value="8">Source 8</option>
+                                        <option `; if(res[i].source == 9){ zone += `selected`; } zone += ` value="9">Source 9</option>
+                                        <option `; if(res[i].source == 10){ zone += `selected`; } zone += ` value="10">Source 10</option>
+                                        <option `; if(res[i].source == 11){ zone += `selected`; } zone += ` value="11">Source 11</option>
+                                        <option `; if(res[i].source == 12){ zone += `selected`; } zone += ` value="12">Source 12</option>
+                                        <option `; if(res[i].source == 13){ zone += `selected`; } zone += ` value="13">Source 13</option>
+                                        <option `; if(res[i].source == 14){ zone += `selected`; } zone += ` value="14">Source 14</option>
+                                        <option `; if(res[i].source == 15){ zone += `selected`; } zone += ` value="15">Source 15</option>
+                                        <option `; if(res[i].source == 16){ zone += `selected`; } zone += ` value="16">Source 16</option>
+                                        <option `; if(res[i].source == 0){ zone += `selected`; } zone += ` value="0">None</option>
+                                    </select>
+                                    </div>
+                                    <div class="volume" id="volume${res[i].id}" style="position:relative">
+                                    <input type="range" min="0" max="100" id="volume-val${res[i].id}" value="${res[i].volume}" class="volume-range">
+                                    <i class="bi bi-volume-off-fill volume-icon-light" id="volume-icon"></i>
+                                    <p class="text-zone-volume text-zone-volume-light">Volume</p>
+                                    <p class="text-zone-number text-zone-number-light" id="show-text-volume${res[i].id}">${res[i].volume}%</p>
+                                    <div class="bar-hoverbox" style="cursor:default">
+                                        <div class="bar">
+                                        <div class="bar-fill"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>`;
+                            var icon_play = "";
 
 
+                                if(data == "Play")
+                                {
+                                    icon_play = "bi-pause-circle-fill";
+                                }else{
+                                    icon_play = "bi-play-circle-fill";
+                                }
+                                console.log(icon_play);
+
+                        console.log(icon_play);
+                    zone += `<div class="modal fade" id="modal-zone${res[i].id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                                tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">${res[i].name}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                    <div class="container" id="con-zone1">
+                                        <div class="row">
+                                        <div class="col-lg-6 col-6" id="col6">
+                                            <img class="img-zone" src="{{ asset('${res[i].image}') }}">
+                                        </div>
+                                        <div class="col-lg-6 col-6 box-source-pop" id="col6">`;
+                                            if(res[i].source == 0){
+                                            zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">กรุณาเลือก source ก่อน</p>`;
+                                            zone += `<h4 class="title-status" id="text-show-source${res[i].id}">None</h4>`;
+                                            }
+                                            else{
+                                            zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
+                                            zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">Song Name</p>`;
+
+                                            }
+                                zone += `<div class="d-none" id="zone-source${res[i].id}">${res[i].source}</div>
+                                            <div class="row" id="time-play-top">
+                                            <div class="col-lg-6 col-6" id="col6">
+                                                <p class="time-play time-play${res[i].source}" id="time-play${res[i].id}">00:00 / 00:00</p>
+                                            </div>
+                                            <div class="col-lg-6 col-6" id="col6">
+                                                <p class="icon-play">
+                                                <a class="skip-left skip-left${res[i].source}" id="skip-lefts${res[i].id}" onclick="previous_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
+                                                <a class="play play${res[i].source}" id="plays${res[i].id}" onclick="playorpause_song(${res[i].source},${res[i].id})" href="javascript:void(0);"><i id="play-or-pause${res[i].id}" class="bi ${icon_play} play-or-pause${res[i].source}"></i></a>
+                                                <a class="skip-right skip-right${res[i].source}" id="skip-right${res[i].id}" onclick="next_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
+                                                </p>
+                                            </div>
+                                            </div>
+
+                                            <div class="row volumelevel">
+                                            <div class="col-lg-6 col-6 pb-2" id="col6" style="align-self:flex-end">
+                                                <p class="text-zone-volume-pop text-zone-volume-pop-light">Volume</p>
+                                            </div>
+                                            <div class="col-lg-6 col-6" id="col6">
+                                                <p class="text-zone-number-popup" id="text-zone-number-popup${res[i].id}">${res[i].volume}%</p>
+                                            </div>
+                                            </div>
+                                            <div class="volume" id="volume-modal${res[i].id}">
+                                            <input type="range" min="0" max="100" value="${res[i].volume}" id="vol_val" class="volume-range">
+                                            <!-- <i class="bi bi-volume-off-fill" id="volume-icon"></i> -->
+
+                                            <div class="bar-hoverbox">
+                                                <div class="bar">
+                                                <div class="bar-fill"></div>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="row flex" id="time-play-top">
+                                            <div class="col-lg-4 col-4" id="col4">
+                                                <a href="javascript:void(0);" class="volume-mute" onclick="mute(${res[i].id})">
+                                                <p id="mute${res[i].id}" class="but-mute">MUTE</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 col-4" id="col4">
+                                                <p class="icon-plud-dash">
+                                                <a class="skip-dash"  href="javascript:void(0);" class="volume-up" onclick="turnDown(${res[i].id})" onmousedown="keepVolumeDown(${res[i].id})" onmouseup="clearDown()" onmouseleave="clearDown()"><i class="bi bi-dash-circle-fill"></i></a>
+                                                <a class="skip-plus" href="javascript:void(0);" class="volume-down" onclick="turnUp(${res[i].id})" onmousedown="keepVolumeUp(${res[i].id})" onmouseup="clearUp()" onmouseleave="clearUp()"><i class="bi bi-plus-circle-fill"></i></a>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4 col-4" id="col4">
+                                                <button id="apply${res[i].id}" class="but-apply" onclick="applyVolume(${res[i].id})" disabled>Apply</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>`;
+                            let div = $('#show-zone');
+                            div.html(zone);
+                            }
+
+                        });
+
+                }
+            }
           }
         });
       }
