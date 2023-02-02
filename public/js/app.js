@@ -26076,13 +26076,17 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   // wssPort: 6001,
   // forceTLS: true,
   // disableStats: true,
-  // // cluster:'mt1',
+  // cluster:'mt1',
   broadcaster: 'pusher',
   key: "local",
   wsHost: window.location.hostname,
   wsPort: 6001,
   wssPort: 6001,
-  disableStats: true
+  forceTLS: true,
+  disableStats: true,
+  cluster: 'mt1',
+  encrypted: true,
+  enabledTransports: ['ws', 'wss']
 });
 
 /***/ }),
