@@ -707,8 +707,9 @@
                                         </div>
                                         <div class="col-lg-6 col-6 box-source-pop" id="col6">`;
                                             if(res[i].source == 0){
+                                              zone += `<h4 class="title-status" id="text-show-source${res[i].id}">None</h4>`;
+
                                             zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">กรุณาเลือก source ก่อน</p>`;
-                                            zone += `<h4 class="title-status" id="text-show-source${res[i].id}">None</h4>`;
                                             }
                                             else{
                                             zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
@@ -1192,7 +1193,7 @@
       success: function(response){
       $.ajax({
           type: "Get",
-          url: "http://localhost/toas/broadcast1",
+          url: "http://localhost/toa/broadcast1",
           data: {
             source: source
           },
