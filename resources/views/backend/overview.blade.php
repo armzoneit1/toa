@@ -59,6 +59,34 @@
                 $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
               })
             })
+    Echo.channel('zoneselect')
+            .listen('zoneselect', (es) => {
+                console.log(es);
+                if(typeof es == 'object'){
+                  es.data.map(function(e,i){
+                    if(e.layout_id == $('#select-layout').val()) {
+
+                      if (e.volume != $('#volume-val' + e.id).val() && $('#volume-val' + e.id).val() != undefined) {
+                        setVolumeOnPage(e.volume, e.id);
+                        setVolumeOnModal(e.volume, e.id);
+                      }
+                      if (e.source != $('#source-zone' + e.id).val()) {
+                        $('#source-zone' + e.id).val(e.source);
+                      }
+
+                      let source_check = $('#zone-source' + e.id).text();
+                      if (e.source != source_check) {
+                        if (e.source == 0) {
+                          $('#text-show-source' + e.id).text('None');
+                        } else {
+                          $('#text-show-source' + e.id).text('Source ' + e.source);
+                        }
+                        $('#zone-source' + e.id).text(e.source);
+                      }
+                    }
+                  });
+                }
+            })
     // Echo.channel("playsongs").bind("sss");
   </script>
 </head>
@@ -809,36 +837,37 @@
       barShow()
     })
 
-    setInterval(() => {
-      $.ajax({
-        type: "GET",
-        url: fullUrl + '/zone/' + $('#select-layout').val(),
-        success: function(res){
-            if(typeof res == 'object'){
-                res.forEach(function(e,i){
-                    if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){
-                    setVolumeOnPage(e.volume,e.id);
-                    setVolumeOnModal(e.volume,e.id);
-                    }
-                    if(e.source != $('#source-zone'+e.id).val()){
-                    $('#source-zone'+e.id).val(e.source);
-                    }
-
-                    let source_check = $('#zone-source'+e.id).text();
-                    if(e.source != source_check){
-                    if(e.source == 0){
-                        $('#text-show-source'+e.id).text('None');
-                    }
-                    else{
-                        $('#text-show-source'+e.id).text('Source '+ e.source);
-                    }
-                    $('#zone-source'+e.id).text(e.source);
-                    }
-                });
-            }
-        }
-      });
-    }, 1000);
+    // setInterval(() => {
+    //   $.ajax({
+    //     type: "GET",
+    //     url: fullUrl + '/zone/' + $('#select-layout').val(),
+    //     success: function(res){
+    //         if(typeof res == 'object'){
+    //           console.log(res);
+    //             res.forEach(function(e,i){
+    //                 if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){
+    //                 setVolumeOnPage(e.volume,e.id);
+    //                 setVolumeOnModal(e.volume,e.id);
+    //                 }
+    //                 if(e.source != $('#source-zone'+e.id).val()){
+    //                 $('#source-zone'+e.id).val(e.source);
+    //                 }
+    //
+    //                 let source_check = $('#zone-source'+e.id).text();
+    //                 if(e.source != source_check){
+    //                 if(e.source == 0){
+    //                     $('#text-show-source'+e.id).text('None');
+    //                 }
+    //                 else{
+    //                     $('#text-show-source'+e.id).text('Source '+ e.source);
+    //                 }
+    //                 $('#zone-source'+e.id).text(e.source);
+    //                 }
+    //             });
+    //         }
+    //     }
+    //   });
+    // }, 1000);
   })
 </script>
 
@@ -1195,7 +1224,7 @@
           type: "Get",
           url: "http://localhost/toa/broadcast1",
           data: {
-            source: source
+            source: sourcearm
           },
           success: function(response){
 

@@ -54,6 +54,20 @@ Route::get('/broadcast1',function ()
     broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
 });
 
+Route::get('/broadcast2',function ()
+{
+    broadcast(new \App\Events\realtimedata("OKOPKAOWO"));
+});
+
+//Route::get('/broadcast3',function ()
+//{
+//    broadcast(new \App\Events\zoneall("OKOPKAOWO"));
+//});
+Route::get('/broadcast3',function ()
+{
+    broadcast(new \App\Events\zoneselect("OKOPKAOWO"));
+});
+
 Route::group(['middleware' => ['Login']], function () {
 
     require('web-backend.php');
