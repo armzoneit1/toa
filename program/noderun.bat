@@ -1,2 +1,2 @@
-cd C:\xampp\htdocs\toas
+cd C:\xampp\htdocs\toa
 node startservice.js

@@ -117,7 +117,7 @@ return [
          * in a separate file specified by local_pk.
          */
 //        'local_cert' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT', null),
-        'local_cert' => "C:/Users/thanatcha/toa.crt",
+        'local_cert' => "C:/ssl/toa.crt",
 //        'local_cert' => null,
 
         /*
@@ -125,7 +125,7 @@ return [
          * certificate (local_cert) and private key.
          */
 //        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', null),
-        'local_pk' => "C:/Users/thanatcha/toa.key",
+        'local_pk' => "C:/ssl/toa.key",
 //        'local_pk' => null,
 
         /*
