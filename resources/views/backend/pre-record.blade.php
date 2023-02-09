@@ -1147,19 +1147,17 @@ tr {
 
     })
 
-    setInterval(() => {
+    var updateInterval = setInterval(() => {
       $(".update-pre-record form").on('submit', function(e){
         e.preventDefault();
         let id = $(this).attr('id').replace( /^\D+/g, '');
         let formData = new FormData(this);
         $('.modal').modal('hide');
-        // for (var pair of formData.entries()) {
-        //   console.log(pair[0]+ ', ' + pair[1]);
-        // }
         $.ajax({
           type: "POST",
           url: fullUrl + '/' + id,
           data: formData,
+          dataType: 'json',
           processData: false,
           contentType: false,
           success: function(response){

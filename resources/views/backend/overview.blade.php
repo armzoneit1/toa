@@ -8,12 +8,12 @@
   <script>
     Echo.channel('playsongs')
             .listen('playsong', (e) => {
-              console.log(e);
+              //console.log(e);
               if(e.data != null) {
                 e.data.map(function (r) {
                   $(".song-name" + r.Id).html(r.Name);
                   $(".time-play" + r.Id).html(r.DurationTimePlay + "/" + r.DurationTime);
-                  console.log(r);
+                  //console.log('playpause',r);
                   if (r.runmusic == 1) {
                     $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
                     $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
@@ -29,11 +29,11 @@
                 }
               }
             }).error(function(e) {
-      console.log(e);
+      //console.log(e);
     })
     Echo.channel('checkPlayMusics')
             .listen('checkPlayMusic', (e) => {
-              console.log(e);
+              //console.log(e);
               e.data.map(function(r){
                 $("#text-show-source"+r.id).html("Source "+r.source)
                 $("#song-name"+r.id).removeClass()
@@ -61,7 +61,7 @@
             })
     Echo.channel('zoneselect')
             .listen('zoneselect', (es) => {
-                console.log(es);
+                //console.log(es);
                 if(typeof es == 'object'){
                   es.data.map(function(e,i){
                     if(e.layout_id == $('#select-layout').val()) {
@@ -715,9 +715,9 @@
                                 }else{
                                     icon_play = "bi-play-circle-fill";
                                 }
-                                console.log(icon_play);
+                                //console.log(icon_play);
 
-                        console.log(icon_play);
+                        //console.log(icon_play);
                     zone += `<div class="modal fade" id="modal-zone${res[i].id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
                                 tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered">
@@ -843,7 +843,7 @@
     //     url: fullUrl + '/zone/' + $('#select-layout').val(),
     //     success: function(res){
     //         if(typeof res == 'object'){
-    //           console.log(res);
+    //           //console.log(res);
     //             res.forEach(function(e,i){
     //                 if(e.volume != $('#volume-val'+e.id).val() && $('#volume-val'+e.id).val() != undefined){
     //                 setVolumeOnPage(e.volume,e.id);
@@ -882,7 +882,7 @@
         const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
 
         // range.addEventListener("change", (e) => {
-        //   console.log("value", e.target.value);
+        //   //console.log("value", e.target.value);
         // });
 
         const setValue = (value) => {
@@ -1088,7 +1088,7 @@
             new_volume:new_volume
         },
       success: function(response){
-        console.log(response, new_volume);
+        //console.log(response, new_volume);
       }
     });
 
@@ -1097,7 +1097,7 @@
         type: "GET",
         url: fullUrl + '/apply-volume',
         success: function(response){
-          console.log(response);
+          //console.log(response);
         }
       });
     }, 300);
@@ -1111,7 +1111,7 @@
     const fill = document.querySelector("#volume-modal"+i+" .bar .bar-fill");
 
     // range.addEventListener("change", (e) => {
-    //   console.log("value", e.target.value);
+    //   //console.log("value", e.target.value);
     // });
 
     const setValue = (value) => {
@@ -1212,7 +1212,7 @@
 
   function selectSource(id){
     var source = $('#source-zone'+id).val();
-    // console.log(source);
+    // //console.log(source);
     $.ajax({
       type: "POST",
       url: fullUrl + '/select-source/' + id,
@@ -1220,15 +1220,16 @@
             source: source
         },
       success: function(response){
-      $.ajax({
-          type: "Get",
-          url: "http://localhost/toa/broadcast1",
-          data: {
-            source: sourcearm
-          },
-          success: function(response){
-
-          }
+        //console.log(response);
+        $.ajax({
+            type: "Get",
+            url: "https://localhost/toa/broadcast1",
+            data: {
+              source: source
+            },
+            success: function(res){
+              
+            }
         });
       }
     });

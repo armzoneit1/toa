@@ -106,7 +106,6 @@ class RecordController extends Controller
             }
             else{
                 $data = PreRecordModel::find($id);
-                PreRecordRepeatModel::where('record_id', $id)->delete();
                 $data->updated_at = date('Y-m-d H:i:s');
             }
 

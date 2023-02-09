@@ -1570,12 +1570,12 @@ a:hover {
             url: fullUrl + '/musicrun/' + {{$zone->source}},
             data: {source:'{{$zone->source}}',_token:'{{csrf_token()}}'},
             success: function(response){
-                console.log(response);
+                // console.log(response);
                 response.map(function (r){
 
                     $(".song-name"+r.Id).html(r.Name);
                     $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
-                    debugger;
+                    // debugger;
                     if(r.runmusic == 1) {
                         $("#play-or-pause"+r.Id).removeClass('bi-play-circle-fill');
                         $("#play-or-pause"+r.Id).addClass('bi-pause-circle-fill');

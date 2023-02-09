@@ -304,21 +304,32 @@ $(document).ready(function (){
 
 })
 
-setInterval(function (){
-    $.ajax({
-        type: "GET",
-        url: `{{ url("webpanel/emergency") }}`,
-        cache: false,
-        success: function(response){
-        // console.log(Date.parse(new Date()) - Date.parse(response.date));
-        if(Date.parse(new Date()) - Date.parse(response.date) == 1000){
-            queue.push(response);
-            console.log(queue);
-        }
-        },
-        error: function(error){}
-    });
-}, 1000);
+// setInterval(function (){
+//     $.ajax({
+//         type: "GET",
+//         url: `{{ url("webpanel/emergency") }}`,
+//         cache: false,
+//         success: function(response){
+//         // console.log(Date.parse(new Date()) - Date.parse(response.date));
+//         if(Date.parse(new Date()) - Date.parse(response.date) == 1000){
+//             queue.push(response);
+//             console.log(queue);
+//         }
+//         },
+//         error: function(error){}
+//     });
+// }, 1000);
+
+// อย่าลืมกลับมาเปิด
+// Echo.channel('realtimedata')
+//   .listen('realtimedata',(e) => {
+//     if(e.data != null) {
+//       console.log('emergency',e);
+//         if (Date.parse(new Date()) - Date.parse(e.data.date)==1000){
+//           queue.push(e.data);
+//         }
+//     }
+//   })
 
 function playEmer(){
 
@@ -326,21 +337,22 @@ function playEmer(){
   var chime_up = document.getElementById("chime-up");
   chime_up.setAttribute("src",`{{ asset('audio/chime_up.mp3') }}`);
   chime_up.play();
-  console.log('chime up');
+  console.log('chime up');  
+  console.log(`{{ asset('${queue[0].file}') }}`);
 
   setTimeout(function (){
     var emer = document.getElementById("emergency");
     emer.setAttribute("src",`{{ asset('${queue[0].file}') }}`);
     emer.play();
     console.log("play emergency");
-  }, 5000);
+  }, 6000);
 
   setTimeout(function (){
     var chime_down = document.getElementById("chime-down");
     chime_down.setAttribute("src",`{{ asset('audio/chime_down.mp3') }}`);
     chime_down.play();
     console.log('chime down');
-  }, queue[0].length + 6000);
+  }, queue[0].length + 7000);
 
   setTimeout(function (){
     // $.ajax({
@@ -356,11 +368,11 @@ function playEmer(){
     //     }
     // });
     queue.shift();
-  }, queue[0].length + 7000);
+  }, queue[0].length + 8000);
 
   setTimeout(function (){
     status = 'ready';
-  }, queue[0].length + 12000);
+  }, queue[0].length + 13000);
 
 }
 </script>
