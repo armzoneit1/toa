@@ -1072,14 +1072,18 @@ a:hover {
         <span class="navbar-toggler-icon"></span>
       </button> -->
       {{-- @if(Session::get('qrcode_zone') == true)  <span class="title-over-top">{{ $zone->name }}</span> --}}
-      @if(empty(Auth::check()))  <span class="title-over-top">{{ $zone->name }}</span>
+      @if(empty(Auth::check()))  
+        <span style="color: #fff;text-transform: initial;font-weight: 200;margin: 0px 0px 10px 30px;font-size: 20px;">{{ $zone->name }}</span>
       @else
       <li class="nav-item" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false" style="height: 32px;">
-        <a href="{{ url()->previous() }}" class="navbar-brand mx-auto mx-lg-0">
-          <!-- <i class="bi-bullseye brand-logo"></i>
-                      <span class="brand-text">Leadership <br> Event</span> -->
+        <!-- <a href="{{ url()->previous() }}" class="navbar-brand mx-auto mx-lg-0">
+          <i class="bi-bullseye brand-logo"></i>
+                      <span class="brand-text">Leadership <br> Event</span>
                       <i class="bi bi-arrow-left"></i>
-        </a>
+        </a> -->
+        @if(!empty(Auth::check()))
+        <a href="{{ url('/home') }}" class="navbar-brand mx-auto mx-lg-0"><i class="bi bi-arrow-left"></i> </a>
+        @endif
         <span class="title-over-top">{{ $zone->name }}</span>
       </li>
 
@@ -1087,11 +1091,12 @@ a:hover {
           <span class="title-project-name">{{ $project }}</span>
           <a href="javascript:void(0);" onclick="myFunction()"><i class="bi bi-three-dots-vertical" id="dropbtn" style="color: white"></i></a>
           <div class="dropdown-content" id="myLinks">
-            <a class="dropdown-item">Theme   <div class="container2">
-              <label class="switch2">
-                <input type="checkbox" class="hidden" id="audio_setting2" checked>
-                <div class="slider slider-light" style="cursor: pointer" id="slider">Light</div>
-              </label>
+            <a class="dropdown-item">Theme
+              <div class="container2">
+                <label class="switch2">
+                  <input type="checkbox" class="hidden" id="audio_setting2"  {{ ( !empty(Auth::check()) ? (Auth::user()->theme == 'B' ? 'checked' : '') : '')  }}>
+                  <div class="slider slider-light change_theme" style="cursor: pointer" id="slider">Light</div>
+                </label>
               </div>
             </a>
             <a class="dropdown-item" href="{{ url('/logout') }}">Log Out</a>

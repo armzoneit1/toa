@@ -28,9 +28,9 @@ function myFunction() {
 }
 window.onclick = function(event) {
   if (!event.target.matches('#dropbtn') && event.target.nodeName !== "A" && event.target.id !== "slider" && event.target.id !== "audio_setting2") {
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    }
+    // if (x.style.display === "block") {
+    //   x.style.display = "none";
+    // }
   }
 }
   $('.change_theme').click(function(){

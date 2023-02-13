@@ -28,120 +28,125 @@
     text-align: center;
 }
 .section-img-over-mobile{
-    display: block;
-    padding: 0px 25px;
-  }
-  #col-mb{
-    border: 1px solid #ccc;
-    margin-top: 30px;
-    border-radius: 25px;
-    padding: 20px 30px;
-  }
-  #col6-mb{
-    flex: 0 0 auto;
-    width: 50%;
-    padding-right: 0;
-  }
-  .form-select-source2 {
-    display: block;
-    width: 68%;
-    padding: 5px 5px;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    margin: 0px 0 0 0;
-    float: none;
-    background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc);
-    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-    background-size: 5px 5px, 5px 5px, 0px 1.5em;
-    background-repeat: no-repeat;
-    margin-left: 50px;
-    margin-top: 7px;
-    z-index: 99;
-    position: relative;
+  display: block;
+  padding: 0px 25px;
+}
+#col-mb{
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  border-radius: 25px;
+  padding: 20px 30px;
+}
+#col6-mb{
+  flex: 0 0 auto;
+  width: 50%;
+  padding-right: 0;
+}
+.form-select-source2 {
+  display: block;
+  width: 68%;
+  padding: 5px 5px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin: 0px 0 0 0;
+  float: none;
+  background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 0px 1.5em;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  margin-top: 7px;
+  z-index: 99;
+  position: relative;
 }
 .text-zone-number2 {
-    position: relative;
-    color: #000;
-    font-size: 12px;
-    margin-left: 0;
-    margin-top: -21px;
-    font-weight: 300;
-    margin-bottom: 0;
+  position: relative;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 0;
+  margin-top: -21px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .volume {
-    display: flex;
-    /* justify-content: center; */
-    justify-content: left;
-    align-items: center;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-bottom: -10px;
-  }
-
-  input[type=range] {
-    display: none;
-  }
-
-  .icon-size {
-    font-size: 2rem;
-  }
-
-  .bar-hoverbox {
-    padding: 10px 0px;
-    opacity: 0.9;
-    transition: opacity 0.2s;
-    width: 100%;
-  }
-
-  .bar-hoverbox:hover {
-    opacity: 1;
-    /* cursor: pointer; */
-  }
-
-  .bar {
-    background: #ccc;
-    height: 7px;
-    /* width: 450px; */
-    border-radius: 15px;
-    overflow: hidden;
-    pointer-events: none;
-  }
-
-  .bar .bar-fill {
-    background: #ff8200 !important;
-    width: 0%;
-    height: 100%;
-    background-clip: border-box;
-    pointer-events: none;
-  }
-
-
-
-  .text-zone-volume2 {
-    position: absolute;
-    color: #000;
-    font-size: 10px;
-    margin-left: 30px;
-    margin-top: -1px;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: left;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-bottom: -10px;
 }
+
+input[type=range] {
+  display: none;
+}
+
+.icon-size {
+  font-size: 2rem;
+}
+
+.bar-hoverbox {
+  padding: 10px 0px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.bar-hoverbox:hover {
+  opacity: 1;
+  /* cursor: pointer; */
+}
+
+.bar {
+  background: #ccc;
+  height: 7px;
+  /* width: 450px; */
+  border-radius: 15px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bar .bar-fill {
+  background: #ff8200 !important;
+  width: 0%;
+  height: 100%;
+  background-clip: border-box;
+  pointer-events: none;
+}
+
+
+
+.text-zone-volume2 {
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  margin-left: 30px;
+  margin-top: -1px;
+}
+
+.text-zone-volume {
+  color: #fff;
+}
+
 #volume-icon2 {
     font-size: 30px;
-    color: #000;
+    color: #fff;
 }
 .text-zone-volume2 {
     position: absolute;
-    color: #000;
+    color: #fff;
     font-size: 10px;
     margin-left: 30px;
     margin-top: -7px;
@@ -152,13 +157,11 @@
 }
 
 .title-zone-mb {
-    color: #000;
+    color: #fff;
     text-align: center;
     font-weight: 300;
     font-size: 22px;
 }
-
-
 
 
 .volume-mobile02 {
@@ -316,7 +319,7 @@
     text-align: right;
   }
   .title-push-mb{
-    color: #000;
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
     margin: 0;
@@ -365,7 +368,7 @@
     padding-left: 5px;
 }
 .title-setting-mb, .title-about-mb {
-    color: #000;
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
     margin: 0;
@@ -512,6 +515,7 @@
 @endif
 
 <body>
+  <?php //echo '<pre>'; print_r(Auth::user()->theme); echo '</pre>'; ?>
   <nav class="navbar">
     <div class="container">
       <a href="{{ url('/home') }}" class="navbar-brand mx-auto mx-lg-0">
@@ -637,12 +641,24 @@
     <div class="row" id="push-to-talk">
       <div class="col-md-6 col7-mb" id="setting-mb7">
         <a href="#setting" data-bs-toggle="modal" data-bs-target="#setting">
-          <h4 class="title-setting-mb">Setting <img class="icon-setting" src="{{ asset('frontend/images/icon-setting.png') }}"></h4>
+          <h4 class="title-setting-mb">Setting 
+            @if(!empty(Auth::check()) && Auth::user()->theme == 'W')
+              <img class="icon-setting" src="{{ asset('frontend/images/icon-setting.png') }}">
+            @else
+              <img class="icon-setting" src="{{ asset('frontend/images/icon-setting-b.png') }}">
+            @endif
+          </h4>
         </a>
       </div>
       <div class="col-md-6 col5-mb" id="about-mb5">
         <a href="#about-us" data-bs-toggle="modal" data-bs-target="#exampleModalToggle3">
-          <h4 class="title-about-mb">About us <img class="icon-setting" src="{{ asset('frontend/images/icon-about-us.png') }}"></h4>
+          <h4 class="title-about-mb">About us 
+            @if(!empty(Auth::check()) && Auth::user()->theme == 'W')
+              <img class="icon-setting" src="{{ asset('frontend/images/icon-about-us.png') }}">
+            @else
+              <img class="icon-setting" src="{{ asset('frontend/images/icon-about-us-b.png') }}">
+            @endif
+          </h4>
         </a>
       </div>
     </div>
