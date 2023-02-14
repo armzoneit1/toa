@@ -293,3 +293,12 @@ color: #000;
     margin-bottom: 20px;
     color: #222;
 }
+.menu-add-zone {
+    color: #222;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0;
+    padding: 20px 10px 20px 20px;
+    border: 1px solid #fff;
+}
