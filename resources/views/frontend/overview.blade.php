@@ -20,8 +20,8 @@
 }
 #align-over{
     align-items: center;
-    background-color: #a3a1a1 !important;
-    border-bottom: 2px solid #bfbfbf;
+    background-color: #222 !important;
+    border-bottom: 2px solid #222;
 }
 .title-over-mb{
     color: #fff;
@@ -49,8 +49,8 @@
   font-size: 10px;
   font-weight: 400;
   line-height: 1.5;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #222;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -498,12 +498,7 @@ input[type=range] {
 @media screen and (max-width: 376px) {
   .title-setting-mb, .title-about-mb {
     margin-bottom: 0px;
-}
-/* #col-mb {
-    height: 350px;
-    overflow: auto;
-} */
-
+  }
 }
 
 

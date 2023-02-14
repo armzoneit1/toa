@@ -685,8 +685,9 @@
 .label-title{
 color: #fff;
 }
-.but-form{
-  margin-bottom: 0px !important;
+.but-form {
+    margin-bottom: 20px;
+    color: #fff;
 }
 .but-sub{
   color: #fff;
@@ -880,7 +881,7 @@ tr {
               <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day" name="task_loop_day[]" id="exampleInputPassword1" value="Friday">&nbsp;&nbsp;FRI</div>
               <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day" name="task_loop_day[]" id="exampleInputPassword1" value="Saturday">&nbsp;&nbsp;SAT</div>
               <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day" name="task_loop_day[]" id="exampleInputPassword1" value="Sunday">&nbsp;&nbsp;SUN</div>
-              <div class="col-lg-1 col-1" style="color: black; width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all">&nbsp;&nbsp;All</div>
+              <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all">&nbsp;&nbsp;All</div>
             </div>
           </div>
           <div class="form-group but-form">
@@ -952,7 +953,7 @@ tr {
               <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit{{ $data->id }}" name="task_loop_day[]" id="exampleInputPassword1" @if(str_contains($data->task_loop, 'Friday') || str_contains($data->task_loop, 'Every Day')) checked @endif value="Friday">&nbsp;&nbsp;FRI</div>
               <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit{{ $data->id }}" name="task_loop_day[]" id="exampleInputPassword1" @if(str_contains($data->task_loop, 'Saturday') || str_contains($data->task_loop, 'Every Day')) checked @endif value="Saturday">&nbsp;&nbsp;SAT</div>
               <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit{{ $data->id }}" name="task_loop_day[]" id="exampleInputPassword1" @if(str_contains($data->task_loop, 'Sunday') || str_contains($data->task_loop, 'Every Day')) checked @endif value="Sunday">&nbsp;&nbsp;SUN</div>
-              <div class="col-lg-1 col-1" style="color: black; width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit{{ $data->id }}">&nbsp;&nbsp;All</div>
+              <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit{{ $data->id }}">&nbsp;&nbsp;All</div>
             </div>
           </div>
           <div class="form-group but-form">
@@ -1086,7 +1087,7 @@ tr {
                                           <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Friday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Friday">&nbsp;&nbsp;FRI</div>
                                           <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Saturday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Saturday">&nbsp;&nbsp;SAT</div>
                                           <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Sunday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Sunday">&nbsp;&nbsp;SUN</div>
-                                          <div class="col-lg-1 col-1" style="color: black; width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
+                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
                                         </div>
                                       </div>
                                       <div class="form-group but-form">
@@ -1212,7 +1213,7 @@ tr {
                                           <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Friday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Friday">&nbsp;&nbsp;FRI</div>
                                           <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Saturday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Saturday">&nbsp;&nbsp;SAT</div>
                                           <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Sunday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Sunday">&nbsp;&nbsp;SUN</div>
-                                          <div class="col-lg-1 col-1" style="color: black; width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
+                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
                                         </div>
                                       </div>
                                       <div class="form-group but-form">

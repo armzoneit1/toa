@@ -289,4 +289,7 @@ color: #000;
 .text-zone-number-popup {
     color: #000000;
 }
-
+.but-form {
+    margin-bottom: 20px;
+    color: #222;
+}

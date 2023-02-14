@@ -747,12 +747,14 @@ tr {
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/css/light-mode.css') }}">
 @endif
 
-<body>
+<body onload=" requiredCheck();">
+  {{-- retrieveData(); --}}
+  @include('backend/inc_navbar')
 
   <main>
-    @include('backend/inc_navbar')
 
-    <section class="about section-top" id="section_2">
+
+    <section class="about section-top" id="section_2" style="min-height: 78px;">
       <div class="container">
         <div class="row align-top">
           <div class="col-lg-8 col-8" id="col8">
@@ -766,7 +768,7 @@ tr {
                               </div> -->
           </div>
           <div class="col-lg-4 col-4" id="col4">
-            <p class="but-add" data-bs-toggle="modal" data-bs-target="#add-account"><i class="bi bi-plus-square-fill" id="icon-plus-add"></i> ADD</p>
+            <p class="but-add" data-bs-toggle="modal" data-bs-target="#add-account"><i class="bi bi-plus-square-fill" id="icon-plus-add"></i> Add</p>
           </div>
 
         </div>
@@ -779,7 +781,7 @@ tr {
         <div class="row">
 
           <div class="col-lg-12 col-12" id="" style="display: block; height: 550px; overflow-y: scroll;">
-            <table id="example" class="table table-striped table-striped-light">
+            <table id="example" class="table table-striped table-striped-light datatable">
               <thead>
                 <tr class="tr-light tr-top tr-top-light">
                   <!-- <th>Select</th> -->
@@ -789,18 +791,11 @@ tr {
                   <th>User Name</th>
                   <th>Role</th>
                   <th>Edit/Delete</th>
-
                 </tr>
               </thead>
               <tbody>
                 @foreach($datas as $data)
                   <tr class="tr-light">
-                    <!-- <td>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="">
-                        <label class="form-check-label" for="">
-                        </label>
-                    </td> -->
                     <td>{{ $data->firstname }}</td>
                     <td>{{ $data->lastname }}</td>
                     <!-- <td>20 Jan 1991</td> -->
@@ -811,43 +806,16 @@ tr {
                       <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle-edit{{ $data->id }}"><i class="bi bi-pencil-square" id="volume-icon02"></i></a>
                       <a href="#" onclick="deleteItem({{ $data->id }})"><i class="bi bi-trash-fill" id="volume-icon03"></i></a>
                     </p>
-                          </td>
+                    </td>
                   </tr>
                 @endforeach
-
-
-
-
               </tbody>
-              <!-- <tfoot>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                    </tr>
-                                </tfoot> -->
             </table>
           </div>
-
-
-
-
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
   </main>
-
-
 
   <div class="modal fade" id="add-account" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalToggleLabel"
               tabindex="-1">

@@ -41,7 +41,7 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        @if($tab == 'overview' || ($tab == 'pre-record'))
+        @if($tab == 'overview' || ($tab == 'pre-record') || ($tab == 'manage-account') || ($tab == 'manage-account') || ($tab == 'layout-plan'))
       <li class="nav-item">
           <a class="nav-link click-scroll title-prj-name">{{ $project->name }}</i></a>
         </li>

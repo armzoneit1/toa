@@ -50,8 +50,8 @@
     font-size: 10px;
     font-weight: 400;
     line-height: 1.5;
-    color: #ffffff;
-    background-color: #000;
+    color: #fff;
+    background-color: #222;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
@@ -525,12 +525,12 @@ a:hover {
 @media screen and (max-width: 376px) {
   .title-setting-mb, .title-about-mb {
     margin-bottom: 0px;
-}
-#show-zone {
-    height: 235px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+  }
+  #show-zone {
+      height: 235px;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
 
 }
 
