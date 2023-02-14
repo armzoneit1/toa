@@ -2708,6 +2708,15 @@ var NullChannel = /*#__PURE__*/function (_Channel) {
       return this;
     }
     /**
+     * Listen for all events on the channel instance.
+     */
+
+  }, {
+    key: "listenToAll",
+    value: function listenToAll(callback) {
+      return this;
+    }
+    /**
      * Stop listening for an event on the channel instance.
      */
 
@@ -3282,6 +3291,15 @@ var NullConnector = /*#__PURE__*/function (_Connector) {
       return new NullPrivateChannel();
     }
     /**
+     * Get a private encrypted channel instance by name.
+     */
+
+  }, {
+    key: "encryptedPrivateChannel",
+    value: function encryptedPrivateChannel(name) {
+      return new NullPrivateChannel();
+    }
+    /**
      * Get a presence channel instance by name.
      */
 
@@ -3408,6 +3426,17 @@ var Echo = /*#__PURE__*/function () {
     key: "leaveChannel",
     value: function leaveChannel(channel) {
       this.connector.leaveChannel(channel);
+    }
+    /**
+     * Leave all channels.
+     */
+
+  }, {
+    key: "leaveAllChannels",
+    value: function leaveAllChannels() {
+      for (var channel in this.connector.channels) {
+        this.leaveChannel(channel);
+      }
     }
     /**
      * Listen for an event on a channel instance.
@@ -20959,7 +20988,7 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
- * Pusher JavaScript Library v8.0.0
+ * Pusher JavaScript Library v8.0.1
  * https://pusher.com/
  *
  * Copyright 2020, Pusher
@@ -21548,7 +21577,7 @@ var ScriptReceivers = new ScriptReceiverFactory('_pusher_script_', 'Pusher.Scrip
 
 // CONCATENATED MODULE: ./src/core/defaults.ts
 var Defaults = {
-    VERSION: "8.0.0",
+    VERSION: "8.0.1",
     PROTOCOL: 7,
     wsPort: 80,
     wssPort: 443,

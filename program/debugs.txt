@@ -1,23 +1,9 @@
-[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:17:15
-[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:17:36
-[Error] System : Thread was being aborted. DateTime:24/1/2023 15:17:59
-[Error] System :  DateTime:24/1/2023 15:17:59
-[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:18:15
-[Info] System : START RUNNING PROGRAM.. DateTime:24/1/2023 15:18:36
-[Error] System : Thread was being aborted. DateTime:24/1/2023 15:18:47
-[Error] System :  DateTime:24/1/2023 15:18:47
-[Info] System : START RUNNING PROGRAM.. DateTime:25/1/2023 12:55:32
-[Error] System : Thread was being aborted. DateTime:25/1/2023 12:56:16
-[Error] System :  DateTime:25/1/2023 12:56:16
-[Info] System : START RUNNING PROGRAM.. DateTime:27/1/2023 14:35:57
-[Error] System : Thread was being aborted. DateTime:27/1/2023 14:57:23
-[Error] System :  DateTime:27/1/2023 14:57:23
-[Info] System : START RUNNING PROGRAM.. DateTime:27/1/2023 14:57:33
-[Info] System : START RUNNING PROGRAM.. DateTime:09-2-2023 10:08:06
-[Error] System : Thread was being aborted. DateTime:09-2-2023 10:08:45
-[Error] System :  DateTime:09-2-2023 10:08:45
-[Info] System : START RUNNING PROGRAM.. DateTime:09-2-2023 10:15:12
-[Info] System : START RUNNING PROGRAM.. DateTime:09-2-2023 10:28:15
-[Info] System : START RUNNING PROGRAM.. DateTime:09-2-2023 13:48:41
-[Info] System : START RUNNING PROGRAM.. DateTime:09-2-2023 14:42:20
-[Info] System : START RUNNING PROGRAM.. DateTime:09-2-2023 14:44:48
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:23:27
+[Error] System : Thread was being aborted. DateTime:14/2/2023 15:23:52
+[Error] System :  DateTime:14/2/2023 15:23:52
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:25:25
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:35:53
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:39:56
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:40:25
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:45:45
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:47:02
