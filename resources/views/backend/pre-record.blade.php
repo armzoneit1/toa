@@ -1027,7 +1027,7 @@ tr {
                                 </div>
                               </td>
                               <td id="name_id${res.id}">${res.task_name}</td>
-                              <td id="date_id${res.id}">`; if(res.task_date == null) html += `-`; else html += `${res.task_date}`; html += `</td>
+                              <td class="text-center" id="date_id${res.id}">`; if(res.task_date == null) html += `-`; else html += `${res.task_date}`; html += `</td>
                               <td class="text-center" id="duration_id${res.id}">`; if(res.task_duration == null) html += `-`; else html += `${res.task_duration}`; html += `</td>
                               <td id="start_id${res.id}">${res.task_start}</td>
                               <td id="end_id${res.id}">`; if(res.task_end == null) html += `-`; else html += `${res.task_end}`; html += `</td>
@@ -1122,7 +1122,7 @@ tr {
                 let div3 = $('#check-audio-play');
                 let html3 = `<div id="div-audio${res.id}">
                               <p id="rec-name_id${res.id}">${res.task_name}</p>
-                              <p id="rec-date_id${res.id}">`;if(res.task_date == null) html3 += ` - `; else `${res.task_date}`; html3 += `</p>
+                              <p class="text-center" id="rec-date_id${res.id}">`;if(res.task_date == null) html3 += ` - `; else `${res.task_date}`; html3 += `</p>
                               <p class="text-center" id="rec-duration_id${res.id}">`;if(res.task_duration == null) html3 += `-`; else html3 += `${res.task_duration}`; html3 += `</p>
                               <p id="rec-start_id${res.id}">${res.task_start}</p>
                               <p id="rec-end_id${res.id}">`;if(res.task_end == null) html3 += ` - `; else html3 += `${res.task_end}`; html3 += `</p>
