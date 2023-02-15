@@ -3,6 +3,67 @@
 
 <head>
   @include('frontend.inc_head')
+  <script>
+    var layout_id = {{ json_encode($id) }};
+    Echo.channel('zoneselect')
+            .listen('zoneselect', (es) => {
+                // console.log(es);
+                if(typeof es == 'object'){
+                    es.data.map(function(e,i){
+                        if(e.layout_id == layout_id){
+                            if(e.volume != $('#volume-val'+e.id).val()){
+                                let i = e.id;
+                                const range = document.querySelector("#volume"+i+" input[type=range]");
+                                const text = document.querySelector("#text-zone-number"+i);
+
+                                const barHoverBox = document.querySelector("#volume"+i+" .bar-hoverbox");
+                                const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
+
+                                let value = e.volume;
+
+                                if(value >= 90){
+                                    fill.style.background = "#e91303";
+                                }
+                                else{
+                                    fill.style.background = "#ff8200";
+                                }
+                                fill.style.width = value + "%";
+                                range.setAttribute("value", value)
+                                text.textContent = Number(value).toFixed(0) + "%";
+                                range.dispatchEvent(new Event("change"))
+                            }
+                            if(e.source != $('#source-zone'+e.id).val()){
+                                $('#source-zone'+e.id).val(e.source);
+                            }
+                        }
+                    });
+                }
+            })
+
+    Echo.channel('layoutandzone')
+        .listen('layoutandzone', (res) => {
+            if(typeof res == 'object'){
+              if(layout.length != res.data.layout.length || zone.length != res.data.zone.length){
+                console.log('length');
+                location.reload();
+              }
+
+              for(let i = 0;i < layout.length;i++){
+                if(layout[i].name != res.data.layout[i].name || layout[i].image != res.data.layout[i].image){
+                  console.log('name or image layout');
+                  location.reload();
+                }
+              }
+
+              for(let i = 0;i < zone.length;i++){
+                if(zone[i].name != res.data.zone[i].name || zone[i].image != res.data.zone[i].image){
+                  console.log('name or image zone');
+                  location.reload();
+                }
+              }
+            }
+        })
+  </script>
 </head>
 
 <style>
@@ -705,70 +766,68 @@ a:hover {
   // let zone_br = {{ json_encode($zone) }};
   let zone = JSON.parse('{{ json_encode($zone) }}'.replace(/&quot;/g,'"').replace(/&#039;/g,'\''));
   $(document).ready(() => {
-    setInterval(() => {
-      $.ajax({
-            type: "GET",
-            url: fullUrl + '/check-new',
-            success: function(res){
-              if(layout.length != res.layout.length || zone.length != res.zone.length){
-                console.log('length');
-                location.reload();
-              }
+    //   setInterval(() => {
+//       $.ajax({
+//             type: "GET",
+//             url: fullUrl + '/check-new',
+//             success: function(res){
+//               if(layout.length != res.layout.length || zone.length != res.zone.length){
+//                 console.log('length');
+//                 location.reload();
+//               }
 
-              for(let i = 0;i < layout.length;i++){
-                if(layout[i].name != res.layout[i].name || layout[i].image != res.layout[i].image){
-                  console.log('name or image layout');
-                  location.reload();
-                }
-              }
+//               for(let i = 0;i < layout.length;i++){
+//                 if(layout[i].name != res.layout[i].name || layout[i].image != res.layout[i].image){
+//                   console.log('name or image layout');
+//                   location.reload();
+//                 }
+//               }
 
-              for(let i = 0;i < zone.length;i++){
-                // console.log(zone[i].name , res.zone[i].name , zone[i].name == res.zone[i].name);
-                // console.log(zone[i].image , res.zone[i].image , zone[i].image == res.zone[i].image);
-                if(zone[i].name != res.zone[i].name || zone[i].image != res.zone[i].image){
-                  console.log('name or image zone');
-                  location.reload();
-                }
-              }
+//               for(let i = 0;i < zone.length;i++){
+//                 if(zone[i].name != res.zone[i].name || zone[i].image != res.zone[i].image){
+//                   console.log('name or image zone');
+//                   location.reload();
+//                 }
+//               }
 
-            }
-      });
-    }, 1000);
+//             }
+//       });
+//     }, 1000);
 
-    setInterval(() => {
-      $.ajax({
-        type: "GET",
-        url: fullUrl + '/zone/' + layout_id,
-        success: function(res){
-          res.forEach(function(e){
-            if(e.volume != $('#volume-val'+e.id).val()){
-              let i = e.id;
-              const range = document.querySelector("#volume"+i+" input[type=range]");
-              const text = document.querySelector("#text-zone-number"+i);
+    // setInterval(() => {
+    //   $.ajax({
+    //     type: "GET",
+    //     url: fullUrl + '/zone/' + layout_id,
+    //     success: function(res){
+    //       res.forEach(function(e){
+    //         if(e.volume != $('#volume-val'+e.id).val()){
+    //           let i = e.id;
+    //           const range = document.querySelector("#volume"+i+" input[type=range]");
+    //           const text = document.querySelector("#text-zone-number"+i);
 
-              const barHoverBox = document.querySelector("#volume"+i+" .bar-hoverbox");
-              const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
+    //           const barHoverBox = document.querySelector("#volume"+i+" .bar-hoverbox");
+    //           const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
 
-              let value = e.volume;
+    //           let value = e.volume;
 
-              if(value >= 90){
-                fill.style.background = "#e91303";
-              }
-              else{
-                fill.style.background = "#ff8200";
-              }
-              fill.style.width = value + "%";
-              range.setAttribute("value", value)
-              text.textContent = Number(value).toFixed(0) + "%";
-              range.dispatchEvent(new Event("change"))
-            }
-            if(e.source != $('#source-zone'+e.id).val()){
-              $('#source-zone'+e.id).val(e.source);
-            }
-          });
-        }
-      });
-    }, 1000);
+    //           if(value >= 90){
+    //             fill.style.background = "#e91303";
+    //           }
+    //           else{
+    //             fill.style.background = "#ff8200";
+    //           }
+    //           fill.style.width = value + "%";
+    //           range.setAttribute("value", value)
+    //           text.textContent = Number(value).toFixed(0) + "%";
+    //           range.dispatchEvent(new Event("change"))
+    //         }
+    //         if(e.source != $('#source-zone'+e.id).val()){
+    //           $('#source-zone'+e.id).val(e.source);
+    //         }
+    //       });
+    //     }
+    //   });
+    // }, 1000);
   })
 </script>
 <script>

@@ -321,15 +321,15 @@ $(document).ready(function (){
 // }, 1000);
 
 // อย่าลืมกลับมาเปิด
-// Echo.channel('realtimedata')
-//   .listen('realtimedata',(e) => {
-//     if(e.data != null) {
-//       console.log('emergency',e);
-//         if (Date.parse(new Date()) - Date.parse(e.data.date)==1000){
-//           queue.push(e.data);
-//         }
-//     }
-//   })
+Echo.channel('realtimedata')
+  .listen('realtimedata',(e) => {
+    if(e.data != null) {
+      // console.log('emergency',e);
+        if (Date.parse(new Date()) - Date.parse(e.data.date) == 2000){
+          queue.push(e.data);
+        }
+    }
+  })
 
 function playEmer(){
 

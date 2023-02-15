@@ -977,7 +977,7 @@ tr {
           <div class="form-group but-form" style="margin-bottom: 20px !important;">
             <center><span id="id_error" class="error"></span></center>
           </div>
-          <center><button type="submit" class="btn btn-primary but-sub">Submit</button></center>
+          <center><button type="submit" class="btn btn-primary but-sub" onclick="subform(event,'form-update{{$data->id}}')">Submit</button></center>
         </form>
         </div>
       </div>
@@ -1111,7 +1111,7 @@ tr {
                                       <div class="form-group but-form" style="margin-bottom: 20px !important;">
                                         <center><span id="id_error" class="error"></span></center>
                                       </div>
-                                      <center><button type="submit" class="btn btn-primary but-sub">Submit</button></center>
+                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="subform(event,\'form-update${res.id}\')">Submit</button></center>
                                     </form>
                                     </div>
                                   </div>
@@ -1147,9 +1147,10 @@ tr {
       })
 
     })
-
-    var updateInterval = setInterval(() => {
+    
+   //var updateInterval = setInterval(() => {
       $(".update-pre-record form").on('submit', function(e){
+        
         e.preventDefault();
         let id = $(this).attr('id').replace( /^\D+/g, '');
         let formData = new FormData(this);
@@ -1237,7 +1238,7 @@ tr {
                                       <div class="form-group but-form" style="margin-bottom: 20px !important;">
                                         <center><span id="id_error" class="error"></span></center>
                                       </div>
-                                      <center><button type="submit" class="btn btn-primary but-sub">Submit</button></center>
+                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="subform(event,\'form-update${res.id}\')">Submit</button></center>
                                     </form>
                                     </div>
                                   </div>
@@ -1307,7 +1308,7 @@ tr {
         })
 
       })
-    }, 1000);
+    //}, 1000);
 
   })
 
@@ -1611,7 +1612,12 @@ setInterval(() => {
         .prop("readonly",true)
         .end();
     }
-
+    function subform(event,idform)
+    {
+      alert("222");
+      event.preventDefault();
+    }
+    
 </script>
 
 </body>

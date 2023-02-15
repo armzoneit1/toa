@@ -7,3 +7,17 @@
 [Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:40:25
 [Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:45:45
 [Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 15:47:02
+[Info] System : START RUNNING PROGRAM.. DateTime:14/2/2023 17:24:46
+[Info] System : START RUNNING PROGRAM.. DateTime:15/2/2023 08:44:29
+[Info] System : START RUNNING PROGRAM.. DateTime:15/2/2023 10:07:01
+[Info] System : START RUNNING PROGRAM.. DateTime:15/2/2023 10:46:06
+[Info] System : START RUNNING PROGRAM.. DateTime:15/2/2023 10:52:30
+[Error] System : Thread was being aborted. DateTime:15/2/2023 15:01:19
+[Error] System :  DateTime:15/2/2023 15:01:19
+[Error] System : Thread was being aborted. DateTime:15/2/2023 15:01:29
+[Error] System :  DateTime:15/2/2023 15:01:29
+[Error] System : Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'. DateTime:15/2/2023 15:01:29
+[Error] System :  DateTime:15/2/2023 15:01:29
+[Info] System : START RUNNING PROGRAM.. DateTime:15/2/2023 15:01:35
+[Info] System : START RUNNING PROGRAM.. DateTime:15/2/2023 16:11:21

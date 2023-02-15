@@ -68,6 +68,16 @@ Route::get('/broadcast3',function ()
     broadcast(new \App\Events\zoneselect("OKOPKAOWO"));
 });
 
+Route::get('/broadcast4',function ()
+{
+    broadcast(new \App\Events\layoutandzone("OKOPKAOWO"));
+});
+
+Route::get('/broadcast5',function ()
+{
+    broadcast(new \App\Events\checkhome("OKOPKAOWO"));
+});
+
 Route::group(['middleware' => ['Login']], function () {
 
     require('web-backend.php');

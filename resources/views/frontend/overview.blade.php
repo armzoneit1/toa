@@ -3,6 +3,57 @@
 
 <head>
   @include('frontend.inc_head')
+  <script>
+    Echo.channel('zoneselect')
+            .listen('zoneselect', (es) => {
+                // console.log(es);
+                if(typeof es == 'object'){
+                    es.data.map(function(e,i){
+                        if(e.layout_id == layout_id){
+                            if(e.volume != $('#volume-val'+e.id).val()){
+                                let i = e.id;
+                                const range = document.querySelector("#volume"+i+" input[type=range]");
+                                const text = document.querySelector("#text-zone-number"+i);
+
+                                const barHoverBox = document.querySelector("#volume"+i+" .bar-hoverbox");
+                                const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
+
+                                let value = e.volume;
+
+                                if(value >= 90){
+                                    fill.style.background = "#e91303";
+                                }
+                                else{
+                                    fill.style.background = "#ff8200";
+                                }
+                                fill.style.width = value + "%";
+                                range.setAttribute("value", value)
+                                text.textContent = Number(value).toFixed(0) + "%";
+                                range.dispatchEvent(new Event("change"))
+                            }
+                            if(e.source != $('#source-zone'+e.id).val()){
+                                $('#source-zone'+e.id).val(e.source);
+                            }
+                        }
+                    });
+                }
+            })
+    
+    Echo.channel('checkhome')
+        .listen('checkhome', (res) => {
+            if(typeof res == 'object'){
+                if(layout.name != res.data.layout.name || layout.image != res.data.layout.image || zone_check.length != res.data.zone.length){
+                    location.reload();
+                }
+
+                for(let i = 0;i < zone_check.length;i++){
+                  if(zone_check[i].name != res.data.zone[i].name || zone_check[i].image != res.data.zone[i].image){
+                    location.reload();
+                  }
+                }
+            }
+        })        
+  </script>
 </head>
 
 <style>
@@ -790,26 +841,26 @@ input[type=range] {
   let layout = JSON.parse('{{ json_encode($layout) }}'.replace(/&quot;/g,'"'));
   let zone_check = JSON.parse('{{ json_encode($zone) }}'.replace(/&quot;/g,'"'));
 
-  // $(document).ready(() => {
-  //   setInterval(() => {
-  //     $.ajax({
-  //           type: "GET",
-  //           url: fullUrl + '/check-new',
-  //           success: function(res){
-  //             if(layout.name != res.layout.name || layout.image != res.layout.image || zone_check.length != res.zone.length){
-  //               location.reload();
-  //             }
+  //   $(document).ready(() => {
+//     setInterval(() => {
+//       $.ajax({
+//             type: "GET",
+//             url: fullUrl + '/check-new',
+//             success: function(res){
+//               if(layout.name != res.layout.name || layout.image != res.layout.image || zone_check.length != res.zone.length){
+//                 location.reload();
+//               }
 
-  //             for(let i = 0;i < zone_check.length;i++){
-  //               if(zone_check[i].name != res.zone[i].name || zone_check[i].image != res.zone[i].image){
-  //                 location.reload();
-  //               }
-  //             }
+//               for(let i = 0;i < zone_check.length;i++){
+//                 if(zone_check[i].name != res.zone[i].name || zone_check[i].image != res.zone[i].image){
+//                   location.reload();
+//                 }
+//               }
 
-  //           }
-  //     });
-  //   }, 1000);
-  // })
+//             }
+//       });
+//     }, 1000);
+//   })
 </script>
 </body>
 

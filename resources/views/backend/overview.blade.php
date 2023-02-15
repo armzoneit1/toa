@@ -4,7 +4,6 @@
 <head>
   @include('backend.inc_head')
   @php $tab = "overview" @endphp
-  <script src="{{asset("js/app.js")}}" ></script>
   <script>
     Echo.channel('playsongs')
             .listen('playsong', (e) => {
