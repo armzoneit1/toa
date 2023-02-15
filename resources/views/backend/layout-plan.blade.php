@@ -1343,9 +1343,8 @@
               for(let i = 0; i < response.length; i++){
                 let qrcode_src = $('#qrcode_'+response[i].id+' img').attr('src');
                 $('#qrcode_download_'+response[i].id).attr('href',qrcode_src);
-                console.log(qrcode_src);
               }
-            }, 2000);
+            }, 1000);
         }
     });
     setTimeout(() => {
@@ -1356,13 +1355,6 @@
 <script>
 
   $(document).ready(function(){
-
-    // $('.replace_download').click(function(){
-    //   var ref = $(this).attr('ref');
-    //   var src = $('#qrcode_'+ref+' img').attr('src');
-    //   console.log(src);
-    //   $('#qrcode_download_'+ref).attr('href',src);
-    // });
 
     setTimeout(() => {
         disableClose();
