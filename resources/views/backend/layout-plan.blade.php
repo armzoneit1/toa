@@ -1138,6 +1138,8 @@
   <!-- JAVASCRIPT FILES -->
  @include('backend/script')
 
+ <script type="text/javascript" src="{{ asset('public/qrcodejs/qrcode.js') }}"></script>
+
  <script>
 
   var fullUrl = window.location.origin + window.location.pathname;
@@ -1174,7 +1176,7 @@
                               <button class="btn" id="btn-img-zone${data[i].id}" style="background-color:${data[i].color};color: white;" data-toggle="dropdown" aria-haspopup="true">${data[i].name}</button>
                               <div id="dropdown-btn" class="dropdown-menu">
                                 <a class="dropdown-item" onclick="disableClose(${data[i].id})" data-bs-toggle="modal" data-bs-target="#edit-zone${data[i].id}" href="javascript:;">Edit</a>
-                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#qrcode${data[i].id}" href="javascript:;">Gen QR Code</a>
+                                <a class="dropdown-item replace_download" ref="${data[i].id}" data-bs-toggle="modal" data-bs-target="#qrcode${data[i].id}" href="javascript:;">Gen QR Code</a>
                                 <a class="dropdown-item" onclick="deleteZone(${data[i].id});" href="javascript:;">Delete</a>
                               </div>
                             </div>`;
@@ -1205,7 +1207,7 @@
             for(let i = 0; i < response.length; i++){
                 // console.log(response[i].output_id);
               check.push(response[i].id);
-              let url_qrcode = fullUrl + '/qrcode/' + response[i].id;
+              let url_qrcode = response[i].url;
               let text_zone = response[i].name.replace(" ","_");
               qrcode += `<div class="modal fade" id="qrcode${response[i].id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
                           tabindex="-1">
@@ -1218,17 +1220,20 @@
                               <div class="modal-body row" id="insert-zone">
                                 <div class="form-group but-form col-8">
                                   <center>{{-- QrCode::size(300)->generate(url($url)) --}}
-                                    <img style="width: 60%;" src="${url_qrcode}" alt="noimage"></center>
+                                    <div id="qrcode_${response[i].id}"></div>
+                                    <input type="hidden" id="url_${response[i].id}" value="${url_qrcode}" />
+                                  </center>
                                 </div>
                                 <div class="form-group but-form mt-3 col-4" style="text-align: center;">
                                   <label class="TitleZone">Zone : </label><br>
                                   <label class="TitleDetail">${text_zone}</label><br>
-                                  <center><a href="${url_qrcode}" download="${text_layout}-${text_zone}.png"><button type="button" class="btn btn-primary but-sub">Download</button></a></center>
+                                  <center><a id="qrcode_download_${response[i].id}" href="#" ref="${text_zone}" download="${text_layout}-${text_zone}.png"><button type="button" class="btn btn-primary but-sub">Download</button></a></center>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>`;
+
               zone_plan_data += `<div class="btn-group dropleft" style="margin-bottom: -16px;">
                           <p data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="bi bi-three-dots-vertical but-dots-plan" style="margin-top: 20px;margin-right: 10px;"></i>
@@ -1237,7 +1242,7 @@
                           </p>
                           <div class="dropdown-menu">
                             <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit-zone${response[i].id}" href="javascript:;">Edit</a>
-                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#qrcode${response[i].id}" href="javascript:;">Gen QR Code</a>
+                            <a class="dropdown-item replace_download" ref="${response[i].id}" data-bs-toggle="modal" data-bs-target="#qrcode${response[i].id}" href="javascript:;">Gen QR Code</a>
                             <a class="dropdown-item" onclick="deleteZone(${response[i].id});" href="javascript:;">Delete</a>
                           </div>
                         </div>`;
@@ -1324,6 +1329,23 @@
             // show_insert_modal.html(store_insert_modal);
             show_edit_modal.html(store_edit_modal);
             show_qrcode.html(qrcode);
+
+            for(let i = 0; i < response.length; i++){
+              var raw_qrcode = new QRCode("qrcode_"+response[i].id);
+              function makeCode () {    
+                var elText = document.getElementById("url_"+response[i].id);
+                raw_qrcode.makeCode(elText.value);
+              }
+              makeCode();
+            }
+
+            setTimeout(function() {
+              for(let i = 0; i < response.length; i++){
+                let qrcode_src = $('#qrcode_'+response[i].id+' img').attr('src');
+                $('#qrcode_download_'+response[i].id).attr('href',qrcode_src);
+                console.log(qrcode_src);
+              }
+            }, 2000);
         }
     });
     setTimeout(() => {
@@ -1334,6 +1356,14 @@
 <script>
 
   $(document).ready(function(){
+
+    // $('.replace_download').click(function(){
+    //   var ref = $(this).attr('ref');
+    //   var src = $('#qrcode_'+ref+' img').attr('src');
+    //   console.log(src);
+    //   $('#qrcode_download_'+ref).attr('href',src);
+    // });
+
     setTimeout(() => {
         disableClose();
     }, 500);
