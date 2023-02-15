@@ -731,7 +731,7 @@ input[type=range] {
         }, i * 1000)
     }
 
-    $('.title-setting-mb').click(function(){
+    $('.title-setting-mb , .title-about-mb').click(function(){
       var x = document.getElementById("myLinks");
       x.style.display = "none";
     });
