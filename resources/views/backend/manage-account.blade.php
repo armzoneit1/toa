@@ -549,7 +549,6 @@
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin: 15px 0 0 0;
-    background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc);
     /* background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em; */
     background-position: calc(100% - 20px) calc(1em + 17px), calc(100% - 16px) calc(1em + 17px), calc(100% - 2.5em) 0.5em;
     background-size: 5px 5px, 5px 5px, 0px 1.5em;
@@ -721,8 +720,9 @@ tr {
     border-width: 0;
     align-items: center;
     vertical-align: middle;
-    background-color: #333;
+    background-color: #333 !important;
     /* border-bottom: 0px solid #4E4E4E; */
+    height: 68px !important;
 }
 .tr-top {
     border-bottom: 2px solid #4E4E4E;
@@ -737,11 +737,10 @@ tr {
     border: 0;
 }
 
-
-
-
-
 </style>
+
+<link rel="stylesheet" type="text/css" href="{{ asset('public/DataTables/datatables.min.css') }}"/>
+
 
 @if(!empty(Auth::check()) && Auth::user()->theme == 'W')
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/css/light-mode.css') }}">
@@ -923,8 +922,18 @@ tr {
 @include('backend/modal-setting-project')
 
 @include('backend/script')
+ 
+<script type="text/javascript" src="{{ asset('public/DataTables/datatables.min.js') }}"></script>
 
 <script>
+
+  $(document).ready(function () {
+    $('#example').DataTable({
+        paging: false,
+        info: false,
+    });
+  });
+
   var fullUrl = window.location.origin + window.location.pathname;
 
   function clearAddData(){
