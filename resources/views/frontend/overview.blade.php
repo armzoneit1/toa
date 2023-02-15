@@ -731,6 +731,11 @@ input[type=range] {
         }, i * 1000)
     }
 
+    $('.title-setting-mb').click(function(){
+      var x = document.getElementById("myLinks");
+      x.style.display = "none";
+    });
+
     // setInterval(() => {
     //   $.ajax({
     //     type: "GET",
