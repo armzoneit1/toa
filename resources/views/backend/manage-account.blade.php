@@ -543,13 +543,21 @@
     margin: 0 10px 0 0;
   }
 
+  .asc {
+    background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc) !important;
+  }
+
+  .desc {
+    background-image: linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(45deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc) !important;
+  }
+
   th {
     background-color: #fcb42400 !important;
     appearance: none;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin: 15px 0 0 0;
-    /* background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em; */
+    /*background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), calc(100% - 2.5em) 0.5em; */
     background-position: calc(100% - 20px) calc(1em + 17px), calc(100% - 16px) calc(1em + 17px), calc(100% - 2.5em) 0.5em;
     background-size: 5px 5px, 5px 5px, 0px 1.5em;
     background-repeat: no-repeat;
@@ -712,8 +720,6 @@ td .edit-delete{
   z-index: 99999 !important;
 }
 
-
-
 tr {
     border-color: inherit;
     border-style: solid;
@@ -735,6 +741,14 @@ tr {
     padding: 1.5rem 0.5rem;
     border-top: 2px solid #959595;
     border: 0;
+}
+
+.sorting_asc:after {
+  content: "";
+}
+
+.sorting_desc:after {
+  content: "";
 }
 
 </style>
@@ -784,11 +798,11 @@ tr {
               <thead>
                 <tr class="tr-light tr-top tr-top-light">
                   <!-- <th>Select</th> -->
-                  <th>First Name</th>
-                  <th>Last Name</th>
+                  <th ref="fname" class="{{ (!empty($_GET['order']) && $_GET['column'] == 'fname' && $_GET['order'] == 'asc' ? 'asc' : 'desc' ) }}">First Name</th>
+                  <th ref="lname" class="{{ (!empty($_GET['order']) && $_GET['column'] == 'lname' && $_GET['order'] == 'asc' ? 'asc' : 'desc' ) }}">Last Name</th>
                   <!-- <th>Date of Birth</th> -->
-                  <th>User Name</th>
-                  <th>Role</th>
+                  <th ref="uname" class="{{ (!empty($_GET['order']) && $_GET['column'] == 'uname' && $_GET['order'] == 'asc' ? 'asc' : 'desc' ) }}">User Name</th>
+                  <th ref="role" class="{{ (!empty($_GET['order']) && $_GET['column'] == 'role' && $_GET['order'] == 'asc' ? 'asc' : 'desc' ) }}">Role</th>
                   <th>Edit/Delete</th>
                 </tr>
               </thead>
@@ -927,11 +941,38 @@ tr {
 
 <script>
 
-  $(document).ready(function () {
-    $('#example').DataTable({
-        paging: false,
-        info: false,
+  $(document).ready(function() {
+    $('.asc').click(function(){
+      var column = $(this).attr('ref');
+      var url = '{{ url("webpanel/manage-account") }}?order=desc&column='+column;
+      window.location.href = url;
     });
+
+    $('.desc').click(function(){
+      var column = $(this).attr('ref');
+      var url = '{{ url("webpanel/manage-account") }}?order=asc&column='+column;
+      window.location.href = url;
+    });
+  //   $('#example').DataTable({
+  //     paging: false,
+  //     info: false,
+  //     language: {
+  //       "sort": {
+  //         "asc": " asc",
+  //         "desc": " desc"
+  //       }
+  //     }
+  //   });
+
+  //   // Replace arrow icons with custom text
+  //   $('th.sorting').each(function() {
+  //     var content = $(this).html();
+  //     if (content.includes('&#9650;')) {
+  //       $(this).html(content.replace('&#9650;', ' asc'));
+  //     } else if (content.includes('&#9660;')) {
+  //       $(this).html(content.replace('&#9660;', ' desc'));
+  //     }
+  //   });
   });
 
   var fullUrl = window.location.origin + window.location.pathname;

@@ -22,11 +22,55 @@ class AccountController extends Controller
      */
     public function index()
     {
-        $datas = User::orderBy('id', 'asc')->get();
+        
+        $datas = User::whereNotNull('id');
+
+        if(!empty($_GET['order']) && $_GET['order'] == 'asc'){
+            if(!empty($_GET['column']) && $_GET['column'] == 'fname'){
+                $datas->orderBy('firstname', 'asc');
+                echo 'A 1';
+            }
+            if(!empty($_GET['column']) && $_GET['column'] == 'lname'){
+                $datas->orderBy('lastname', 'asc');
+                echo 'A 2';
+            }
+            if(!empty($_GET['column']) && $_GET['column'] == 'uname'){
+                $datas->orderBy('username', 'asc');
+                echo 'A 3';
+            }
+            if(!empty($_GET['column']) && $_GET['column'] == 'role'){
+                $datas->orderBy('role', 'asc');
+                echo 'A 4';
+            }
+        }
+
+        if(!empty($_GET['order']) && $_GET['order'] == 'desc'){
+            if(!empty($_GET['column']) && $_GET['column'] == 'fname'){
+                $datas->orderBy('firstname', 'desc');
+                echo 'B 1';
+            }
+            if(!empty($_GET['column']) && $_GET['column'] == 'lname'){
+                $datas->orderBy('lastname', 'desc');
+                echo 'B 2';
+            }
+            if(!empty($_GET['column']) && $_GET['column'] == 'uname'){
+                $datas->orderBy('username', 'desc');
+                echo 'B 3';
+            }
+            if(!empty($_GET['column']) && $_GET['column'] == 'role'){
+                $datas->orderBy('role', 'desc');
+                echo 'B 4';
+            }
+        }
+
+        $data = $datas->get();
+
+        // dd($data);
+
         $project = SettingModel::first();
         $ptt = PreRecordModel::orderBy('id', 'asc')->get();
         return view("$this->prefix.$this->name", [
-            'datas' => $datas,
+            'datas' => $data,
             'project' => $project,
             'ptt' => $ptt,
         ]);
