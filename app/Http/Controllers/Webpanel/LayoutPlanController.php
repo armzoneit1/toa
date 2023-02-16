@@ -51,11 +51,10 @@ class LayoutPlanController extends Controller
         $zone = ZoneModel::where('layout_id',$id)->get();
 
         $ipconfig = shell_exec('ipconfig');
-        preg_match('/IPv4 Address.*LAN/m', $ipconfig, $matches);
+        preg_match_all('/IPv4 Address[.\s]+:\s+(\d+\.\d+\.\d+\.\d+)/', $ipconfig, $matches);
+        // dd($matches);
         if(!empty($matches[0])){
-            $ipAddress = trim(str_replace('IPv4 Address. . . . . . . . . . . :', '', $matches[0]));
-        }else{
-            $ipAddress = trim(exec("ipconfig | findstr /R /C:\"IPv4 Address\""));
+            $ipAddress = array_shift($matches[0]);
             $ipAddress = str_replace("IPv4 Address. . . . . . . . . . . :","",$ipAddress);
             $ipAddress = trim($ipAddress);
         }
