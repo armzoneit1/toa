@@ -1265,7 +1265,7 @@ a:hover {
     $(document).ready(function (){
         for (var i = 0; i < 5; i++) {
             setTimeout(function () {
-                $('body').click();
+                $('#fake_click').click();
             }, i * 1000)
         }
     })

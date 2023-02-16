@@ -727,7 +727,7 @@ input[type=range] {
   $(document).ready(function (){
     for (var i = 0; i < 15; i++) {
         setTimeout(function () {
-            $('body').click();
+            $('#fake_click').click();
         }, i * 1000)
     }
 

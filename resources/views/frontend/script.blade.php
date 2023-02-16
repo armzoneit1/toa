@@ -1,3 +1,4 @@
+<div id="fake_click"></div>
 <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
   <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
   <script src="{{ asset('frontend/js/jquery.sticky.js') }}"></script>
@@ -27,10 +28,11 @@ function myFunction() {
   }
 }
 window.onclick = function(event) {
-  if (!event.target.matches('#dropbtn') && event.target.nodeName !== "A" && event.target.id !== "slider" && event.target.id !== "audio_setting2") {
-    // if (x.style.display === "block") {
-    //   x.style.display = "none";
-    // }
+  if (!event.target.matches('#dropbtn') && event.target.nodeName !== "A" && event.target.id !== "slider" 
+    && event.target.id !== "audio_setting2" && event.target.id !== "fake_click") {
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    }
   }
 }
   $('.change_theme').click(function(){

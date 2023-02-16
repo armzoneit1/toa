@@ -977,7 +977,7 @@ tr {
           <div class="form-group but-form" style="margin-bottom: 20px !important;">
             <center><span id="id_error" class="error"></span></center>
           </div>
-          <center><button type="submit" class="btn btn-primary but-sub" onclick="subform(event,'form-update{{$data->id}}')">Submit</button></center>
+          <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(event,{{$data->id}})">Submit</button></center>
         </form>
         </div>
       </div>
@@ -1111,7 +1111,7 @@ tr {
                                       <div class="form-group but-form" style="margin-bottom: 20px !important;">
                                         <center><span id="id_error" class="error"></span></center>
                                       </div>
-                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="subform(event,\'form-update${res.id}\')">Submit</button></center>
+                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(event,${res.id})">Submit</button></center>
                                     </form>
                                     </div>
                                   </div>
@@ -1147,170 +1147,166 @@ tr {
       })
 
     })
-    
-   //var updateInterval = setInterval(() => {
-      $(".update-pre-record form").on('submit', function(e){
-        
-        e.preventDefault();
-        let id = $(this).attr('id').replace( /^\D+/g, '');
-        let formData = new FormData(this);
-        $('.modal').modal('hide');
-        $.ajax({
-          type: "POST",
-          url: fullUrl + '/' + id,
-          data: formData,
-          dataType: 'json',
-          processData: false,
-          contentType: false,
-          success: function(response){
-            if(response.Success){
-              $.ajax({
-                type: "GET",
-                url: fullUrl + '/latest/' + id,
-                success: function(res){
-                  $("#toggle-edit-modal"+id).attr('data-bs-toggle','');
-                  $('#edit-record'+id).remove();
-                  let div2 = $("#append-update-modal");
-                  let html2 = `<div class="modal fade update-pre-record" data-bs-backdrop="static" data-bs-keyboard="false" id="edit-record${res.id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                                tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalToggleLabel">Edit Pre-Record ${res.task_name}</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                    <form action="{{ url('webpanel/pre-record/${res.id}') }}" method="POST" id="form-update${res.id}" enctype="multipart/form-data">
-                                      @csrf
-                                      <div class="form-group but-form">
-                                        <label for="exampleInputEmail1" class="label-title">Task Name</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Task Name" name="task_name" id="task_name_edit${res.id}" value="${res.task_name}" required>
-                                      </div>
-                                      <div class="form-group but-form">
-                                        <label for="exampleInputEmail1" class="label-title">Repeat</label>
-                                        <select class="form-select" id="task_repeat_edit${res.id}" name="task_repeat" aria-label="Default select example" required>
-                                          <option `; if(res.task_repeat == "Specified") html2 += `selected`; html2 += ` value="1">Specified</option>
-                                          <option `; if(res.task_repeat == "Weekly") html2 += `selected`; html2 += ` value="2">Weekly</option>
-                                        </select>
-                                      </div>
-                                      <div class="form-group but-form" id="task_date_edit${res.id}">
-                                        <label for="exampleInputPassword1" class="label-title">Date</label>
-                                        <input type="date" class="form-control" name="task_date" value="`; if(res.task_date) html2 += `${res.task_date}`; html2 += `"  id="td_edit${res.id}">
-                                      </div>
-                                      <div class="form-group but-form" id="task_loop_repeat_edit${res.id}">
-                                        <label for="exampleInputPassword1" class="label-title">Loop</label>
-                                        <div class="row mt-2">
-                                          <div class="col-lg-6 col-6"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_repeat_edit${res.id}" name="task_loop_repeat[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Every Month")) html2 += `checked`; html2 += ` value="Every Month" >&nbsp;&nbsp;Every Month</div>
-                                          <div class="col-lg-6 col-6"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_repeat_edit${res.id}" name="task_loop_repeat[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Every Year")) html2 += `checked`; html2 += ` value="Every Year">&nbsp;&nbsp;Every Year</div>
-                                        </div>
-                                      </div>
-                                      <div class="form-group but-form d-none" id="task_loop_day_edit${res.id}">
-                                        <label for="exampleInputPassword1" class="label-title">Loop</label>
-                                        <div class="row mt-2">
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Monday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Monday">&nbsp;&nbsp;MON</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Tuesday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Tuesday">&nbsp;&nbsp;TUE</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Wednesday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Wednesday">&nbsp;&nbsp;WED</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Thursday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Thursday">&nbsp;&nbsp;THU</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Friday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Friday">&nbsp;&nbsp;FRI</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Saturday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Saturday">&nbsp;&nbsp;SAT</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Sunday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Sunday">&nbsp;&nbsp;SUN</div>
-                                          <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
-                                        </div>
-                                      </div>
-                                      <div class="form-group but-form">
-                                        <label for="exampleInputEmail1" class="label-title">Duration (m)</label>
-                                        <input type="number" min="1" class="form-control" id="task_duration_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_duration) html2 += `${res.task_duration}`; html2 += `"  placeholder="Enter Duration" name="task_duration">
-                                      </div>
-                                      <div class="row">
-                                        <div class="form-group but-form col-sm-6 col-md-6">
-                                          <label for="exampleInputEmail1" class="label-title">Start Time</label>
-                                          <input type="time" class="form-control" name="task_start" id="exampleInputEmail1" aria-describedby="emailHelp" value="${res.task_start}" required>
-                                        </div>
-                                        <div class="form-group but-form col-sm-6 col-md-6">
-                                          <label for="exampleInputEmail1" class="label-title">End Time</label>
-                                          <input type="time" class="form-control" name="task_end" id="task_end_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_end) html2 += `${res.task_end}`; html2 += `" `; if(!res.task_end) html2 += `readonly`; html2 += `>
-                                        </div>
-                                      </div>
-                                      <div class="form-group but-form" style="margin-bottom: 20px !important;">
-                                        <label for="exampleInputEmail1" class="label-title">Audio File</label>
-                                        <input type="file" class="form-control" id="exampleInputEmail1" accept="audio/*" aria-describedby="emailHelp" name="file">
-                                      </div>
-                                      <div class="form-group but-form" style="margin-bottom: 20px !important;">
-                                        <center><span id="id_error" class="error"></span></center>
-                                      </div>
-                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="subform(event,\'form-update${res.id}\')">Submit</button></center>
-                                    </form>
+  })
+
+  function updateRecord(event,formId){
+    event.preventDefault();
+    let div = $('#form-update'+formId)[0];
+    let id = $('#form-update'+formId).attr('id').replace( /^\D+/g, '');
+    let formData = new FormData(div);
+    $('.modal').modal('hide');
+    $.ajax({
+      type: "POST",
+      url: fullUrl + '/' + id,
+      data: formData,
+      dataType: 'json',
+      processData: false,
+      contentType: false,
+      success: function(response){
+        if(response.Success){
+          $.ajax({
+            type: "GET",
+            url: fullUrl + '/latest/' + id,
+            success: function(res){
+              $("#toggle-edit-modal"+id).attr('data-bs-toggle','');
+              $('#edit-record'+id).remove();
+              let div2 = $("#append-update-modal");
+              let html2 = `<div class="modal fade update-pre-record" data-bs-backdrop="static" data-bs-keyboard="false" id="edit-record${res.id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                            tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel">Edit Pre-Record ${res.task_name}</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form action="{{ url('webpanel/pre-record/${res.id}') }}" method="POST" id="form-update${res.id}" enctype="multipart/form-data">
+                                  @csrf
+                                  <div class="form-group but-form">
+                                    <label for="exampleInputEmail1" class="label-title">Task Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Task Name" name="task_name" id="task_name_edit${res.id}" value="${res.task_name}" required>
+                                  </div>
+                                  <div class="form-group but-form">
+                                    <label for="exampleInputEmail1" class="label-title">Repeat</label>
+                                    <select class="form-select" id="task_repeat_edit${res.id}" name="task_repeat" aria-label="Default select example" required>
+                                      <option `; if(res.task_repeat == "Specified") html2 += `selected`; html2 += ` value="1">Specified</option>
+                                      <option `; if(res.task_repeat == "Weekly") html2 += `selected`; html2 += ` value="2">Weekly</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group but-form" id="task_date_edit${res.id}">
+                                    <label for="exampleInputPassword1" class="label-title">Date</label>
+                                    <input type="date" class="form-control" name="task_date" value="`; if(res.task_date) html2 += `${res.task_date}`; html2 += `"  id="td_edit${res.id}">
+                                  </div>
+                                  <div class="form-group but-form" id="task_loop_repeat_edit${res.id}">
+                                    <label for="exampleInputPassword1" class="label-title">Loop</label>
+                                    <div class="row mt-2">
+                                      <div class="col-lg-6 col-6"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_repeat_edit${res.id}" name="task_loop_repeat[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Every Month")) html2 += `checked`; html2 += ` value="Every Month" >&nbsp;&nbsp;Every Month</div>
+                                      <div class="col-lg-6 col-6"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_repeat_edit${res.id}" name="task_loop_repeat[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Every Year")) html2 += `checked`; html2 += ` value="Every Year">&nbsp;&nbsp;Every Year</div>
                                     </div>
                                   </div>
+                                  <div class="form-group but-form d-none" id="task_loop_day_edit${res.id}">
+                                    <label for="exampleInputPassword1" class="label-title">Loop</label>
+                                    <div class="row mt-2">
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Monday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Monday">&nbsp;&nbsp;MON</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Tuesday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Tuesday">&nbsp;&nbsp;TUE</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Wednesday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Wednesday">&nbsp;&nbsp;WED</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Thursday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Thursday">&nbsp;&nbsp;THU</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Friday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Friday">&nbsp;&nbsp;FRI</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Saturday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Saturday">&nbsp;&nbsp;SAT</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Sunday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Sunday">&nbsp;&nbsp;SUN</div>
+                                      <div class="col-lg-1 col-1" style="color: black; width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group but-form">
+                                    <label for="exampleInputEmail1" class="label-title">Duration (m)</label>
+                                    <input type="number" min="1" class="form-control" id="task_duration_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_duration) html2 += `${res.task_duration}`; html2 += `"  placeholder="Enter Duration" name="task_duration">
+                                  </div>
+                                  <div class="row">
+                                    <div class="form-group but-form col-sm-6 col-md-6">
+                                      <label for="exampleInputEmail1" class="label-title">Start Time</label>
+                                      <input type="time" class="form-control" name="task_start" id="exampleInputEmail1" aria-describedby="emailHelp" value="${res.task_start}" required>
+                                    </div>
+                                    <div class="form-group but-form col-sm-6 col-md-6">
+                                      <label for="exampleInputEmail1" class="label-title">End Time</label>
+                                      <input type="time" class="form-control" name="task_end" id="task_end_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_end) html2 += `${res.task_end}`; html2 += `" `; if(!res.task_end) html2 += `readonly`; html2 += `>
+                                    </div>
+                                  </div>
+                                  <div class="form-group but-form" style="margin-bottom: 20px !important;">
+                                    <label for="exampleInputEmail1" class="label-title">Audio File</label>
+                                    <input type="file" class="form-control" id="exampleInputEmail1" accept="audio/*" aria-describedby="emailHelp" name="file">
+                                  </div>
+                                  <div class="form-group but-form" style="margin-bottom: 20px !important;">
+                                    <center><span id="id_error" class="error"></span></center>
+                                  </div>
+                                  <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(event,${res.id})">Submit</button></center>
+                                </form>
                                 </div>
-                              </div>`;
-                  div2.append(html2);
-                  $("#toggle-edit-modal"+id).attr('data-bs-toggle','modal');
+                              </div>
+                            </div>
+                          </div>`;
+              div2.append(html2);
+              $("#toggle-edit-modal"+id).attr('data-bs-toggle','modal');
 
-                  let div = $('#latest-record');
-                  if(res.task_active == 1){
-                    $('#task_active'+id).prop('checked',true)
-                  }
-                  $('#'+id).text();
-                  $('#name_id'+id).text(res.task_name);
-                  if(res.task_date == null){
-                    $('#date_id'+id).text('-');
-                  }
-                  else{
-                    $('#date_id'+id).text(res.task_date);
-                  }
-                  if(res.task_duration == null){
-                    $('#duration_id'+id).text('-');
-                  }
-                  else{
-                    $('#duration_id'+id).text(res.task_duration);
-                  }
-                  $('#start_id'+id).text(res.task_start);
-                  if(res.task_end == null){
-                    $('#end_id'+id).text('-');
-                  }
-                  else{
-                    $('#end_id'+id).text(res.task_end);
-                  }
-                  $('#repeat_id'+id).text(res.task_repeat);
-                  $('#loop_id'+id).text(res.task_loop);
+              let div = $('#latest-record');
+              if(res.task_active == 1){
+                $('#task_active'+id).prop('checked',true)
+              }
+              $('#'+id).text();
+              $('#name_id'+id).text(res.task_name);
+              if(res.task_date == null){
+                $('#date_id'+id).text('-');
+              }
+              else{
+                $('#date_id'+id).text(res.task_date);
+              }
+              if(res.task_duration == null){
+                $('#duration_id'+id).text('-');
+              }
+              else{
+                $('#duration_id'+id).text(res.task_duration);
+              }
+              $('#start_id'+id).text(res.task_start);
+              if(res.task_end == null){
+                $('#end_id'+id).text('-');
+              }
+              else{
+                $('#end_id'+id).text(res.task_end);
+              }
+              $('#repeat_id'+id).text(res.task_repeat);
+              $('#loop_id'+id).text(res.task_loop);
 
-                  $('#rec-name_id'+id).text(res.task_name);
-                  if(res.task_date == null){
-                    $('#rec-date_id'+id).text('-');
-                  }
-                  else{
-                    $('#rec-date_id'+id).text(res.task_date+' ');
-                  }
-                  if(res.task_duration == null){
-                    $('#rec-duration_id'+id).text('-');
-                  }
-                  else{
-                    $('#rec-duration_id'+id).text(res.task_duration);
-                  }
-                  $('#rec-start_id'+id).text(res.task_start);
-                  if(res.task_end == null){
-                    $('#rec-end_id'+id).text('-');
-                  }
-                  else{
-                    $('#rec-end_id'+id).text(res.task_end);
-                  }
-                  $('#rec-repeat_id'+id).text(res.task_repeat);
-                  $('#rec-loop_id'+id).text(res.task_loop);
-                  $('#rec-audio'+id).attr('src',`{{ asset('${res.file}') }}`)[0];
-                }
-              })
+              $('#rec-name_id'+id).text(res.task_name);
+              if(res.task_date == null){
+                $('#rec-date_id'+id).text('-');
+              }
+              else{
+                $('#rec-date_id'+id).text(res.task_date+' ');
+              }
+              if(res.task_duration == null){
+                $('#rec-duration_id'+id).text('-');
+              }
+              else{
+                $('#rec-duration_id'+id).text(res.task_duration);
+              }
+              $('#rec-start_id'+id).text(res.task_start);
+              if(res.task_end == null){
+                $('#rec-end_id'+id).text('-');
+              }
+              else{
+                $('#rec-end_id'+id).text(res.task_end);
+              }
+              $('#rec-repeat_id'+id).text(res.task_repeat);
+              $('#rec-loop_id'+id).text(res.task_loop);
+              $('#rec-audio'+id).attr('src',`{{ asset('${res.file}') }}`)[0];
             }
-            else{
-              $('#id_error').text('Cannot insert or update Pre-Record');
-            }
-          }
-        })
-
-      })
-    //}, 1000);
-
-  })
+          })
+        }
+        else{
+          $('#id_error').text('Cannot insert or update Pre-Record');
+        }
+      }
+    })
+  }
 
   function playAudio(id){
     var sound = $('audio');
@@ -1612,12 +1608,7 @@ setInterval(() => {
         .prop("readonly",true)
         .end();
     }
-    function subform(event,idform)
-    {
-      alert("222");
-      event.preventDefault();
-    }
-    
+
 </script>
 
 </body>
