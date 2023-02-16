@@ -545,10 +545,12 @@
 
   .asc {
     background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc) !important;
+    cursor: pointer;
   }
 
   .desc {
     background-image: linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(45deg, white 54%, transparent 59%), linear-gradient(to right, #ccc, #ccc) !important;
+    cursor: pointer;
   }
 
   th {
