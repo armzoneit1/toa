@@ -1363,7 +1363,6 @@ tr {
   function requiredCheck(){
     $('#add_record').modal({backdrop:'static', keyboard:false});
     $(".check_day").prop('required', false);
-    $(".check_repeat").prop('required', true);
 
     checker.forEach(e => {
       $('#edit-record'+e).modal({backdrop:'static', keyboard:false});
