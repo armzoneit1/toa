@@ -49,9 +49,16 @@ class LayoutPlanController extends Controller
 
     public function get_zone($id){
         $zone = ZoneModel::where('layout_id',$id)->get();
-        $ipAddress = trim(exec("ipconfig | findstr /R /C:\"IPv4 Address\""));
-        $ipAddress = str_replace("IPv4 Address. . . . . . . . . . . :","",$ipAddress);
-        $ipAddress = trim($ipAddress);
+
+        $ipconfig = shell_exec('ipconfig');
+        preg_match('/IPv4 Address.*LAN/m', $ipconfig, $matches);
+        if(!empty($matches[0])){
+            $ipAddress = trim(str_replace('IPv4 Address. . . . . . . . . . . :', '', $matches[0]));
+        }else{
+            $ipAddress = trim(exec("ipconfig | findstr /R /C:\"IPv4 Address\""));
+            $ipAddress = str_replace("IPv4 Address. . . . . . . . . . . :","",$ipAddress);
+            $ipAddress = trim($ipAddress);
+        }
 
         if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
             $protocol = "https://";
