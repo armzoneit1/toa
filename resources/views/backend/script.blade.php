@@ -254,6 +254,31 @@ let queue = [], concur = [];
 let status = 'ready';
 let audio = $('.audio-pre-record');
 
+function playAudio(id){
+    var sound = $('audio');
+    var audio = $('#audio'+id)[0];
+
+    if(audio.paused){
+        for (let i = 0; i < sound.length; i++) {
+        if(!sound[i].paused){
+            sound[i].pause();
+        }
+        }
+        $(".bi-volume-off-fill").removeClass('volume-icon022');
+        $(".bi-volume-off-fill").addClass('volume-icon02');
+
+        audio.play();
+        $('#sound'+id).removeClass('volume-icon02');
+        $('#sound'+id).addClass('volume-icon022');
+    }
+    else{
+        audio.pause();
+        $('#sound'+id).removeClass('volume-icon022');
+        $('#sound'+id).addClass('volume-icon02');
+    }
+    audio.currentTime = 0;
+}
+
 $(document).ready(function (){
 
   $.ajax({

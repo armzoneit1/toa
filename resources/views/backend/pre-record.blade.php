@@ -750,13 +750,6 @@ tr {
         <div class="row align-top">
           <div class="col-lg-8 col-8" id="col8">
             <h4 id="toppp" class="title-top">Pre-Record Timer</h4>
-            <!-- <div class="form-group">
-                                <select class="form-select form-select-layout" aria-label="Default select example">
-                                  <option selected>Layout 1</option>
-                                  <option value="2">Layout 2</option>
-                                  <option value="3">Layout 3</option>
-                                </select>
-                              </div> -->
           </div>
           <div class="col-lg-4 col-4" id="col4">
             <button class="but-add" data-bs-toggle="modal" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-target="#add_record"><i class="bi bi-plus-square-fill" id="icon-plus-add"></i> Add</button>
@@ -818,7 +811,6 @@ tr {
                     </td>
                   </tr>
                 @endforeach
-                {{-- <a href="javascript:void(0);" onclick="playAudio({{ $data->id }});"><i class="bi bi-volume-off-fill volume-icon02" id="sound{{ $data->id }}"></i></a>  --}}
               </tbody>
             </table>
           </div>
@@ -977,7 +969,7 @@ tr {
           <div class="form-group but-form" style="margin-bottom: 20px !important;">
             <center><span id="id_error" class="error"></span></center>
           </div>
-          <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(event,{{$data->id}})">Submit</button></center>
+          <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord({{$data->id}})">Submit</button></center>
         </form>
         </div>
       </div>
@@ -1002,9 +994,6 @@ tr {
       e.preventDefault();
       let formData = new FormData(this);
       $('.modal').modal('hide');
-      // for (var pair of formData.entries()) {
-      //   console.log(pair[0]+ ', ' + pair[1]);
-      // }
       $.ajax({
         type: "POST",
         url: fullUrl,
@@ -1111,7 +1100,7 @@ tr {
                                       <div class="form-group but-form" style="margin-bottom: 20px !important;">
                                         <center><span id="id_error" class="error"></span></center>
                                       </div>
-                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(event,${res.id})">Submit</button></center>
+                                      <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(${res.id})">Submit</button></center>
                                     </form>
                                     </div>
                                   </div>
@@ -1149,8 +1138,9 @@ tr {
     })
   })
 
-  function updateRecord(event,formId){
-    event.preventDefault();
+  function updateRecord(formId){
+    $(".update-pre-record form").on('submit', function(e){
+    e.preventDefault();
     let div = $('#form-update'+formId)[0];
     let id = $('#form-update'+formId).attr('id').replace( /^\D+/g, '');
     let formData = new FormData(div);
@@ -1214,7 +1204,7 @@ tr {
                                       <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Friday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Friday">&nbsp;&nbsp;FRI</div>
                                       <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Saturday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Saturday">&nbsp;&nbsp;SAT</div>
                                       <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input check_day_edit${res.id}" name="task_loop_day[]" id="exampleInputPassword1" `; if(res.task_loop.includes("Sunday") || res.task_loop.includes("Every Day")) html2 += `checked`; html2 += ` value="Sunday">&nbsp;&nbsp;SUN</div>
-                                      <div class="col-lg-1 col-1" style="color: black; width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
+                                      <div class="col-lg-1 col-1" style="width: 12.5% !important;"><input type="checkbox" style="width:15px !important; height: 15px !important;" class="form-check-input" id="check_all_edit${res.id}">&nbsp;&nbsp;All</div>
                                     </div>
                                   </div>
                                   <div class="form-group but-form">
@@ -1238,7 +1228,7 @@ tr {
                                   <div class="form-group but-form" style="margin-bottom: 20px !important;">
                                     <center><span id="id_error" class="error"></span></center>
                                   </div>
-                                  <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(event,${res.id})">Submit</button></center>
+                                  <center><button type="submit" class="btn btn-primary but-sub" onclick="updateRecord(${res.id})">Submit</button></center>
                                 </form>
                                 </div>
                               </div>
@@ -1306,31 +1296,7 @@ tr {
         }
       }
     })
-  }
-
-  function playAudio(id){
-    var sound = $('audio');
-    var audio = $('#audio'+id)[0];
-
-    if(audio.paused){
-      for (let i = 0; i < sound.length; i++) {
-        if(!sound[i].paused){
-          sound[i].pause();
-        }
-      }
-      $(".bi-volume-off-fill").removeClass('volume-icon022');
-      $(".bi-volume-off-fill").addClass('volume-icon02');
-
-      audio.play();
-      $('#sound'+id).removeClass('volume-icon02');
-      $('#sound'+id).addClass('volume-icon022');
-    }
-    else{
-      audio.pause();
-      $('#sound'+id).removeClass('volume-icon022');
-      $('#sound'+id).addClass('volume-icon02');
-    }
-    audio.currentTime = 0;
+    })
   }
 
   $('#task_repeat').on("change", function(){
@@ -1360,15 +1326,6 @@ tr {
       $('#input_date').prop("value", '');
     }
   })
-
-  // $('.check_repeat').on("change", function (){
-  //   if($('#task_loop_repeat :checkbox:checked').length > 0){
-  //     $(".check_repeat").prop('required', false);
-  //   }
-  //   else{
-  //     $(".check_repeat").prop('required', true);
-  //   }
-  // });
 
   $('.check_day').on("change", function (){
     if($('#task_loop_day :checkbox:checked').length > 0){
@@ -1406,7 +1363,7 @@ tr {
   function requiredCheck(){
     $('#add_record').modal({backdrop:'static', keyboard:false});
     $(".check_day").prop('required', false);
-    // $(".check_repeat").prop('required', true);
+    $(".check_repeat").prop('required', true);
 
     checker.forEach(e => {
       $('#edit-record'+e).modal({backdrop:'static', keyboard:false});
@@ -1416,7 +1373,7 @@ tr {
       }
       else{
         $(".check_day_edit"+e).prop('required', true);
-        $(".check_repeat_edit"+e).prop('required', false);
+        // $(".check_repeat_edit"+e).prop('required', false);
         if ($('.check_day_edit'+e+':checked').length == $('.check_day_edit'+e).length) {
           $('#check_all_edit'+e).prop('checked',true);
         }
@@ -1433,12 +1390,6 @@ tr {
         $(".check_day_edit"+id).prop('required', false);
       }
       $('#task_loop_repeat_edit'+id).removeClass("d-none");
-      // if($('#task_loop_repeat_edit'+id+' :checkbox:checked').length > 0){
-      //   $(".check_repeat_edit"+id).prop('required', false);
-      // }
-      // else{
-      //   $(".check_repeat_edit"+id).prop('required', true);
-      // }
       $('#task_date_edit'+id).removeClass("d-none");
       $('#td_edit'+id).prop("required", true);
     }
@@ -1469,15 +1420,6 @@ setInterval(() => {
     $('#task_repeat_edit'+id).on("change", function(){
       checkEdit(id);
     })
-
-    // $('.check_repeat_edit'+id).on("change", function (){
-    //   if($('#task_loop_repeat_edit'+id+' :checkbox:checked').length > 0){
-    //     $(".check_repeat_edit"+id).prop('required', false);
-    //   }
-    //   else{
-    //     $(".check_repeat_edit"+id).prop('required', true);
-    //   }
-    // });
 
     $('.check_day_edit'+id).on("change", function (){
       if($('#task_loop_day_edit'+id+' :checkbox:checked').length > 0){
@@ -1586,14 +1528,6 @@ setInterval(() => {
               })
             }
           })
-          // preConfirm: () => {
-          //     return fetch(fullUrl + '/destroy?id=' + id)
-          //         .then(response => response.json())
-          //         // .then(data => location.reload())
-          //         .catch(error => {
-          //             Swal.showValidationMessage(`Request failed: ${error}`)
-          //         })
-          // }
   }
 
     function clearAddData(){
