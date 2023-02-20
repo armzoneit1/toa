@@ -5,9 +5,31 @@
   @include('backend.inc_head')
   @php $tab = "overview" @endphp
   <script>
+  
+    window.Echo.connector.pusher.connection.bind('connecting', (payload) => {
+
+/**
+ * All dependencies have been loaded and Channels is trying to connect.
+ * The connection will also enter this state when it is trying to reconnect after a connection failure.
+ */
+
+console.log('connecting...');
+console.log(payload);
+
+});
+
+window.Echo.connector.pusher.connection.bind('connected', (payload) => {
+
+/**
+ * The connection to Channels is open and authenticated with your app.
+ */
+
+console.log('connected!', payload);
+});
+
+
     Echo.channel('playsongs')
             .listen('playsong', (e) => {
-              //console.log(e);
               if(e.data != null) {
                 e.data.map(function (r) {
                   $(".song-name" + r.Id).html(r.Name);
@@ -22,13 +44,17 @@
                   }
                 })
               }else{
-                for (var i = 1; i <= 16; i++) {
+                for (var i = 0; i <= 16; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
                 }
               }
             }).error(function(e) {
-      //console.log(e);
+              
+              for (var i = 0; i <= 16; i++) {
+                  $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+                  $(".time-play" + i).html("00:00/00:00");
+                }
     })
     Echo.channel('checkPlayMusics')
             .listen('checkPlayMusic', (e) => {
@@ -735,13 +761,15 @@
                                         <div class="col-lg-6 col-6 box-source-pop" id="col6">`;
                                             if(res[i].source == 0){
                                               zone += `<h4 class="title-status" id="text-show-source${res[i].id}">None</h4>`;
-
-                                            zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">กรุณาเลือก source ก่อน</p>`;
+                                              zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">กรุณาเลือก source ก่อน</p>`;
+                                            }
+                                            else if(res[i].source >= 9 && res[i].source <= 16){
+                                              zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
+                                              zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">Local Input</p>`;
                                             }
                                             else{
-                                            zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
-                                            zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">Song Name</p>`;
-
+                                              zone += `<h4 class="title-status" id="text-show-source${res[i].id}">Source ${res[i].source}</h4>`;
+                                              zone += `<p class="song-name song-name${res[i].source}" id="song-name${res[i].id}">ไม่สามารถเชื่อมต่อ Multi Player ได้</p>`;
                                             }
                                 zone += `<div class="d-none" id="zone-source${res[i].id}">${res[i].source}</div>
                                             <div class="row" id="time-play-top">
@@ -1219,17 +1247,11 @@
             source: source
         },
       success: function(response){
-        //console.log(response);
-        $.ajax({
-            type: "Get",
-            url: "https://localhost/toa/broadcast1",
-            data: {
-              source: source
-            },
-            success: function(res){
-              
-            }
-        });
+        retrieveData();
+        // $('#song-name'+id).removeClass('song-name'+old_source);
+        // $('#song-name'+id).addClass('song-name'+source);
+        // $('#time-play'+id).removeClass('time-play'+old_source);
+        // $('#time-play'+id).addClass('time-play'+source);
       }
     });
   }

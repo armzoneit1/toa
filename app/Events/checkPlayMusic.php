@@ -2,6 +2,7 @@
 
 namespace App\Events;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Webpanel\OverviewController;
 use App\Models\Backend\ZoneModel;
 use Illuminate\Broadcasting\Channel;

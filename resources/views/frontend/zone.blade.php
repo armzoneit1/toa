@@ -3,6 +3,99 @@
 
 <head>
   @include('frontend.inc_head')
+  <script>
+  var zone_id = {{ json_encode($zone->id) }};
+  var zone_volume = {{ json_encode($zone->volume) }};
+  var zone_source = {{ json_encode($zone->source) }};
+  Echo.channel('zoneselect')
+            .listen('zoneselect', (es) => {
+                if(typeof es == 'object'){
+                    es.data.map(function(e,i){
+                        if(e.id == zone_id){
+                            if(e.volume != zone_volume){
+                                let i = e.id;
+                                const range = document.querySelector("#volume input[type=range]");
+                                const text = document.querySelector("#text-zone-number-popup");
+
+                                const barHoverBox = document.querySelector("#volume .bar-hoverbox");
+                                const fill = document.querySelector("#volume .bar .bar-fill");
+
+                                let value = e.volume;
+
+                                if(value >= 90){
+                                fill.style.background = "#e91303";
+                                }
+                                else{
+                                fill.style.background = "#ff8200";
+                                }
+                                fill.style.width = value + "%";
+                                range.setAttribute("value", value)
+                                text.textContent = Number(value).toFixed(0) + "%";
+                                range.dispatchEvent(new Event("change"))
+
+                                if(document.querySelector("#volume input[type=range]").value == 0){
+                                document.querySelector("#mute").style.backgroundColor = '#e91303';
+                                }
+                                else{
+                                document.querySelector("#mute").style.backgroundColor = '#c3c3c3';
+                                }
+
+                                zone_volume = $("#volume-val").val();
+
+                            }
+                            if(e.source != zone_source){
+                                if(e.source == 0){
+                                $('#source-number').text('None');
+                                }
+                                else{
+                                $('#source-number').text('Source '+ e.source);
+                                }
+                                zone_source = e.source;
+                            }
+                        }
+                    });
+                }
+            })
+      Echo.channel('playsongs')
+            .listen('playsong', (e) => {
+              if(e.data != null) {
+                e.data.map(function (r) {
+                  if(zone_source == 0){
+                    $(".song-name").html("กรุณาเลือก source ก่อน");
+                    $(".time-play").html("00:00 / 00:00");
+                  }
+                  else if(zone_source >= 9 && zone_source <= 16){
+                    $(".song-name").html("Local Input");
+                    $(".time-play").html("00:00 / 00:00");
+                  }
+                  if(r.Id == zone_source){
+                    $(".song-name").html(r.Name);
+                    $(".time-play").html(r.DurationTimePlay + "/" + r.DurationTime);
+                    //console.log('playpause',r);
+                    if (r.runmusic == 1) {
+                      $(".play-or-pause").removeClass('bi-play-circle-fill');
+                      $(".play-or-pause").addClass('bi-pause-circle-fill');
+                    } else {
+                      $(".play-or-pause").removeClass('bi-pause-circle-fill');
+                      $(".play-or-pause").addClass('bi-play-circle-fill');
+                    }
+                  }
+                  else{
+
+                  }
+                })
+              }else{
+                $(".song-name").html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+                $(".time-play").html("00:00/00:00");               
+              }
+            }).error(function(e) {
+              
+              for (var i = 0; i <= 16; i++) {
+                  $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+                  $(".time-play" + i).html("00:00/00:00");
+                }
+    })
+    </script>
 </head>
 
 <style>
@@ -1163,11 +1256,11 @@ a:hover {
 
                           <div class="col-lg-12 col-12" id="">
                           <h4 class="title-status" id="source-number">@if($zone->source == 0) None @else Source {{ $zone->source }} @endif</h4>
-                          <p id="song-name" class="song-name song-name{{$zone->source}}">Song Name</p>
+                          <p id="song-name" class="song-name">Song Name</p>
                           </div>
 
                             <div class="col-lg-6 col-6" id="col6-mb">
-                              <p class="time-play time-play{{$zone->source}}" id="time-play">00:00 / 00:15</p>
+                              <p class="time-play" id="time-play">00:00 / 00:15</p>
                             </div>
                             <div class="col-lg-6 col-6" id="col6-mb">
                               <p class="icon-play">
@@ -1504,95 +1597,100 @@ a:hover {
       document.querySelector("#mute").style.backgroundColor = '#e91303';
     }
 
-    $.ajax({
-        type: "GET",
-        url: fullUrl + '/current-song',
-        data: {source:zone_source},
-        success: function(data){
-            $('#song-name').text(data);
-        }
-    });
-
     setInterval(() => {
-      $.ajax({
-        type: "GET",
-        url: fullUrl + '/this-zone',
-        success: function(e){
-          if(e.volume != zone_volume){
-            let i = e.id;
-            const range = document.querySelector("#volume input[type=range]");
-            const text = document.querySelector("#text-zone-number-popup");
+      //   $.ajax({
+    //     type: "GET",
+    //     url: fullUrl + '/this-zone',
+    //     success: function(e){
+    //       if(e.volume != zone_volume){
+    //         let i = e.id;
+    //         const range = document.querySelector("#volume input[type=range]");
+    //         const text = document.querySelector("#text-zone-number-popup");
 
-            const barHoverBox = document.querySelector("#volume .bar-hoverbox");
-            const fill = document.querySelector("#volume .bar .bar-fill");
+    //         const barHoverBox = document.querySelector("#volume .bar-hoverbox");
+    //         const fill = document.querySelector("#volume .bar .bar-fill");
 
-            let value = e.volume;
+    //         let value = e.volume;
 
-            if(value >= 90){
-              fill.style.background = "#e91303";
-            }
-            else{
-              fill.style.background = "#ff8200";
-            }
-            fill.style.width = value + "%";
-            range.setAttribute("value", value)
-            text.textContent = Number(value).toFixed(0) + "%";
-            range.dispatchEvent(new Event("change"))
+    //         if(value >= 90){
+    //           fill.style.background = "#e91303";
+    //         }
+    //         else{
+    //           fill.style.background = "#ff8200";
+    //         }
+    //         fill.style.width = value + "%";
+    //         range.setAttribute("value", value)
+    //         text.textContent = Number(value).toFixed(0) + "%";
+    //         range.dispatchEvent(new Event("change"))
 
-            if(document.querySelector("#volume input[type=range]").value == 0){
-              document.querySelector("#mute").style.backgroundColor = '#e91303';
-            }
-            else{
-              document.querySelector("#mute").style.backgroundColor = '#c3c3c3';
-            }
+    //         if(document.querySelector("#volume input[type=range]").value == 0){
+    //           document.querySelector("#mute").style.backgroundColor = '#e91303';
+    //         }
+    //         else{
+    //           document.querySelector("#mute").style.backgroundColor = '#c3c3c3';
+    //         }
 
-            zone_volume = $("#volume-val").val();
+    //         zone_volume = $("#volume-val").val();
 
-          }
-          if(e.source != zone_source){
-            if(e.source == 0){
-              $('#source-number').text('None');
-            }
-            else{
-              $('#source-number').text('Source '+ e.source);
-            }
-            zone_source = e.source;
+    //       }
+    //       if(e.source != zone_source){
+    //         if(e.source == 0){
+    //           $('#source-number').text('None');
+    //         }
+    //         else{
+    //           $('#source-number').text('Source '+ e.source);
+    //         }
+    //         zone_source = e.source;
+    //       }
+    //     }
+    //   });
 
-            $.ajax({
-                type: "GET",
-                url: fullUrl + '/current-song',
-                data: {source:zone_source},
-                success: function(data){
-                    $('#song-name').text(data);
-                }
-            });
-          }
-        }
-      });
+        // $.ajax({
+        //     type: "POST",
+        //     url: fullUrl + '/musicrun/' + {{$zone->source}},
+        //     data: {source:'{{$zone->source}}',_token:'{{csrf_token()}}'},
+        //     success: function(response){
+        //         // console.log(response);
+        //       if(typeof response == "object"){
+        //         if({{$zone->source}} == 0){
+        //           $(".song-name{{$zone->source}}").html("กรุณาเลือก source ก่อน");
+        //           $(".time-play{{$zone->source}}").html("00:00 / 00:00");
+        //         }
+        //         else if({{$zone->source}} >= 9 && {{$zone->source}} <= 16){
+        //           $(".song-name{{$zone->source}}").html("Local Input");
+        //           $(".time-play{{$zone->source}}").html("00:00 / 00:00");
+        //         }else {
+        //           response.map(function (r){
 
-        $.ajax({
-            type: "POST",
-            url: fullUrl + '/musicrun/' + {{$zone->source}},
-            data: {source:'{{$zone->source}}',_token:'{{csrf_token()}}'},
-            success: function(response){
-                // console.log(response);
-                response.map(function (r){
-
-                    $(".song-name"+r.Id).html(r.Name);
-                    $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
-                    // debugger;
-                    if(r.runmusic == 1) {
-                        $("#play-or-pause"+r.Id).removeClass('bi-play-circle-fill');
-                        $("#play-or-pause"+r.Id).addClass('bi-pause-circle-fill');
-                    }else{
+        //               $(".song-name"+r.Id).html(r.Name);
+        //               $(".time-play"+r.Id).html(r.DurationTimePlay+"/"+r.DurationTime);
+        //               // debugger;
+        //               if(r.runmusic == 1) {
+        //                   $("#play-or-pause"+r.Id).removeClass('bi-play-circle-fill');
+        //                   $("#play-or-pause"+r.Id).addClass('bi-pause-circle-fill');
+        //               }else{
 
 
-                        $("#play-or-pause"+r.Id).removeClass('bi-pause-circle-fill');
-                        $("#play-or-pause"+r.Id).addClass('bi-play-circle-fill');
-                    }
-                });
-            }
-        });
+        //                   $("#play-or-pause"+r.Id).removeClass('bi-pause-circle-fill');
+        //                   $("#play-or-pause"+r.Id).addClass('bi-play-circle-fill');
+        //               }
+        //           });
+        //         }
+        //       }else{
+        //         if({{$zone->source}} == 0){
+        //           $(".song-name{{$zone->source}}").html("กรุณาเลือก source ก่อน");
+        //           $(".time-play{{$zone->source}}").html("00:00 / 00:00");
+        //         }
+        //         else if({{$zone->source}} >= 9 && {{$zone->source}} <= 16){
+        //           $(".song-name{{$zone->source}}").html("Local Input");
+        //           $(".time-play{{$zone->source}}").html("00:00 / 00:00");
+        //         }else{
+        //           $(".song-name" + r.Id).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+        //           $(".time-play" + r.Id).html("00:00/00:00");
+        //         }
+        //       }
+        //     }
+        // });
 
     }, 1000);
 
@@ -1642,29 +1740,6 @@ a:hover {
     }, 300);
 
     zone_volume = volume;
-  }
-
-  function selectSource(){
-    var source = $('#source-zone').val();
-    // console.log(source);
-    $.ajax({
-          type: "POST",
-          url: fullUrl + '/select-source',
-          data: {
-                source: source
-            },
-          success: function(response){
-            // console.log(response)
-            $.ajax({
-                type: "GET",
-                url: fullUrl + '/current-song',
-                data: {source:source},
-                success: function(data){
-                    $('#song-name').text(data);
-                }
-            });
-          }
-    });
   }
 
     function playorpause_song(source, id){
