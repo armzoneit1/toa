@@ -1153,14 +1153,6 @@ function danceStop(){
   }
 }
 
-$(document).ready(function(){
-  setInterval(() => {
-    if(mediaRecorder.state == 'inactive'){
-      clearTimer();
-    }
-  }, 1000);
-})
-
 </script>
 
 

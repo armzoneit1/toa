@@ -5,7 +5,7 @@
   @include('backend.inc_head')
   @php $tab = "overview" @endphp
   <script>
-  
+
     window.Echo.connector.pusher.connection.bind('connecting', (payload) => {
 
 /**
@@ -50,7 +50,7 @@ console.log('connected!', payload);
                 }
               }
             }).error(function(e) {
-              
+
               for (var i = 0; i <= 16; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
@@ -1239,7 +1239,7 @@ console.log('connected!', payload);
 
   function selectSource(id){
     var source = $('#source-zone'+id).val();
-    // //console.log(source);
+    // console.log(source);
     $.ajax({
       type: "POST",
       url: fullUrl + '/select-source/' + id,
@@ -1247,11 +1247,118 @@ console.log('connected!', payload);
             source: source
         },
       success: function(response){
-        retrieveData();
-        // $('#song-name'+id).removeClass('song-name'+old_source);
-        // $('#song-name'+id).addClass('song-name'+source);
-        // $('#time-play'+id).removeClass('time-play'+old_source);
-        // $('#time-play'+id).addClass('time-play'+source);
+        $.ajax({
+            type: "GET",
+            url: fullUrl + '/zone1/' + id,
+            success: function(res){
+                $.ajax({
+                    type: "post",
+                    async: false,
+                    url: fullUrl + '/get_status_play/' + res.source,
+                    data:{_token:'{{csrf_token()}}'},
+                    //url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + res[i].source + '&controltype=get_status_music',
+                    // data: {source:res[i].source},
+                    success: function(data){
+                        var icon_play = "";
+                        if(data == "Play")
+                        {
+                            icon_play = "bi-pause-circle-fill";
+                        }else{
+                            icon_play = "bi-play-circle-fill";
+                        }
+
+                        $('#modal-zone'+id).remove();
+                        var zone = `<div class="modal fade" id="modal-zone${res.id}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                                        tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel">${res.name}</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                            <div class="container" id="con-zone1">
+                                                <div class="row">
+                                                <div class="col-lg-6 col-6" id="col6">
+                                                    <img class="img-zone" src="{{ asset('${res.image}') }}">
+                                                </div>
+                                                <div class="col-lg-6 col-6 box-source-pop" id="col6">`;
+                                                    if(res.source == 0){
+                                                    zone += `<h4 class="title-status" id="text-show-source${res.id}">None</h4>`;
+                                                    zone += `<p class="song-name song-name${res.source}" id="song-name${res.id}">กรุณาเลือก source ก่อน</p>`;
+                                                    }
+                                                    else if(res.source >= 9 && res.source <= 16){
+                                                    zone += `<h4 class="title-status" id="text-show-source${res.id}">Source ${res.source}</h4>`;
+                                                    zone += `<p class="song-name song-name${res.source}" id="song-name${res.id}">Local Input</p>`;
+                                                    }
+                                                    else{
+                                                    zone += `<h4 class="title-status" id="text-show-source${res.id}">Source ${res.source}</h4>`;
+                                                    zone += `<p class="song-name song-name${res.source}" id="song-name${res.id}">ไม่สามารถเชื่อมต่อ Multi Player ได้</p>`;
+                                                    }
+                                        zone += `<div class="d-none" id="zone-source${res.id}">${res.source}</div>
+                                                    <div class="row" id="time-play-top">
+                                                    <div class="col-lg-6 col-6" id="col6">
+                                                        <p class="time-play time-play${res.source}" id="time-play${res.id}">00:00 / 00:00</p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-6" id="col6">
+                                                        <p class="icon-play">
+                                                        <a class="skip-left skip-left${res.source}" id="skip-lefts${res.id}" onclick="previous_song(${res.source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
+                                                        <a class="play play${res.source}" id="plays${res.id}" onclick="playorpause_song(${res.source},${res.id})" href="javascript:void(0);"><i id="play-or-pause${res.id}" class="bi ${icon_play} play-or-pause${res.source}"></i></a>
+                                                        <a class="skip-right skip-right${res.source}" id="skip-right${res.id}" onclick="next_song(${res.source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
+                                                        </p>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="row volumelevel">
+                                                    <div class="col-lg-6 col-6 pb-2" id="col6" style="align-self:flex-end">
+                                                        <p class="text-zone-volume-pop text-zone-volume-pop-light">Volume</p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-6" id="col6">
+                                                        <p class="text-zone-number-popup" id="text-zone-number-popup${res.id}">${res.volume}%</p>
+                                                    </div>
+                                                    </div>
+                                                    <div class="volume" id="volume-modal${res.id}">
+                                                    <input type="range" min="0" max="100" value="${res.volume}" id="vol_val" class="volume-range">
+                                                    <!-- <i class="bi bi-volume-off-fill" id="volume-icon"></i> -->
+
+                                                    <div class="bar-hoverbox">
+                                                        <div class="bar">
+                                                        <div class="bar-fill"></div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="row flex" id="time-play-top">
+                                                    <div class="col-lg-4 col-4" id="col4">
+                                                        <a href="javascript:void(0);" class="volume-mute" onclick="mute(${res.id})">
+                                                        <p id="mute${res.id}" class="but-mute">MUTE</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-4" id="col4">
+                                                        <p class="icon-plud-dash">
+                                                        <a class="skip-dash"  href="javascript:void(0);" class="volume-up" onclick="turnDown(${res.id})" onmousedown="keepVolumeDown(${res.id})" onmouseup="clearDown()" onmouseleave="clearDown()"><i class="bi bi-dash-circle-fill"></i></a>
+                                                        <a class="skip-plus" href="javascript:void(0);" class="volume-down" onclick="turnUp(${res.id})" onmousedown="keepVolumeUp(${res.id})" onmouseup="clearUp()" onmouseleave="clearUp()"><i class="bi bi-plus-circle-fill"></i></a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-lg-4 col-4" id="col4">
+                                                        <button id="apply${res.id}" class="but-apply" onclick="applyVolume(${res.id})" disabled>Apply</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>`;
+                                    let div = $('#show-zone');
+                                    div.append(zone);
+                    }
+                });
+            }
+        });
       }
     });
   }
