@@ -73,11 +73,11 @@
                     $(".time-play").html(r.DurationTimePlay + "/" + r.DurationTime);
                     //console.log('playpause',r);
                     if (r.runmusic == 1) {
-                      $(".play-or-pause").removeClass('bi-play-circle-fill');
-                      $(".play-or-pause").addClass('bi-pause-circle-fill');
+                      $("#play-or-pause").removeClass('bi-play-circle-fill');
+                      $("#play-or-pause").addClass('bi-pause-circle-fill');
                     } else {
-                      $(".play-or-pause").removeClass('bi-pause-circle-fill');
-                      $(".play-or-pause").addClass('bi-play-circle-fill');
+                      $("#play-or-pause").removeClass('bi-pause-circle-fill');
+                      $("#play-or-pause").addClass('bi-play-circle-fill');
                     }
                   }
                   else{
@@ -1264,9 +1264,9 @@ a:hover {
                             </div>
                             <div class="col-lg-6 col-6" id="col6-mb">
                               <p class="icon-play">
-                                  <a class="skip-left" href="javascript:void(0);" onclick="previous_song({{$zone->source}})"><i class="bi bi-skip-backward-fill"></i></a>
-                                  <a class="play" href="javascript:void(0);" onclick="playorpause_song({{$zone->source}},{{$zone->id}})"><i id="play-or-pause{{$zone->source}}" class="bi bi-play-circle-fill"></i></a>
-                                  <a class="skip-right" href="javascript:void(0);" onclick="next_song({{$zone->source}})"><i class="bi bi-skip-forward-fill"></i></a></p>
+                                  <a class="skip-left" href="javascript:void(0);" onclick="previous_song()"><i class="bi bi-skip-backward-fill"></i></a>
+                                  <a class="play" href="javascript:void(0);" onclick="playorpause_song()"><i id="play-or-pause" class="bi bi-play-circle-fill"></i></a>
+                                  <a class="skip-right" href="javascript:void(0);" onclick="next_song()"><i class="bi bi-skip-forward-fill"></i></a></p>
                             </div>
                           </div>
 
@@ -1742,11 +1742,11 @@ a:hover {
     zone_volume = volume;
   }
 
-    function playorpause_song(source, id){
+    function playorpause_song(){
         $.ajax({
             type: "POST",
             url: fullUrl+'/song-status',
-            data: {source:source,_token:'{{csrf_token()}}'},
+            data: {source:zone_source,_token:'{{csrf_token()}}'},
             success: function(response){
                 if(response){
                     $('#play-or-pause').toggleClass('bi-pause-circle-fill bi-play-circle-fill')
@@ -1754,22 +1754,22 @@ a:hover {
             }
         });
     }
-    function next_song(source){
+    function next_song(){
         $.ajax({
             type: "POST",
-            url: fullUrl + '/forwardmusic/' + source,
-            data: {source:source,_token:'{{csrf_token()}}'},
+            url: fullUrl + '/forwardmusic/' + zone_source,
+            data: {source:zone_source,_token:'{{csrf_token()}}'},
             success: function(response){
 
             }
         });
     }
 
-    function previous_song(source){
+    function previous_song(){
         $.ajax({
             type: "POST",
-            url: fullUrl + '/backwardmusic/' + source,
-            data: {source:source,_token:'{{csrf_token()}}'},
+            url: fullUrl + '/backwardmusic/' + zone_source,
+            data: {source:zone_source,_token:'{{csrf_token()}}'},
             success: function(response){
 
             }

@@ -45,6 +45,11 @@ class OverviewController extends Controller
         return $zone;
     }
 
+    public function get_zone1($id){
+        $zone = ZoneModel::find($id);
+        return $zone;
+    }
+
     public function updateSource($source){
         $datas = ZoneModel::where('source', $source)->orderBy('frame_id','asc')->orderBy('output_id','asc')->get();
         $frame = [];

@@ -1,6 +1,100 @@
-﻿1	32 good boy - Kj.mp3	00:03:13	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\32 good boy - Kj.mp3	
-2	33 เวลา - ป๊อบ ปองกูล.mp3	00:04:28	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\33 เวลา - ป๊อบ ปองกูล.mp3	
-3	34 ลืมแทบไม่ไหว - SARAN, Maimhon.mp3	00:05:51	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\34 ลืมแทบไม่ไหว - SARAN, Maimhon.mp3	
-4	35 ทรงอย่างแบด (Bad Boy) - Paper Planes.mp3	00:03:26	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\35 ทรงอย่างแบด (Bad Boy) - Paper Planes.mp3	
-5	36 ใครเพื่อนแก - bamm.mp3	00:04:08	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\36 ใครเพื่อนแก - bamm.mp3	
-6	37 ตั้งใจรัก (happy accident) - พัด Vorapat, First Anuwat.mp3	00:02:35	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\37 ตั้งใจรัก (happy accident) - พัด Vorapat, First Anuwat.mp3	
+﻿1	01 สลักจิต Feat. Da Endorphine - ป๊อบ ปองกูล.mp3	00:04:24	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\01 สลักจิต Feat. Da Endorphine - ป๊อบ ปองกูล.mp3	
+2	02 เส้นบางๆ - Indigo.mp3	00:04:31	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\02 เส้นบางๆ - Indigo.mp3	
+3	03 ผีเห็นผี - L.กฮ.mp3	00:04:33	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\03 ผีเห็นผี - L.กฮ.mp3	
+4	04 นะหน้าทอง - JOEY PHUWASIT.mp3	00:04:47	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\04 นะหน้าทอง - JOEY PHUWASIT.mp3	
+5	05 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	00:03:35	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\05 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	
+6	06 ถามเพื่ออะไร (What for) - KLEAR.mp3	00:03:45	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\06 ถามเพื่ออะไร (What for) - KLEAR.mp3	
+7	07 ฉันคือดวงจันทร์ - MONICA.mp3	00:03:33	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\07 ฉันคือดวงจันทร์ - MONICA.mp3	
+8	08 ทรงอย่างแบด (Bad Boy) - Paper Planes.mp3	00:03:26	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\08 ทรงอย่างแบด (Bad Boy) - Paper Planes.mp3	
+9	09 แค่เธอ (Why Don't You Stay) [From KinnPorsche The Series] - Jeff Satur.mp3	00:03:49	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\09 แค่เธอ (Why Don't You Stay) [From KinnPorsche The Series] - Jeff Satur.mp3	
+10	10 เสแสร้ง (Pretend) Feat. MOON - Paper Planes.mp3	00:03:43	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\10 เสแสร้ง (Pretend) Feat. MOON - Paper Planes.mp3	
+11	100 เสาหลักของบ้าน แรงงานของนาย - เบียร์ พร้อมพงษ์.mp3	00:05:06	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\100 เสาหลักของบ้าน แรงงานของนาย - เบียร์ พร้อมพงษ์.mp3	
+12	11 เลือดกรุ๊ปบี - CHRRISSA.mp3	00:04:49	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\11 เลือดกรุ๊ปบี - CHRRISSA.mp3	
+13	12 ได้แต่นึกถึง - Only Monday.mp3	00:04:24	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\12 ได้แต่นึกถึง - Only Monday.mp3	
+14	13 ถ้าเราเจอกันอีก (Until Then) - Tilly Birds.mp3	00:04:48	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\13 ถ้าเราเจอกันอีก (Until Then) - Tilly Birds.mp3	
+15	14 ฉลามชอบงับคุณ Feat.IIVY B - bonnadol.mp3	00:03:55	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\14 ฉลามชอบงับคุณ Feat.IIVY B - bonnadol.mp3	
+16	15 เวลา - ป๊อบ ปองกูล.mp3	00:04:28	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\15 เวลา - ป๊อบ ปองกูล.mp3	
+17	16 ปล่อยให้เวลา - Three Man Down.mp3	00:02:51	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\16 ปล่อยให้เวลา - Three Man Down.mp3	
+18	17 นางไอ่ของอ้าย - มนต์แคน แก่นคูน.mp3	00:04:17	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\17 นางไอ่ของอ้าย - มนต์แคน แก่นคูน.mp3	
+19	18 ผู้ถูกเลือกให้ผิดหวัง (ดอกไม้ฤดูหนาว)[Bedroom Version] - เรนิษรา.mp3	00:04:30	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\18 ผู้ถูกเลือกให้ผิดหวัง (ดอกไม้ฤดูหนาว)[Bedroom Version] - เรนิษรา.mp3	
+20	19 พิง (เพลงประกอบละคร กระเช้าสีดา) - NONT TANONT.mp3	00:04:02	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\19 พิง (เพลงประกอบละคร กระเช้าสีดา) - NONT TANONT.mp3	
+21	20 ไม่ตอบเลยน้า (What's the matter) - LAZ1.mp3	00:03:53	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\20 ไม่ตอบเลยน้า (What's the matter) - LAZ1.mp3	
+22	21 Shut Down - BLACKPINK.mp3	00:02:55	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\21 Shut Down - BLACKPINK.mp3	
+23	22 ถ้าเธอรักใครคนหนึ่ง OST.บุพเพสันนิวาส 2 - INK WARUNTORN.mp3	00:04:06	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\22 ถ้าเธอรักใครคนหนึ่ง OST.บุพเพสันนิวาส 2 - INK WARUNTORN.mp3	
+24	23 ท้องฟ้า - Paper.mp3	00:04:56	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\23 ท้องฟ้า - Paper.mp3	
+25	24 ริบบิ้นเลิฟคัลเลอร์แบล็ค - Palmy, สิงโต นำโชค.mp3	00:03:25	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\24 ริบบิ้นเลิฟคัลเลอร์แบล็ค - Palmy, สิงโต นำโชค.mp3	
+26	25 ลืมได้จริงใช่ไหม Feat. ZOM MARIE - NUM KALA.mp3	00:04:17	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\25 ลืมได้จริงใช่ไหม Feat. ZOM MARIE - NUM KALA.mp3	
+27	26 Undo [JOOX Original] - ป๊อบ ปองกูล, WONDERFRAME.mp3	00:04:03	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\26 Undo [JOOX Original] - ป๊อบ ปองกูล, WONDERFRAME.mp3	
+28	27 ถ้าเธอ feat. Violette Wautier - แสตมป์, Violette Wautier.mp3	00:03:19	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\27 ถ้าเธอ feat. Violette Wautier - แสตมป์, Violette Wautier.mp3	
+29	28 not a home - Pardyalone.mp3	00:02:49	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\28 not a home - Pardyalone.mp3	
+30	29 น้อง - Three Man Down, UrboyTJ.mp3	00:03:07	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\29 น้อง - Three Man Down, UrboyTJ.mp3	
+31	30 คนหรือไมโครเวฟ (microwave) - BELL WARISARA.mp3	00:03:27	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\30 คนหรือไมโครเวฟ (microwave) - BELL WARISARA.mp3	
+32	31 วันเกิดฉันปีนี้ (HBD to me) - Three Man Down.mp3	00:04:11	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\31 วันเกิดฉันปีนี้ (HBD to me) - Three Man Down.mp3	
+33	32 ฝนตกไหม - Three Man Down.mp3	00:04:23	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\32 ฝนตกไหม - Three Man Down.mp3	
+34	33 ถ้าฉันเป็นเขา - Indigo.mp3	00:04:01	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\33 ถ้าฉันเป็นเขา - Indigo.mp3	
+35	34 รักฉันรึเปล่า (เพลงประกอบละคร สิเน่หาส่าหรี) - KLEAR.mp3	00:03:13	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\34 รักฉันรึเปล่า (เพลงประกอบละคร สิเน่หาส่าหรี) - KLEAR.mp3	
+36	35 Hype Boy - NewJeans.mp3	00:02:59	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\35 Hype Boy - NewJeans.mp3	
+37	36 ข้างกัน (City) feat. ออม TELExTELEXs - Three Man Down.mp3	00:04:56	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\36 ข้างกัน (City) feat. ออม TELExTELEXs - Three Man Down.mp3	
+38	37 ดึงดัน [JOOX Original] - Cocktail, ตั๊ก ศิริพร.mp3	00:04:07	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\37 ดึงดัน [JOOX Original] - Cocktail, ตั๊ก ศิริพร.mp3	
+39	38 ถ้าเธอรักฉันจริง - Three Man Down.mp3	00:04:00	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\38 ถ้าเธอรักฉันจริง - Three Man Down.mp3	
+40	39 ศรัทธาในรัก - MAN'R.mp3	00:03:59	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\39 ศรัทธาในรัก - MAN'R.mp3	
+41	40 โทรศัพท์เครื่องเก่า (Memories) - FrenchW.mp3	00:03:39	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\40 โทรศัพท์เครื่องเก่า (Memories) - FrenchW.mp3	
+42	41 ทดลองใช้ - เบิร์ด ธงไชย.mp3	00:03:40	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\41 ทดลองใช้ - เบิร์ด ธงไชย.mp3	
+43	42 Freaky Deaky (Explicit) - Tyga, Doja Cat.mp3	00:03:35	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\42 Freaky Deaky (Explicit) - Tyga, Doja Cat.mp3	
+44	43 ละไว้ในฐานที่เข้าใจ - บุ๊ค ศุภกาญจน์.mp3	00:05:28	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\43 ละไว้ในฐานที่เข้าใจ - บุ๊ค ศุภกาญจน์.mp3	
+45	44 ถ้ารู้อย่างนี้ - Big Ass.mp3	00:03:50	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\44 ถ้ารู้อย่างนี้ - Big Ass.mp3	
+46	45 งานแต่งคนจน - มนต์แคน แก่นคูน.mp3	00:03:55	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\45 งานแต่งคนจน - มนต์แคน แก่นคูน.mp3	
+47	46 เรื่องธรรมดา - Cocktail.mp3	00:04:28	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\46 เรื่องธรรมดา - Cocktail.mp3	
+48	47 สหายสุรา - อ.ไข่ มาลีฮวนน่า, เนสกาแฟ ศรีนคร.mp3	00:03:23	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\47 สหายสุรา - อ.ไข่ มาลีฮวนน่า, เนสกาแฟ ศรีนคร.mp3	
+49	48 เพื่อนเล่น ไม่เล่นเพื่อน (Just Being Friendly) Feat. MILLI (Original) - Tilly Birds.mp3	00:03:37	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\48 เพื่อนเล่น ไม่เล่นเพื่อน (Just Being Friendly) Feat. MILLI (Original) - Tilly Birds.mp3	
+50	49 ชอบที่เธอเป็นเธอ - วงแทมมะริน.mp3	00:04:14	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\49 ชอบที่เธอเป็นเธอ - วงแทมมะริน.mp3	
+51	50 สหายสุรา Feat. เหลือง อนุกูล - Am Seatwo.mp3	00:03:14	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\50 สหายสุรา Feat. เหลือง อนุกูล - Am Seatwo.mp3	
+52	51 ทุกวันได้ไหม Feat. BIRD THONGCHAI - NUM KALA.mp3	00:04:40	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\51 ทุกวันได้ไหม Feat. BIRD THONGCHAI - NUM KALA.mp3	
+53	52 ภาพจำ - ป๊อบ ปองกูล.mp3	00:04:34	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\52 ภาพจำ - ป๊อบ ปองกูล.mp3	
+54	53 คาถาขุนแผน (หลวงพ่อกวย) - กานต์ ทศน.mp3	00:04:46	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\53 คาถาขุนแผน (หลวงพ่อกวย) - กานต์ ทศน.mp3	
+55	54 คำว่าฮักกัน มันเหี่ยถิ่มไส - มนต์แคน แก่นคูน.mp3	00:04:36	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\54 คำว่าฮักกัน มันเหี่ยถิ่มไส - มนต์แคน แก่นคูน.mp3	
+56	55 พิจารณา - Musketeers.mp3	00:04:07	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\55 พิจารณา - Musketeers.mp3	
+57	56 แค่มีเธอไปเดินเตะคลื่นทะเลด้วยกัน - No One Else.mp3	00:03:53	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\56 แค่มีเธอไปเดินเตะคลื่นทะเลด้วยกัน - No One Else.mp3	
+58	57 ลืมไปแล้วว่าลืมยังไง (Fade) - Jeff Satur.mp3	00:04:22	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\57 ลืมไปแล้วว่าลืมยังไง (Fade) - Jeff Satur.mp3	
+59	58 ไม่เป็นรอง - Cocktail.mp3	00:04:53	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\58 ไม่เป็นรอง - Cocktail.mp3	
+60	59 เธอรักเขาตอนเรารักกัน - Bean Napason.mp3	00:03:24	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\59 เธอรักเขาตอนเรารักกัน - Bean Napason.mp3	
+61	60 สันละกะยา - อานัส.mp3	00:04:04	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\60 สันละกะยา - อานัส.mp3	
+62	61 คิด(แต่ไม่)ถึง (Same Page) - Tilly Birds.mp3	00:04:26	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\61 คิด(แต่ไม่)ถึง (Same Page) - Tilly Birds.mp3	
+63	62 เธอ - Cocktail.mp3	00:04:26	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\62 เธอ - Cocktail.mp3	
+64	63 อยากให้รู้ว่ารักเธอ - Season Five.mp3	00:04:47	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\63 อยากให้รู้ว่ารักเธอ - Season Five.mp3	
+65	64 คำยินดี - KLEAR.mp3	00:04:26	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\64 คำยินดี - KLEAR.mp3	
+66	65 ติดกลิ่น - Jack&Co.mp3	00:04:23	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\65 ติดกลิ่น - Jack&Co.mp3	
+67	66 สองใจ (เพลงประกอบละคร วันทอง) - ดา เอ็นโดรฟิน.mp3	00:04:10	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\66 สองใจ (เพลงประกอบละคร วันทอง) - ดา เอ็นโดรฟิน.mp3	
+68	67 พัง - Indigo.mp3	00:03:48	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\67 พัง - Indigo.mp3	
+69	68 คนไม่เอาถ่าน - Big Ass.mp3	00:03:59	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\68 คนไม่เอาถ่าน - Big Ass.mp3	
+70	69 เอาปากกามาวง - BELL WARISARA.mp3	00:03:24	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\69 เอาปากกามาวง - BELL WARISARA.mp3	
+71	70 ถ้าฉันเป็นเขา (Special Version) - Indigo.mp3	00:04:29	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\70 ถ้าฉันเป็นเขา (Special Version) - Indigo.mp3	
+72	71 จะรักหรือจะร้าย - KLEAR.mp3	00:03:57	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\71 จะรักหรือจะร้าย - KLEAR.mp3	
+73	72 วาดไว้ (recall) - BOWKYLION.mp3	00:04:15	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\72 วาดไว้ (recall) - BOWKYLION.mp3	
+74	73 MOVE ON - ปราโมทย์ วิเลปะนะ.mp3	00:03:53	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\73 MOVE ON - ปราโมทย์ วิเลปะนะ.mp3	
+75	74 ดวงเดือน - JOEY PHUWASIT.mp3	00:04:49	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\74 ดวงเดือน - JOEY PHUWASIT.mp3	
+76	75 ลม (Remaster) - NUM KALA.mp3	00:03:11	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\75 ลม (Remaster) - NUM KALA.mp3	
+77	76 ยังฮักไผอีกได้บ่ - มนต์แคน แก่นคูน, มีนตรา อินทิรา.mp3	00:04:11	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\76 ยังฮักไผอีกได้บ่ - มนต์แคน แก่นคูน, มีนตรา อินทิรา.mp3	
+78	77 คู่ชีวิต - Cocktail.mp3	00:05:37	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\77 คู่ชีวิต - Cocktail.mp3	
+79	78 ครั้งหนึ่งไม่ถึงตาย - KLEAR.mp3	00:03:22	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\78 ครั้งหนึ่งไม่ถึงตาย - KLEAR.mp3	
+80	79 นิโคติน - Mirrr.mp3	00:03:37	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\79 นิโคติน - Mirrr.mp3	
+81	80 เมารัก - หมวยเล็กนิ๊ปปี้, ต้าร์ หูเติบ.mp3	00:04:03	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\80 เมารัก - หมวยเล็กนิ๊ปปี้, ต้าร์ หูเติบ.mp3	
+82	81 ช่างมัน - Cocktail.mp3	00:04:36	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\81 ช่างมัน - Cocktail.mp3	
+83	82 ชวนน้องล่องใต้ Feat. กล้วย แสตมป์ - แน๊ท ราเชนทร์.mp3	00:04:04	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\82 ชวนน้องล่องใต้ Feat. กล้วย แสตมป์ - แน๊ท ราเชนทร์.mp3	
+84	83 คุยคนเดียวเก่ง - Three Man Down.mp3	00:03:22	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\83 คุยคนเดียวเก่ง - Three Man Down.mp3	
+85	84 ไทม์แมชชีน - ปอน นิพนธ์, โต๋เหน่อ.mp3	00:04:54	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\84 ไทม์แมชชีน - ปอน นิพนธ์, โต๋เหน่อ.mp3	
+86	85 แน่ใจไหม [JOOX Original] - NONT TANONT.mp3	00:04:08	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\85 แน่ใจไหม [JOOX Original] - NONT TANONT.mp3	
+87	86 อ้ายมาส่งทาง - มนต์แคน แก่นคูน.mp3	00:04:22	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\86 อ้ายมาส่งทาง - มนต์แคน แก่นคูน.mp3	
+88	87 ฝันถึงแฟนเก่า - Three Man Down.mp3	00:04:02	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\87 ฝันถึงแฟนเก่า - Three Man Down.mp3	
+89	88 ปล่อย - ป๊อบ ปองกูล.mp3	00:04:39	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\88 ปล่อย - ป๊อบ ปองกูล.mp3	
+90	89 กอดจูบลูบคลำ - L.กฮ.mp3	00:03:22	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\89 กอดจูบลูบคลำ - L.กฮ.mp3	
+91	90 อย่างน้อย - Big Ass.mp3	00:03:50	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\90 อย่างน้อย - Big Ass.mp3	
+92	91 นอกจากชื่อฉัน - ACTART.mp3	00:03:58	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\91 นอกจากชื่อฉัน - ACTART.mp3	
+93	92 โต๊ะริม (Melt) - NONT TANONT.mp3	00:04:05	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\92 โต๊ะริม (Melt) - NONT TANONT.mp3	
+94	93 ปล่อย - NUM KALA.mp3	00:03:43	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\93 ปล่อย - NUM KALA.mp3	
+95	94 เพื่อนเล่น ไม่เล่นเพื่อน (Just Being Friendly) Feat. MILLI - Tilly Birds.mp3	00:03:37	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\94 เพื่อนเล่น ไม่เล่นเพื่อน (Just Being Friendly) Feat. MILLI - Tilly Birds.mp3	
+96	95 ผาแดงของน้อง - ต่าย อรทัย.mp3	00:04:40	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\95 ผาแดงของน้อง - ต่าย อรทัย.mp3	
+97	96 ซ่อนกลิ่น - Palmy.mp3	00:04:12	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\96 ซ่อนกลิ่น - Palmy.mp3	
+98	97 ผ่าน - Slot Machine.mp3	00:04:03	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\97 ผ่าน - Slot Machine.mp3	
+99	98 เดาไม่เก่ง - Three Man Down.mp3	00:03:08	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\98 เดาไม่เก่ง - Three Man Down.mp3	
+100	99 แค่เราไม่ได้รักกัน - Indigo.mp3	00:04:22	D:\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\JOOX Thailand Top 100 (ไทย-สากล) ๏ 20 ม.ค. 2566\99 แค่เราไม่ได้รักกัน - Indigo.mp3	

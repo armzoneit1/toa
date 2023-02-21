@@ -1,141 +1,97 @@
-﻿1	05 วาดไว้ (recall) - BOWKYLION.mp3	00:04:15	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\05 วาดไว้ (recall) - BOWKYLION.mp3	
-2	06 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	00:03:35	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\06 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	
-3	07 FIRE BOY - PP Krit.mp3	00:02:45	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\07 FIRE BOY - PP Krit.mp3	
-4	08 นะหน้าทอง - JOEY PHUWASIT.mp3	00:04:46	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\08 นะหน้าทอง - JOEY PHUWASIT.mp3	
-5	09 คนไม่คุย - PROXIE.mp3	00:03:50	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\09 คนไม่คุย - PROXIE.mp3	
-6	10 ซูลูปาก้า ตาปาเฮ้ - THEMOONWILLALWAYSBEWITHME.mp3	00:03:45	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\10 ซูลูปาก้า ตาปาเฮ้ - THEMOONWILLALWAYSBEWITHME.mp3	
-7	11 โต๊ะริม (Melt) - NONT TANONT.mp3	00:04:05	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\11 โต๊ะริม (Melt) - NONT TANONT.mp3	
-8	12 ถามเพื่ออะไร (What for) - KLEAR.mp3	00:03:45	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\12 ถามเพื่ออะไร (What for) - KLEAR.mp3	
-9	13 ชอบตัวเองตอนอยู่กับเธอ - Billkin.mp3	00:03:42	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\13 ชอบตัวเองตอนอยู่กับเธอ - Billkin.mp3	
-10	14 ไม่ได้ก็ไม่เอา (Whatever) - PiXXiE.mp3	00:02:48	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\14 ไม่ได้ก็ไม่เอา (Whatever) - PiXXiE.mp3	
-11	20 เสแสร้ง (Pretend) Feat. MOON - Paper Planes.mp3	00:03:43	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\20 เสแสร้ง (Pretend) Feat. MOON - Paper Planes.mp3	
-12	22 ทรงอย่างแบด (Bad Boy) - Paper Planes.mp3	00:03:26	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\22 ทรงอย่างแบด (Bad Boy) - Paper Planes.mp3	
-13	001. Taylor Swift - Anti-Hero.mp3	00:03:20	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\001. Taylor Swift - Anti-Hero.mp3	
-14	002. Mariah Carey - All I Want for Christmas Is You.mp3	00:04:01	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\002. Mariah Carey - All I Want for Christmas Is You.mp3	
-15	003. Brenda Lee - Rockin' Around The Christmas Tree.mp3	00:02:04	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\003. Brenda Lee - Rockin' Around The Christmas Tree.mp3	
-16	004. Sam Smith - Unholy.mp3	00:02:36	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\004. Sam Smith - Unholy.mp3	
-17	005. Bobby Helms - Jingle Bell Rock (Single Version).mp3	00:02:08	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\005. Bobby Helms - Jingle Bell Rock (Single Version).mp3	
-18	006. Burl Ives - A Holly Jolly Christmas.mp3	00:02:12	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\006. Burl Ives - A Holly Jolly Christmas.mp3	
-19	007. Drake - Rich Flex.mp3	00:03:59	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\007. Drake - Rich Flex.mp3	
-20	008. Steve Lacy - Bad Habit.mp3	00:03:52	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\008. Steve Lacy - Bad Habit.mp3	
-21	009. Andy Williams - It's the Most Wonderful Time of the Year.mp3	00:02:31	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\009. Andy Williams - It's the Most Wonderful Time of the Year.mp3	
-22	010. Wham! - Last Christmas.mp3	00:04:23	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\010. Wham! - Last Christmas.mp3	
-23	011. David Guetta - I'm Good (Blue).mp3	00:02:55	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\011. David Guetta - I'm Good (Blue).mp3	
-24	04. NAYEON - POP!.mp3	00:02:48	F:\@TT_VA - Best of 2022 K-Pop\04. NAYEON - POP!.mp3	
-25	05. LE SSERAFIM - FEARLESS.mp3	00:02:48	F:\@TT_VA - Best of 2022 K-Pop\05. LE SSERAFIM - FEARLESS.mp3	
-26	06. Psy - That That (prod. & feat. SUGA of BTS).mp3	00:02:54	F:\@TT_VA - Best of 2022 K-Pop\06. Psy - That That (prod. & feat. SUGA of BTS).mp3	
-27	07. BLACKPINK - Pink Venom.mp3	00:03:07	F:\@TT_VA - Best of 2022 K-Pop\07. BLACKPINK - Pink Venom.mp3	
-28	08. IVE - LOVE DIVE.mp3	00:02:57	F:\@TT_VA - Best of 2022 K-Pop\08. IVE - LOVE DIVE.mp3	
-29	09. NewJeans - Attention.mp3	00:03:00	F:\@TT_VA - Best of 2022 K-Pop\09. NewJeans - Attention.mp3	
-30	10. Stray Kids - MANIAC.mp3	00:03:02	F:\@TT_VA - Best of 2022 K-Pop\10. Stray Kids - MANIAC.mp3	
-31	11. SEVENTEEN - Darl+ing.mp3	00:02:56	F:\@TT_VA - Best of 2022 K-Pop\11. SEVENTEEN - Darl+ing.mp3	
-32	12. Kep1er - Up! (Japanese version).mp3	00:03:12	F:\@TT_VA - Best of 2022 K-Pop\12. Kep1er - Up! (Japanese version).mp3	
-33	13. (G)I-DLE - TOMBOY.mp3	00:02:54	F:\@TT_VA - Best of 2022 K-Pop\13. (G)I-DLE - TOMBOY.mp3	
-34	14. aespa - Girls.mp3	00:04:00	F:\@TT_VA - Best of 2022 K-Pop\14. aespa - Girls.mp3	
-35	33. ENHYPEN - Blessed-Cursed.mp3	00:02:50	F:\@TT_VA - Best of 2022 K-Pop\33. ENHYPEN - Blessed-Cursed.mp3	
-36	34. BTS - Run BTS.mp3	00:03:24	F:\@TT_VA - Best of 2022 K-Pop\34. BTS - Run BTS.mp3	
-37	35. SEVENTEEN - _WORLD.mp3	00:02:58	F:\@TT_VA - Best of 2022 K-Pop\35. SEVENTEEN - _WORLD.mp3	
-38	36. NCT 127 - Favorite (Vampire).mp3	00:03:35	F:\@TT_VA - Best of 2022 K-Pop\36. NCT 127 - Favorite (Vampire).mp3	
-39	37. aespa - Illusion.mp3	00:03:15	F:\@TT_VA - Best of 2022 K-Pop\37. aespa - Illusion.mp3	
-40	38. fromis_9 - DM.mp3	00:03:24	F:\@TT_VA - Best of 2022 K-Pop\38. fromis_9 - DM.mp3	
-41	41. Pentagon - Feelin' Like.mp3	00:02:47	F:\@TT_VA - Best of 2022 K-Pop\41. Pentagon - Feelin' Like.mp3	
-42	42. Viviz - BOP BOP!.mp3	00:03:39	F:\@TT_VA - Best of 2022 K-Pop\42. Viviz - BOP BOP!.mp3	
-43	43. Kep1er - Wing Wing.mp3	00:03:15	F:\@TT_VA - Best of 2022 K-Pop\43. Kep1er - Wing Wing.mp3	
-44	44. NCT DREAM - Beatbox.mp3	00:03:25	F:\@TT_VA - Best of 2022 K-Pop\44. NCT DREAM - Beatbox.mp3	
-45	45. fromis_9 - Stay This Way.mp3	00:03:15	F:\@TT_VA - Best of 2022 K-Pop\45. fromis_9 - Stay This Way.mp3	
-46	46. Cherry Bullet - Love In Space.mp3	00:03:37	F:\@TT_VA - Best of 2022 K-Pop\46. Cherry Bullet - Love In Space.mp3	
-47	47. MAMAMOO - ILLELLA.mp3	00:02:46	F:\@TT_VA - Best of 2022 K-Pop\47. MAMAMOO - ILLELLA.mp3	
-48	024. Ariana Grande - Santa Tell Me.mp3	00:03:24	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\024. Ariana Grande - Santa Tell Me.mp3	
-49	025. Morgan Wallen - You Proof.mp3	00:02:37	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\025. Morgan Wallen - You Proof.mp3	
-50	026. Nicki Minaj - Super Freaky Girl.mp3	00:02:51	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\026. Nicki Minaj - Super Freaky Girl.mp3	
-51	027. Post Malone - I Like You (A Happier Song).mp3	00:03:12	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\027. Post Malone - I Like You (A Happier Song).mp3	
-52	028. Zach Bryan - Something in the Orange.mp3	00:03:48	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\028. Zach Bryan - Something in the Orange.mp3	
-53	029. Michael Bublé - It's Beginning to Look a Lot like Christmas.mp3	00:03:26	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\029. Michael Bublé - It's Beginning to Look a Lot like Christmas.mp3	
-54	030. Nat King Cole - Deck The Halls (Remastered 1999).mp3	00:01:09	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\030. Nat King Cole - Deck The Halls (Remastered 1999).mp3	
-55	031. Bing Crosby - White Christmas.mp3	00:03:04	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\031. Bing Crosby - White Christmas.mp3	
-56	032. Morgan Wallen - Wasted On You.mp3	00:02:58	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\032. Morgan Wallen - Wasted On You.mp3	
-57	033. Frank Sinatra - Jingle Bells (Remastered 1999).mp3	00:02:00	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\033. Frank Sinatra - Jingle Bells (Remastered 1999).mp3	
-58	034. Gene Autry - Rudolph the Red-Nosed Reindeer.mp3	00:03:06	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\034. Gene Autry - Rudolph the Red-Nosed Reindeer.mp3	
-59	035. Lil Uzi Vert - Just Wanna Rock.mp3	00:02:03	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\035. Lil Uzi Vert - Just Wanna Rock.mp3	
-60	036. Meghan Trainor - Made You Look.mp3	00:02:14	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\036. Meghan Trainor - Made You Look.mp3	
-61	037. GloRilla - Tomorrow 2.mp3	00:03:29	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\037. GloRilla - Tomorrow 2.mp3	
-62	038. Doja Cat - Vegas (From the Original Motion Picture Soundtrack ELVIS).mp3	00:03:02	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\038. Doja Cat - Vegas (From the Original Motion Picture Soundtrack ELVIS).mp3	
-63	070. Taylor Swift - Bejeweled.mp3	00:03:14	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\070. Taylor Swift - Bejeweled.mp3	
-64	071. Taylor Swift - Midnight Rain.mp3	00:02:54	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\071. Taylor Swift - Midnight Rain.mp3	
-65	072. d4vd - Romantic Homicide.mp3	00:02:12	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\072. d4vd - Romantic Homicide.mp3	
-66	073. Taylor Swift - Maroon.mp3	00:03:38	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\073. Taylor Swift - Maroon.mp3	
-67	074. Tems - Free Mind.mp3	00:04:07	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\074. Tems - Free Mind.mp3	
-68	075. Drake - Privileged Rappers.mp3	00:02:40	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\075. Drake - Privileged Rappers.mp3	
-69	076. Nate Smith - Whiskey On You.mp3	00:03:03	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\076. Nate Smith - Whiskey On You.mp3	
-70	077. Armani White - BILLIE EILISH.mp3	00:01:39	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\077. Armani White - BILLIE EILISH.mp3	
-71	078. Taylor Swift - Karma.mp3	00:03:24	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\078. Taylor Swift - Karma.mp3	
-72	079. Drake - Broke Boys.mp3	00:03:45	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\079. Drake - Broke Boys.mp3	
-73	080. Taylor Swift - You're On Your Own, Kid.mp3	00:03:14	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\080. Taylor Swift - You're On Your Own, Kid.mp3	
-74	081. Drake - BackOutsideBoyz.mp3	00:02:32	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\081. Drake - BackOutsideBoyz.mp3	
-75	082. Lil Baby - Heyy.mp3	00:03:12	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\082. Lil Baby - Heyy.mp3	
-76	083. Taylor Swift - Snow On The Beach.mp3	00:04:16	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\083. Taylor Swift - Snow On The Beach.mp3	
-77	084. Grupo Frontera - No Se Va (En Vivo).mp3	00:03:14	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\084. Grupo Frontera - No Se Va (En Vivo).mp3	
-78	085. Brent Faiyaz - ALL MINE.mp3	00:03:36	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\085. Brent Faiyaz - ALL MINE.mp3	
-79	086. Lil Baby - California Breeze.mp3	00:02:57	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\086. Lil Baby - California Breeze.mp3	
-80	087. Rema - Calm Down.mp3	00:03:59	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\087. Rema - Calm Down.mp3	
-81	088. Drake - Hours In Silence.mp3	00:06:39	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\088. Drake - Hours In Silence.mp3	
-82	089. Luke Bryan - Country On.mp3	00:03:56	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\089. Luke Bryan - Country On.mp3	
-83	090. Lil Baby - Freestyle.mp3	00:02:42	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\090. Lil Baby - Freestyle.mp3	
-84	091. Lauren Spencer - Last Christmas.mp3	00:03:00	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\091. Lauren Spencer - Last Christmas.mp3	
-85	092. Drake - Jumbotron Shit Poppin.mp3	00:02:17	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\092. Drake - Jumbotron Shit Poppin.mp3	
-86	093. Gabby Barrett - Pick Me Up.mp3	00:02:49	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\093. Gabby Barrett - Pick Me Up.mp3	
-87	094. Lainey Wilson - Heart Like A Truck.mp3	00:03:19	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\094. Lainey Wilson - Heart Like A Truck.mp3	
-88	095. Manuel Turizo - La Bachata.mp3	00:02:42	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\095. Manuel Turizo - La Bachata.mp3	
-89	096. Lizzo - Someday at Christmas.mp3	00:02:58	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\096. Lizzo - Someday at Christmas.mp3	
-90	097. Taylor Swift - Vigilante Shit.mp3	00:02:44	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\097. Taylor Swift - Vigilante Shit.mp3	
-91	098. Lewis Capaldi - Forget Me.mp3	00:03:23	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\098. Lewis Capaldi - Forget Me.mp3	
-92	099. Luke Combs - Going, Going, Gone.mp3	00:02:57	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\099. Luke Combs - Going, Going, Gone.mp3	
-93	100. Oliver Tree - Miss You.mp3	00:03:26	F:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\100. Oliver Tree - Miss You.mp3	
-94	49 เอาใจลงไปเล่น (GAMBLE) - sarah salola.mp3	00:03:24	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\49 เอาใจลงไปเล่น (GAMBLE) - sarah salola.mp3	
-95	50 KIMINOTO - SPRITE, YOUNGOHM.mp3	00:03:42	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\50 KIMINOTO - SPRITE, YOUNGOHM.mp3	
-96	51 พิง (เพลงประกอบละคร กระเช้าสีดา) - NONT TANONT.mp3	00:04:02	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\51 พิง (เพลงประกอบละคร กระเช้าสีดา) - NONT TANONT.mp3	
-97	52 Luxury - D Gerrard.mp3	00:04:03	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\52 Luxury - D Gerrard.mp3	
-98	53 ลืมได้จริงใช่ไหม Feat. ZOM MARIE - NUM KALA.mp3	00:04:16	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\53 ลืมได้จริงใช่ไหม Feat. ZOM MARIE - NUM KALA.mp3	
-99	54 คนหรือไมโครเวฟ (microwave) - BELL WARISARA.mp3	00:03:27	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\54 คนหรือไมโครเวฟ (microwave) - BELL WARISARA.mp3	
-100	55 ถ้าเธอ feat. Violette Wautier - แสตมป์, Violette Wautier.mp3	00:03:19	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\55 ถ้าเธอ feat. Violette Wautier - แสตมป์, Violette Wautier.mp3	
-101	56 น้อง - Three Man Down, UrboyTJ.mp3	00:03:07	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\56 น้อง - Three Man Down, UrboyTJ.mp3	
-102	57 ขวานบิ่น - สิงโต นำโชค, Joke So Cool.mp3	00:04:55	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\57 ขวานบิ่น - สิงโต นำโชค, Joke So Cool.mp3	
-103	58 ลาก่อน - YourMOOD.mp3	00:03:08	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\58 ลาก่อน - YourMOOD.mp3	
-104	59 ที่ไม่รัก - PROXIE.mp3	00:04:26	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\59 ที่ไม่รัก - PROXIE.mp3	
-105	60 ทราบแล้วเปลี่ยน (attention please) - BOWKYLION.mp3	00:03:55	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\60 ทราบแล้วเปลี่ยน (attention please) - BOWKYLION.mp3	
-106	61 หนีบ่ม้ม - มนต์แคน แก่นคูน.mp3	00:04:07	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\61 หนีบ่ม้ม - มนต์แคน แก่นคูน.mp3	
-107	62 ทดลองใช้ - เบิร์ด ธงไชย.mp3	00:03:40	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\62 ทดลองใช้ - เบิร์ด ธงไชย.mp3	
-108	63 โสดมาก (DM Me) - MEAN, sarah salola.mp3	00:02:55	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\63 โสดมาก (DM Me) - MEAN, sarah salola.mp3	
-109	64 Hype Boy - NewJeans.mp3	00:02:59	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\64 Hype Boy - NewJeans.mp3	
-110	65 รักฉันรึเปล่า (เพลงประกอบละคร สิเน่หาส่าหรี) - KLEAR.mp3	00:03:13	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\65 รักฉันรึเปล่า (เพลงประกอบละคร สิเน่หาส่าหรี) - KLEAR.mp3	
-111	66 ศรัทธาในรัก - MAN'R.mp3	00:03:59	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\66 ศรัทธาในรัก - MAN'R.mp3	
-112	67 Pink Venom - BLACKPINK.mp3	00:03:07	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\67 Pink Venom - BLACKPINK.mp3	
-113	68 ท้องฟ้า - Paper.mp3	00:04:56	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\68 ท้องฟ้า - Paper.mp3	
-114	69 โทรศัพท์เครื่องเก่า (Memories) - FrenchW.mp3	00:03:39	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\69 โทรศัพท์เครื่องเก่า (Memories) - FrenchW.mp3	
-115	70 ผู้ถูกเลือกให้ผิดหวัง (ดอกไม้ฤดูหนาว) (Sad flower) - เรนิษรา - สำเนา.mp3	00:04:30	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\70 ผู้ถูกเลือกให้ผิดหวัง (ดอกไม้ฤดูหนาว) (Sad flower) - เรนิษรา - สำเนา.mp3	
-116	71 เกินต้าน (Too Cute) - PiXXiE.mp3	00:03:06	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\71 เกินต้าน (Too Cute) - PiXXiE.mp3	
-117	72 กลับมาคบกันเถอะ (Please Please) - Billkin.mp3	00:03:26	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\72 กลับมาคบกันเถอะ (Please Please) - Billkin.mp3	
-118	73 Undo [JOOX Original] - ป๊อบ ปองกูล, WONDERFRAME.mp3	00:04:03	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\73 Undo [JOOX Original] - ป๊อบ ปองกูล, WONDERFRAME.mp3	
-119	74 บานปลาย (Best wishes) - BOWKYLION.mp3	00:04:49	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\74 บานปลาย (Best wishes) - BOWKYLION.mp3	
-120	75 Freaky Deaky (Explicit) - Tyga, Doja Cat.mp3	00:03:35	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\75 Freaky Deaky (Explicit) - Tyga, Doja Cat.mp3	
-121	76 เป็นเกียรติหลาย - มนต์แคน แก่นคูน.mp3	00:05:23	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\76 เป็นเกียรติหลาย - มนต์แคน แก่นคูน.mp3	
-122	77 งานแต่งคนจน - มนต์แคน แก่นคูน.mp3	00:03:55	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\77 งานแต่งคนจน - มนต์แคน แก่นคูน.mp3	
-123	78 ปีใหม่ปีนี้ - SARAN, Jeff Satur.mp3	00:03:26	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\78 ปีใหม่ปีนี้ - SARAN, Jeff Satur.mp3	
-124	79 วันเกิดฉันปีนี้ (HBD to me) - Three Man Down.mp3	00:04:11	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\79 วันเกิดฉันปีนี้ (HBD to me) - Three Man Down.mp3	
-125	80 ตกหลุมรักรอบที่ล้าน - Kinkaworn, BELL WARISARA.mp3	00:03:19	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\80 ตกหลุมรักรอบที่ล้าน - Kinkaworn, BELL WARISARA.mp3	
-126	81 ถ้ารู้อย่างนี้ - Big Ass.mp3	00:03:50	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\81 ถ้ารู้อย่างนี้ - Big Ass.mp3	
-127	82 จันทร์อังคารพุธพฤหัสศุกร์เสาร์อาทิตย์ (Everyday) - Patrickananda.mp3	00:03:02	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\82 จันทร์อังคารพุธพฤหัสศุกร์เสาร์อาทิตย์ (Everyday) - Patrickananda.mp3	
-128	83 ฟีโรโมน - Blackheart.mp3	00:03:40	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\83 ฟีโรโมน - Blackheart.mp3	
-129	84 BONG (Explicit) - OG BOBBY, VannDa.mp3	00:04:01	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\84 BONG (Explicit) - OG BOBBY, VannDa.mp3	
-130	85 สหายสุรา - อ.ไข่ มาลีฮวนน่า, เนสกาแฟ ศรีนคร.mp3	00:03:23	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\85 สหายสุรา - อ.ไข่ มาลีฮวนน่า, เนสกาแฟ ศรีนคร.mp3	
-131	86 17 - Dept.mp3	00:03:29	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\86 17 - Dept.mp3	
-132	87 ฝนตกไหม - Three Man Down.mp3	00:04:23	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\87 ฝนตกไหม - Three Man Down.mp3	
-133	88 ต่อจากนี้เพลงรักทุกเพลงจะเป็นของเธอเท่านั้น - NO ONE ELSE.mp3	00:04:14	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\88 ต่อจากนี้เพลงรักทุกเพลงจะเป็นของเธอเท่านั้น - NO ONE ELSE.mp3	
-134	89 ละไว้ในฐานที่เข้าใจ - บุ๊ค ศุภกาญจน์.mp3	00:05:28	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\89 ละไว้ในฐานที่เข้าใจ - บุ๊ค ศุภกาญจน์.mp3	
-135	90 ถ้าเธอรักฉันจริง - Three Man Down.mp3	00:04:00	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\90 ถ้าเธอรักฉันจริง - Three Man Down.mp3	
-136	91 ข้างกัน (City) feat. ออม TELExTELEXs - Three Man Down.mp3	00:04:56	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\91 ข้างกัน (City) feat. ออม TELExTELEXs - Three Man Down.mp3	
-137	92 ชอบอยู่คนเดียว - INK WARUNTORN.mp3	00:02:59	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\92 ชอบอยู่คนเดียว - INK WARUNTORN.mp3	
-138	93 ถ้าฉันเป็นเขา (Special Version) - Indigo.mp3	00:04:29	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\93 ถ้าฉันเป็นเขา (Special Version) - Indigo.mp3	
-139	94 ดึงดัน (JOOX Original) Cocktail ตั๊ก ศิริพร.mp3	00:04:07	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\94 ดึงดัน (JOOX Original) Cocktail ตั๊ก ศิริพร.mp3	
-140	95 คาถาขุนแผน (หลวงพ่อกวย) - กานต์ ทศน - สำเนา.mp3	00:04:46	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\95 คาถาขุนแผน (หลวงพ่อกวย) - กานต์ ทศน - สำเนา.mp3	
-141	98 ชอบป่ะเนี่ย (Can I Call You Mine) - ใหม่ ดาวิกา.mp3	00:03:12	F:\[Chart]+JOOX+Thailand+Top+100+(ไทย-สากล)+6+ม.ค.+2566+[320+kbps]\[Chart] JOOX Thailand Top 100 (ไทย-สากล) 6 ม.ค. 2566 [320 kbps]\98 ชอบป่ะเนี่ย (Can I Call You Mine) - ใหม่ ดาวิกา.mp3	
+﻿1	01 เลือดกรุ๊ปบี - CHRRISSA.mp3	00:04:49	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\01 เลือดกรุ๊ปบี - CHRRISSA.mp3	
+2	02 ผีเห็นผี - L.กฮ.mp3	00:04:32	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\02 ผีเห็นผี - L.กฮ.mp3	
+3	03 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	00:03:35	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\03 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	
+4	04 ผู้ถูกเลือกให้ผิดหวัง (ดอกไม้ฤดูหนาว)[Bedroom Version] - เรนิษรา.mp3	00:04:30	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\04 ผู้ถูกเลือกให้ผิดหวัง (ดอกไม้ฤดูหนาว)[Bedroom Version] - เรนิษรา.mp3	
+5	05 ถามเพื่ออะไร (What for) - KLEAR.mp3	00:03:45	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\05 ถามเพื่ออะไร (What for) - KLEAR.mp3	
+6	06 ปล่อยให้เวลา - Three Man Down.mp3	00:02:51	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\06 ปล่อยให้เวลา - Three Man Down.mp3	
+7	07 นางไอ่ของอ้าย - มนต์แคน แก่นคูน.mp3	00:04:17	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\07 นางไอ่ของอ้าย - มนต์แคน แก่นคูน.mp3	
+8	08 ริบบิ้นเลิฟคัลเลอร์แบล็ค - Palmy, สิงโต นำโชค.mp3	00:03:28	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\08 ริบบิ้นเลิฟคัลเลอร์แบล็ค - Palmy, สิงโต นำโชค.mp3	
+9	09 สันละกะยา - อานัส.mp3	00:04:04	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\09 สันละกะยา - อานัส.mp3	
+10	10 ละไว้ในฐานที่เข้าใจ - บุ๊ค ศุภกาญจน์.mp3	00:05:28	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\10 ละไว้ในฐานที่เข้าใจ - บุ๊ค ศุภกาญจน์.mp3	
+11	11 ทดลองใช้ - เบิร์ด ธงไชย.mp3	00:03:40	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\11 ทดลองใช้ - เบิร์ด ธงไชย.mp3	
+12	12 อยากให้รู้ว่ารักเธอ - Season Five.mp3	00:04:47	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\12 อยากให้รู้ว่ารักเธอ - Season Five.mp3	
+13	13 ลืมไปแล้วว่าลืมยังไง (Fade) - Jeff Satur.mp3	00:04:22	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\13 ลืมไปแล้วว่าลืมยังไง (Fade) - Jeff Satur.mp3	
+14	14 พิจารณา - Musketeers.mp3	00:04:06	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\14 พิจารณา - Musketeers.mp3	
+15	15 ชวนน้องล่องใต้ Feat. กล้วย แสตมป์ - แน๊ท ราเชนทร์.mp3	00:04:04	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\15 ชวนน้องล่องใต้ Feat. กล้วย แสตมป์ - แน๊ท ราเชนทร์.mp3	
+16	16 ไม่เป็นรอง - Cocktail.mp3	00:04:53	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\16 ไม่เป็นรอง - Cocktail.mp3	
+17	17 Mr. Everything - Billkin.mp3	00:03:21	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\17 Mr. Everything - Billkin.mp3	
+18	18 ชวนน้องล่องใต้ (cover) - กิม ชญาภา.mp3	00:04:01	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\18 ชวนน้องล่องใต้ (cover) - กิม ชญาภา.mp3	
+19	19 คำตอบคือเธอ - Peet Model.mp3	00:05:37	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\19 คำตอบคือเธอ - Peet Model.mp3	
+20	20 ไทม์แมชชีน - ปอน นิพนธ์, โต๋เหน่อ.mp3	00:05:04	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\20 ไทม์แมชชีน - ปอน นิพนธ์, โต๋เหน่อ.mp3	
+21	21 วาดไว้ (recall) - BOWKYLION.mp3	00:04:15	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\21 วาดไว้ (recall) - BOWKYLION.mp3	
+22	22 รักก็รักดิ (From Cutie Pie 2 You) - NuNew, ซี พฤกษ์.mp3	00:03:17	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\22 รักก็รักดิ (From Cutie Pie 2 You) - NuNew, ซี พฤกษ์.mp3	
+23	23 ใจคะลาดหมื่น - เบนซ์ ปรีชา.mp3	00:03:33	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\23 ใจคะลาดหมื่น - เบนซ์ ปรีชา.mp3	
+24	24 คนไม่คุย - PROXIE.mp3	00:03:50	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\24 คนไม่คุย - PROXIE.mp3	
+25	25 ไม่ได้ก็ไม่เอา (Whatever) - PiXXiE.mp3	00:02:49	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\25 ไม่ได้ก็ไม่เอา (Whatever) - PiXXiE.mp3	
+26	26 หยุดรักไม่ได้แล้ว Feat. Archy - NOAH.mp3	00:04:45	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\26 หยุดรักไม่ได้แล้ว Feat. Archy - NOAH.mp3	
+27	27 Very Very Small (Explicit) - YOUNGOHM.mp3	00:03:03	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\27 Very Very Small (Explicit) - YOUNGOHM.mp3	
+28	28 BONG (Explicit) - OG BOBBY, VannDa.mp3	00:04:01	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\28 BONG (Explicit) - OG BOBBY, VannDa.mp3	
+29	29 ซ้อมมีแฟน (Trial) - Kinkaworn.mp3	00:03:15	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\29 ซ้อมมีแฟน (Trial) - Kinkaworn.mp3	
+30	30 ชอบป่ะเนี่ย (Can I Call You Mine) - ใหม่ ดาวิกา.mp3	00:03:12	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\30 ชอบป่ะเนี่ย (Can I Call You Mine) - ใหม่ ดาวิกา.mp3	
+31	31 อย่าแตกสลายเพราะใครเลย (fragile) - Jeep, sarah salola.mp3	00:03:57	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\31 อย่าแตกสลายเพราะใครเลย (fragile) - Jeep, sarah salola.mp3	
+32	32 ชวนพี่ล่องใต้ Feat. ฝ้าย กรรติมา TIG - กุ๊กไก่ รุ่งทิวา.mp3	00:04:03	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\32 ชวนพี่ล่องใต้ Feat. ฝ้าย กรรติมา TIG - กุ๊กไก่ รุ่งทิวา.mp3	
+33	33 ใครเพื่อนแก - bamm.mp3	00:04:08	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\33 ใครเพื่อนแก - bamm.mp3	
+34	34 คุ้นเคย ไม่เคยคุ้น - กุ้ง สุธิราช, วิ วิรดา วงศ์เทวัญ.mp3	00:05:00	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\34 คุ้นเคย ไม่เคยคุ้น - กุ้ง สุธิราช, วิ วิรดา วงศ์เทวัญ.mp3	
+35	35 ขอบคุณ (Thankful) - Wanyai.mp3	00:04:13	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\35 ขอบคุณ (Thankful) - Wanyai.mp3	
+36	36 คนละครึ่ง Feat. ฝน พรสุดา - เบส ขวางหวัน.mp3	00:05:05	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\36 คนละครึ่ง Feat. ฝน พรสุดา - เบส ขวางหวัน.mp3	
+37	37 มีใครแล้วใช่ไหม - พั้นช์.mp3	00:04:03	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\37 มีใครแล้วใช่ไหม - พั้นช์.mp3	
+38	38 เเฟนผมน่ารัก - Bow Maylada.mp3	00:03:20	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\38 เเฟนผมน่ารัก - Bow Maylada.mp3	
+39	39 ช่วยจับมือฉันเอาไว้ - Sleep Flowz, ONENIGHT, PT$K, MaxMillor.mp3	00:04:14	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\39 ช่วยจับมือฉันเอาไว้ - Sleep Flowz, ONENIGHT, PT$K, MaxMillor.mp3	
+40	40 ฉันนี่แหละ...คนอื่น - CHILAX.mp3	00:03:42	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\40 ฉันนี่แหละ...คนอื่น - CHILAX.mp3	
+41	41 เธอครับ - Ptrp Studio.mp3	00:02:35	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\41 เธอครับ - Ptrp Studio.mp3	
+42	42 อยากมีก็ต้องสร้าง - นิว พงศกร TIG.mp3	00:04:51	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\42 อยากมีก็ต้องสร้าง - นิว พงศกร TIG.mp3	
+43	43 เด๋อนางเด้อ - ปรีชา ปัดภัย.mp3	00:04:27	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\43 เด๋อนางเด้อ - ปรีชา ปัดภัย.mp3	
+44	44 FIRE BOY - PP Krit.mp3	00:02:49	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\44 FIRE BOY - PP Krit.mp3	
+45	45 เศษ (Remain) [feat. Earth Patravee] - tinn.mp3	00:04:26	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\45 เศษ (Remain) [feat. Earth Patravee] - tinn.mp3	
+46	46 คำสัญญาที่ชานุมาน - แอ้ม ชลธิชา.mp3	00:04:57	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\46 คำสัญญาที่ชานุมาน - แอ้ม ชลธิชา.mp3	
+47	47 หมวกเมฆสีรุ้ง - YEW.mp3	00:04:18	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\47 หมวกเมฆสีรุ้ง - YEW.mp3	
+48	48 ถ้าเปลี่ยน - Snoopking.mp3	00:03:37	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\48 ถ้าเปลี่ยน - Snoopking.mp3	
+49	49 17 - Dept.mp3	00:03:30	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\49 17 - Dept.mp3	
+50	50 เอาใจลงไปเล่น (GAMBLE) - sarah salola.mp3	00:03:24	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\50 เอาใจลงไปเล่น (GAMBLE) - sarah salola.mp3	
+51	51 หวานใจ - Proo Thunwa.mp3	00:03:31	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\51 หวานใจ - Proo Thunwa.mp3	
+52	52 โสดมาก (DM Me) - MEAN, sarah salola.mp3	00:02:55	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\52 โสดมาก (DM Me) - MEAN, sarah salola.mp3	
+53	53 ถ้าเธอจะรักก็รักไปแล้ว - GoyNattyDream.mp3	00:03:44	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\53 ถ้าเธอจะรักก็รักไปแล้ว - GoyNattyDream.mp3	
+54	54 โรงอาหาร (Canteen) - Kamin Kingsak.mp3	00:03:57	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\54 โรงอาหาร (Canteen) - Kamin Kingsak.mp3	
+55	55 ระวังเสียใจ (Warning) - Violette Wautier.mp3	00:02:54	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\55 ระวังเสียใจ (Warning) - Violette Wautier.mp3	
+56	56 ปีหน้าฉันขอ (I (Wish) You.) - Praesun.mp3	00:02:50	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\56 ปีหน้าฉันขอ (I (Wish) You.) - Praesun.mp3	
+57	57 คาเฟอีน - หญิงลี ศรีจุมพล.mp3	00:04:25	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\57 คาเฟอีน - หญิงลี ศรีจุมพล.mp3	
+58	58 นอนหน่อยไหม - ANATOMY RABBIT.mp3	00:03:53	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\58 นอนหน่อยไหม - ANATOMY RABBIT.mp3	
+59	59 อยากใช้คำว่ารัก (OST. Between Us เชือกป่าน) - Boy Sompob.mp3	00:04:38	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\59 อยากใช้คำว่ารัก (OST. Between Us เชือกป่าน) - Boy Sompob.mp3	
+60	60 อยู่กับฉันก่อน - SARAN.mp3	00:03:37	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\60 อยู่กับฉันก่อน - SARAN.mp3	
+61	62 คนมีเจ้าของ - บังนัส ฟิวเจอร์แบนด์.mp3	00:05:07	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\62 คนมีเจ้าของ - บังนัส ฟิวเจอร์แบนด์.mp3	
+62	63 เราอาจจะนอนเล่นกันอยู่ในงานเต้นรำ - N_A.mp3	00:03:07	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\63 เราอาจจะนอนเล่นกันอยู่ในงานเต้นรำ - N_A.mp3	
+63	64 มันแปลว่าฮัก (เวอร์ชั่นพิเศษ) - ตรี ชัยณรงค์.mp3	00:04:14	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\64 มันแปลว่าฮัก (เวอร์ชั่นพิเศษ) - ตรี ชัยณรงค์.mp3	
+64	65 คล้ายว่ารักกัน - Paper, RAMQSZ.mp3	00:03:36	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\65 คล้ายว่ารักกัน - Paper, RAMQSZ.mp3	
+65	66 แพ้เป็นพระชอบนะคะเป็นแฟนกันมั้ย - WONDERFRAME.mp3	00:02:46	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\66 แพ้เป็นพระชอบนะคะเป็นแฟนกันมั้ย - WONDERFRAME.mp3	
+66	67 ฝัง จำ จม Feat. Benjamin Tuffnell - Silly Fools.mp3	00:04:39	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\67 ฝัง จำ จม Feat. Benjamin Tuffnell - Silly Fools.mp3	
+67	68 บุญเก่า - ก้อง ห้วยไร่.mp3	00:03:48	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\68 บุญเก่า - ก้อง ห้วยไร่.mp3	
+68	69 ไม่อยากฟัง - SERIOUS BACON.mp3	00:04:38	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\69 ไม่อยากฟัง - SERIOUS BACON.mp3	
+69	70 เปิดตัวได้แล้ว - Yin War.mp3	00:03:33	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\70 เปิดตัวได้แล้ว - Yin War.mp3	
+70	71 น้ำหอม - Eito.mp3	00:04:09	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\71 น้ำหอม - Eito.mp3	
+71	72 พิการตายังมีใจ - STS 73.mp3	00:04:10	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\72 พิการตายังมีใจ - STS 73.mp3	
+72	73 KRYPTONITE - PUN.mp3	00:05:10	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\73 KRYPTONITE - PUN.mp3	
+73	74 2565 - CGM48.mp3	00:04:34	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\74 2565 - CGM48.mp3	
+74	76 ไอ้น้องบ่าว - วงกางเกง, ธีเดช ทองอภิชาติ.mp3	00:04:53	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\76 ไอ้น้องบ่าว - วงกางเกง, ธีเดช ทองอภิชาติ.mp3	
+75	77 รักร้าว Feat.แต๊ก สิงขร - Long.mp3	00:03:39	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\77 รักร้าว Feat.แต๊ก สิงขร - Long.mp3	
+76	78 มีทุกอย่าง - Zentyarb.mp3	00:03:33	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\78 มีทุกอย่าง - Zentyarb.mp3	
+77	79 Call Center - TangBadVoice.mp3	00:03:00	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\79 Call Center - TangBadVoice.mp3	
+78	80 คืนวันศุกร์ (Cover Version) Ost. OMG! รักจังวะ.ผิดจังหวะ - BOWKYLION, THE TOYS.mp3	00:03:19	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\80 คืนวันศุกร์ (Cover Version) Ost. OMG! รักจังวะ.ผิดจังหวะ - BOWKYLION, THE TOYS.mp3	
+79	81 จินตนาการ - Violette Wautier.mp3	00:03:35	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\81 จินตนาการ - Violette Wautier.mp3	
+80	82 รักในวันฝนมา (เพลงจากละคร วิวาห์ฟ้าแลบ) - CINCIN IRADA, DIAMOND LAZ1.mp3	00:02:55	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\82 รักในวันฝนมา (เพลงจากละคร วิวาห์ฟ้าแลบ) - CINCIN IRADA, DIAMOND LAZ1.mp3	
+81	83 ฝืนใจอยู่ แต่กูไหว - ตั๊กแตน ชลดา.mp3	00:04:09	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\83 ฝืนใจอยู่ แต่กูไหว - ตั๊กแตน ชลดา.mp3	
+82	84 คิดเหมือนกัน (From GAP The series ทฤษฎีสีชมพู) - Becky Rebecca.mp3	00:03:07	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\84 คิดเหมือนกัน (From GAP The series ทฤษฎีสีชมพู) - Becky Rebecca.mp3	
+83	85 หัวใจฮอมปอย - YIKKY.mp3	00:04:18	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\85 หัวใจฮอมปอย - YIKKY.mp3	
+84	86 ทฤษฎีรักนี้สีชมพู (From GAP The series ทฤษฎีสีชมพู) - Freen Sarocha, Becky Rebecca.mp3	00:03:07	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\86 ทฤษฎีรักนี้สีชมพู (From GAP The series ทฤษฎีสีชมพู) - Freen Sarocha, Becky Rebecca.mp3	
+85	87 ได้โปรดอย่าหาย (Disappear) - FrenchW.mp3	00:03:33	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\87 ได้โปรดอย่าหาย (Disappear) - FrenchW.mp3	
+86	88 จะอยู่ให้เธอรัก - มุก ประกายมุก.mp3	00:05:15	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\88 จะอยู่ให้เธอรัก - มุก ประกายมุก.mp3	
+87	89 Victoria's Secret (Explicit) - DIAMOND MQT.mp3	00:03:53	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\89 Victoria's Secret (Explicit) - DIAMOND MQT.mp3	
+88	90 อย่าแตกสลายเพราะใครเลย - First Anuwat.mp3	00:03:37	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\90 อย่าแตกสลายเพราะใครเลย - First Anuwat.mp3	
+89	91 มองจากดาวอังคารก็รู้ - Chilling Sunday.mp3	00:03:36	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\91 มองจากดาวอังคารก็รู้ - Chilling Sunday.mp3	
+90	92 MUSE (Explicit) - PUN.mp3	00:03:27	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\92 MUSE (Explicit) - PUN.mp3	
+91	93 ใจยังเซ (From พี่จะตีนะเนย) - แมว จิรศักดิ์.mp3	00:03:34	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\93 ใจยังเซ (From พี่จะตีนะเนย) - แมว จิรศักดิ์.mp3	
+92	94 ไม่รักก็ฟัคเลย - Taratiwat, YELLOWSKRT.mp3	00:02:38	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\94 ไม่รักก็ฟัคเลย - Taratiwat, YELLOWSKRT.mp3	
+93	95 แค่ผ่านมาให้จำ - Indigo.mp3	00:04:27	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\95 แค่ผ่านมาให้จำ - Indigo.mp3	
+94	96 FAKE LOVE (Explicit) - SARAN, P6ICK.mp3	00:03:28	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\96 FAKE LOVE (Explicit) - SARAN, P6ICK.mp3	
+95	97 ชนแก้ว - Gavin D.mp3	00:03:25	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\97 ชนแก้ว - Gavin D.mp3	
+96	98 ไม่ได้ก็ไม่เอา (Whatever) - Paiiinntt.mp3	00:03:04	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\98 ไม่ได้ก็ไม่เอา (Whatever) - Paiiinntt.mp3	
+97	99 ตะเกียงวิเศษ (One Wish) - Minnie.mp3	00:03:50	D:\JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566\[TT][Chart] JOOX Top 100 ลูกทุ่ง l ไทบ้าน ๏ 20 ม.ค. 2566 [320 kbps]\99 ตะเกียงวิเศษ (One Wish) - Minnie.mp3	

@@ -43,6 +43,7 @@ Route::group(['middleware' => ['Admin']], function () {
             Route::get('/', [Webpanel\OverviewController::class, 'index']);
             Route::get('/{id}', [Webpanel\OverviewController::class, 'get_layout'])->where(['id' => '[0-9]+']);
             Route::get('/zone/{id}', [Webpanel\OverviewController::class, 'get_zone'])->where(['id' => '[0-9]+']);
+            Route::get('/zone1/{id}', [Webpanel\OverviewController::class, 'get_zone1'])->where(['id' => '[0-9]+']);
             Route::get('/destroy', [Webpanel\OverviewController::class, 'destroy']);
             Route::post('/volume/{zone_id}', [Webpanel\OverviewController::class, 'adjustVolume']);
             Route::post('/select-source/{zone_id}', [Webpanel\OverviewController::class, 'selectSource']);

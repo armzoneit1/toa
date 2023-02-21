@@ -1,10 +1,100 @@
-﻿1	01 สลักจิต Feat. Da Endorphine - ป๊อบ ปองกูล.mp3	00:04:24	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\01 สลักจิต Feat. Da Endorphine - ป๊อบ ปองกูล.mp3	
-2	02 พิจารณา - Musketeers.mp3	00:04:06	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\02 พิจารณา - Musketeers.mp3	
-3	03 ลืมไปแล้วว่าลืมยังไง (Fade) - Jeff Satur.mp3	00:04:22	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\03 ลืมไปแล้วว่าลืมยังไง (Fade) - Jeff Satur.mp3	
-4	04 เส้นบางๆ - Indigo.mp3	00:04:31	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\04 เส้นบางๆ - Indigo.mp3	
-5	05 วาดไว้ (recall) - BOWKYLION.mp3	00:04:15	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\05 วาดไว้ (recall) - BOWKYLION.mp3	
-6	06 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	00:03:35	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\06 รักแท้ (เพลงจากละคร คุณชาย) - NuNew.mp3	
-7	07 FIRE BOY - PP Krit.mp3	00:02:45	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\07 FIRE BOY - PP Krit.mp3	
-8	08 นะหน้าทอง - JOEY PHUWASIT.mp3	00:04:46	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\08 นะหน้าทอง - JOEY PHUWASIT.mp3	
-9	09 คนไม่คุย - PROXIE.mp3	00:03:50	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\09 คนไม่คุย - PROXIE.mp3	
-10	10 ซูลูปาก้า ตาปาเฮ้ - THEMOONWILLALWAYSBEWITHME.mp3	00:03:45	D:\2023\download\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\JOOX Thailand Top 100 (ไทย-สากล) ๏ 25 พ.ย. 2565\10 ซูลูปาก้า ตาปาเฮ้ - THEMOONWILLALWAYSBEWITHME.mp3	
+﻿1	001. Taylor Swift - Anti-Hero.mp3	00:03:20	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\001. Taylor Swift - Anti-Hero.mp3	
+2	002. Mariah Carey - All I Want for Christmas Is You.mp3	00:04:01	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\002. Mariah Carey - All I Want for Christmas Is You.mp3	
+3	003. Brenda Lee - Rockin' Around The Christmas Tree.mp3	00:02:04	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\003. Brenda Lee - Rockin' Around The Christmas Tree.mp3	
+4	004. Sam Smith - Unholy.mp3	00:02:36	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\004. Sam Smith - Unholy.mp3	
+5	005. Bobby Helms - Jingle Bell Rock (Single Version).mp3	00:02:08	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\005. Bobby Helms - Jingle Bell Rock (Single Version).mp3	
+6	006. Burl Ives - A Holly Jolly Christmas.mp3	00:02:12	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\006. Burl Ives - A Holly Jolly Christmas.mp3	
+7	007. Drake - Rich Flex.mp3	00:03:59	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\007. Drake - Rich Flex.mp3	
+8	008. Steve Lacy - Bad Habit.mp3	00:03:52	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\008. Steve Lacy - Bad Habit.mp3	
+9	009. Andy Williams - It's the Most Wonderful Time of the Year.mp3	00:02:31	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\009. Andy Williams - It's the Most Wonderful Time of the Year.mp3	
+10	010. Wham! - Last Christmas.mp3	00:04:23	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\010. Wham! - Last Christmas.mp3	
+11	011. David Guetta - I'm Good (Blue).mp3	00:02:55	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\011. David Guetta - I'm Good (Blue).mp3	
+12	012. Nat King Cole - The Christmas Song (Merry Christmas To You) (Remastered 1999).mp3	00:03:11	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\012. Nat King Cole - The Christmas Song (Merry Christmas To You) (Remastered 1999).mp3	
+13	013. José Feliciano - Feliz Navidad.mp3	00:03:02	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\013. José Feliciano - Feliz Navidad.mp3	
+14	014. Harry Styles - As It Was.mp3	00:02:47	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\014. Harry Styles - As It Was.mp3	
+15	015. The Weeknd - Die For You.mp3	00:04:20	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\015. The Weeknd - Die For You.mp3	
+16	016. The Ronettes - Sleigh Ride.mp3	00:03:01	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\016. The Ronettes - Sleigh Ride.mp3	
+17	017. Kelly Clarkson - Underneath the Tree.mp3	00:03:49	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\017. Kelly Clarkson - Underneath the Tree.mp3	
+18	018. Dean Martin - Let It Snow! Let It Snow! Let It Snow!.mp3	00:01:56	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\018. Dean Martin - Let It Snow! Let It Snow! Let It Snow!.mp3	
+19	019. Perry Como - It's Beginning To Look Like Christmas (with The Fontaine Sisters).mp3	00:02:35	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\019. Perry Como - It's Beginning To Look Like Christmas (with The Fontaine Sisters).mp3	
+20	020. Beyoncé - CUFF IT.mp3	00:03:45	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\020. Beyoncé - CUFF IT.mp3	
+21	021. Chris Brown - Under The Influence.mp3	00:03:04	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\021. Chris Brown - Under The Influence.mp3	
+22	022. Rihanna - Lift Me Up (From Black Panther_ Wakanda Forever - Music From and Inspired By).mp3	00:03:16	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\022. Rihanna - Lift Me Up (From Black Panther_ Wakanda Forever - Music From and Inspired By).mp3	
+23	023. Darlene Love - Christmas (Baby Please Come Home).mp3	00:02:46	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\023. Darlene Love - Christmas (Baby Please Come Home).mp3	
+24	024. Ariana Grande - Santa Tell Me.mp3	00:03:24	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\024. Ariana Grande - Santa Tell Me.mp3	
+25	025. Morgan Wallen - You Proof.mp3	00:02:37	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\025. Morgan Wallen - You Proof.mp3	
+26	026. Nicki Minaj - Super Freaky Girl.mp3	00:02:51	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\026. Nicki Minaj - Super Freaky Girl.mp3	
+27	027. Post Malone - I Like You (A Happier Song).mp3	00:03:12	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\027. Post Malone - I Like You (A Happier Song).mp3	
+28	028. Zach Bryan - Something in the Orange.mp3	00:03:48	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\028. Zach Bryan - Something in the Orange.mp3	
+29	029. Michael Bublé - It's Beginning to Look a Lot like Christmas.mp3	00:03:26	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\029. Michael Bublé - It's Beginning to Look a Lot like Christmas.mp3	
+30	030. Nat King Cole - Deck The Halls (Remastered 1999).mp3	00:01:09	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\030. Nat King Cole - Deck The Halls (Remastered 1999).mp3	
+31	031. Bing Crosby - White Christmas.mp3	00:03:04	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\031. Bing Crosby - White Christmas.mp3	
+32	032. Morgan Wallen - Wasted On You.mp3	00:02:58	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\032. Morgan Wallen - Wasted On You.mp3	
+33	033. Frank Sinatra - Jingle Bells (Remastered 1999).mp3	00:02:00	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\033. Frank Sinatra - Jingle Bells (Remastered 1999).mp3	
+34	034. Gene Autry - Rudolph the Red-Nosed Reindeer.mp3	00:03:06	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\034. Gene Autry - Rudolph the Red-Nosed Reindeer.mp3	
+35	035. Lil Uzi Vert - Just Wanna Rock.mp3	00:02:03	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\035. Lil Uzi Vert - Just Wanna Rock.mp3	
+36	036. Meghan Trainor - Made You Look.mp3	00:02:14	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\036. Meghan Trainor - Made You Look.mp3	
+37	037. GloRilla - Tomorrow 2.mp3	00:03:29	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\037. GloRilla - Tomorrow 2.mp3	
+38	038. Doja Cat - Vegas (From the Original Motion Picture Soundtrack ELVIS).mp3	00:03:02	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\038. Doja Cat - Vegas (From the Original Motion Picture Soundtrack ELVIS).mp3	
+39	039. Gene Autry - Here Comes Santa Claus (Right Down Santa Claus Lane) (1947 Version).mp3	00:02:31	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\039. Gene Autry - Here Comes Santa Claus (Right Down Santa Claus Lane) (1947 Version).mp3	
+40	040. Future - WAIT FOR U (feat. Drake & Tems).mp3	00:03:09	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\040. Future - WAIT FOR U (feat. Drake & Tems).mp3	
+41	041. JVKE - golden hour.mp3	00:03:29	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\041. JVKE - golden hour.mp3	
+42	042. Boris Karloff - You're A Mean One, Mr. Grinch.mp3	00:05:15	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\042. Boris Karloff - You're A Mean One, Mr. Grinch.mp3	
+43	043. Elvis Presley - Blue Christmas.mp3	00:02:08	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\043. Elvis Presley - Blue Christmas.mp3	
+44	044. Bad Bunny - Tití Me Preguntó.mp3	00:04:03	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\044. Bad Bunny - Tití Me Preguntó.mp3	
+45	045. OneRepublic - I Ain't Worried.mp3	00:02:28	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\045. OneRepublic - I Ain't Worried.mp3	
+46	046. Drake - Jimmy Cooks.mp3	00:03:38	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\046. Drake - Jimmy Cooks.mp3	
+47	047. Nicky Youre - Sunroof.mp3	00:02:43	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\047. Nicky Youre - Sunroof.mp3	
+48	048. Lizzo - About Damn Time.mp3	00:03:11	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\048. Lizzo - About Damn Time.mp3	
+49	049. Jackson 5 - Santa Claus Is Coming To Town.mp3	00:02:24	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\049. Jackson 5 - Santa Claus Is Coming To Town.mp3	
+50	050. Cole Swindell - She Had Me At Heads Carolina.mp3	00:03:26	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\050. Cole Swindell - She Had Me At Heads Carolina.mp3	
+51	051. Bailey Zimmerman - Fall In Love.mp3	00:03:52	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\051. Bailey Zimmerman - Fall In Love.mp3	
+52	052. Taylor Swift - Lavender Haze.mp3	00:03:22	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\052. Taylor Swift - Lavender Haze.mp3	
+53	053. Drake - Spin Bout U.mp3	00:03:34	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\053. Drake - Spin Bout U.mp3	
+54	054. Stephen Sanchez - Until I Found You.mp3	00:02:57	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\054. Stephen Sanchez - Until I Found You.mp3	
+55	055. Kane Brown - Thank God.mp3	00:02:54	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\055. Kane Brown - Thank God.mp3	
+56	056. Drake - Circo Loco.mp3	00:03:56	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\056. Drake - Circo Loco.mp3	
+57	057. Jax - Victoria's Secret.mp3	00:02:56	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\057. Jax - Victoria's Secret.mp3	
+58	058. Drake - On BS.mp3	00:04:21	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\058. Drake - On BS.mp3	
+59	059. Drake - Major Distribution.mp3	00:02:50	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\059. Drake - Major Distribution.mp3	
+60	060. Jelly Roll - Son Of A Sinner.mp3	00:03:52	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\060. Jelly Roll - Son Of A Sinner.mp3	
+61	061. Bailey Zimmerman - Rock and A Hard Place.mp3	00:03:27	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\061. Bailey Zimmerman - Rock and A Hard Place.mp3	
+62	062. Jordan Davis - What My World Spins Around.mp3	00:03:06	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\062. Jordan Davis - What My World Spins Around.mp3	
+63	063. Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp3	00:03:30	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\063. Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp3	
+64	064. Drake - Pussy & Millions.mp3	00:04:02	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\064. Drake - Pussy & Millions.mp3	
+65	065. HARDY - wait in the truck (feat. Lainey Wilson).mp3	00:04:37	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\065. HARDY - wait in the truck (feat. Lainey Wilson).mp3	
+66	066. SZA - Shirt.mp3	00:03:01	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\066. SZA - Shirt.mp3	
+67	067. Elton John - Hold Me Closer.mp3	00:03:22	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\067. Elton John - Hold Me Closer.mp3	
+68	068. Thomas Rhett - Half Of Me.mp3	00:03:03	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\068. Thomas Rhett - Half Of Me.mp3	
+69	069. Jackson Dean - Don't Come Lookin'.mp3	00:03:08	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\069. Jackson Dean - Don't Come Lookin'.mp3	
+70	070. Taylor Swift - Bejeweled.mp3	00:03:14	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\070. Taylor Swift - Bejeweled.mp3	
+71	071. Taylor Swift - Midnight Rain.mp3	00:02:54	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\071. Taylor Swift - Midnight Rain.mp3	
+72	072. d4vd - Romantic Homicide.mp3	00:02:12	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\072. d4vd - Romantic Homicide.mp3	
+73	073. Taylor Swift - Maroon.mp3	00:03:38	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\073. Taylor Swift - Maroon.mp3	
+74	074. Tems - Free Mind.mp3	00:04:07	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\074. Tems - Free Mind.mp3	
+75	075. Drake - Privileged Rappers.mp3	00:02:40	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\075. Drake - Privileged Rappers.mp3	
+76	076. Nate Smith - Whiskey On You.mp3	00:03:03	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\076. Nate Smith - Whiskey On You.mp3	
+77	077. Armani White - BILLIE EILISH.mp3	00:01:39	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\077. Armani White - BILLIE EILISH.mp3	
+78	078. Taylor Swift - Karma.mp3	00:03:24	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\078. Taylor Swift - Karma.mp3	
+79	079. Drake - Broke Boys.mp3	00:03:45	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\079. Drake - Broke Boys.mp3	
+80	080. Taylor Swift - You're On Your Own, Kid.mp3	00:03:14	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\080. Taylor Swift - You're On Your Own, Kid.mp3	
+81	081. Drake - BackOutsideBoyz.mp3	00:02:32	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\081. Drake - BackOutsideBoyz.mp3	
+82	082. Lil Baby - Heyy.mp3	00:03:12	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\082. Lil Baby - Heyy.mp3	
+83	083. Taylor Swift - Snow On The Beach.mp3	00:04:16	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\083. Taylor Swift - Snow On The Beach.mp3	
+84	084. Grupo Frontera - No Se Va (En Vivo).mp3	00:03:14	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\084. Grupo Frontera - No Se Va (En Vivo).mp3	
+85	085. Brent Faiyaz - ALL MINE.mp3	00:03:36	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\085. Brent Faiyaz - ALL MINE.mp3	
+86	086. Lil Baby - California Breeze.mp3	00:02:57	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\086. Lil Baby - California Breeze.mp3	
+87	087. Rema - Calm Down.mp3	00:03:59	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\087. Rema - Calm Down.mp3	
+88	088. Drake - Hours In Silence.mp3	00:06:39	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\088. Drake - Hours In Silence.mp3	
+89	089. Luke Bryan - Country On.mp3	00:03:56	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\089. Luke Bryan - Country On.mp3	
+90	090. Lil Baby - Freestyle.mp3	00:02:42	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\090. Lil Baby - Freestyle.mp3	
+91	091. Lauren Spencer - Last Christmas.mp3	00:03:00	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\091. Lauren Spencer - Last Christmas.mp3	
+92	092. Drake - Jumbotron Shit Poppin.mp3	00:02:17	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\092. Drake - Jumbotron Shit Poppin.mp3	
+93	093. Gabby Barrett - Pick Me Up.mp3	00:02:49	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\093. Gabby Barrett - Pick Me Up.mp3	
+94	094. Lainey Wilson - Heart Like A Truck.mp3	00:03:19	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\094. Lainey Wilson - Heart Like A Truck.mp3	
+95	095. Manuel Turizo - La Bachata.mp3	00:02:42	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\095. Manuel Turizo - La Bachata.mp3	
+96	096. Lizzo - Someday at Christmas.mp3	00:02:58	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\096. Lizzo - Someday at Christmas.mp3	
+97	097. Taylor Swift - Vigilante Shit.mp3	00:02:44	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\097. Taylor Swift - Vigilante Shit.mp3	
+98	098. Lewis Capaldi - Forget Me.mp3	00:03:23	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\098. Lewis Capaldi - Forget Me.mp3	
+99	099. Luke Combs - Going, Going, Gone.mp3	00:02:57	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\099. Luke Combs - Going, Going, Gone.mp3	
+100	100. Oliver Tree - Miss You.mp3	00:03:26	D:\Billboard Hot 100 Singles Chart 10.12.2022\Billboard Hot 100 Singles Chart 10.12.2022\100. Oliver Tree - Miss You.mp3	
