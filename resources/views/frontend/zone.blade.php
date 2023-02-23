@@ -86,10 +86,10 @@
                 })
               }else{
                 $(".song-name").html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
-                $(".time-play").html("00:00/00:00");               
+                $(".time-play").html("00:00/00:00");
               }
             }).error(function(e) {
-              
+
               for (var i = 0; i <= 16; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
@@ -1165,7 +1165,7 @@ a:hover {
         <span class="navbar-toggler-icon"></span>
       </button> -->
       {{-- @if(Session::get('qrcode_zone') == true)  <span class="title-over-top">{{ $zone->name }}</span> --}}
-      @if(empty(Auth::check()))  
+      @if(empty(Auth::check()))
         <span style="color: #fff;text-transform: initial;font-weight: 200;margin: 0px 0px 10px 30px;font-size: 20px;">{{ $zone->name }}</span>
       @else
       <li class="nav-item" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false" style="height: 32px;">
@@ -1256,11 +1256,11 @@ a:hover {
 
                           <div class="col-lg-12 col-12" id="">
                           <h4 class="title-status" id="source-number">@if($zone->source == 0) None @else Source {{ $zone->source }} @endif</h4>
-                          <p id="song-name" class="song-name">Song Name</p>
+                          <p id="song-name" class="song-name">กรูณารอสักครู่</p>
                           </div>
 
                             <div class="col-lg-6 col-6" id="col6-mb">
-                              <p class="time-play" id="time-play">00:00 / 00:15</p>
+                              <p class="time-play" id="time-play">00:00 / 00:00</p>
                             </div>
                             <div class="col-lg-6 col-6" id="col6-mb">
                               <p class="icon-play">
