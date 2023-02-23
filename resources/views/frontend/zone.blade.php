@@ -58,42 +58,36 @@
             })
       Echo.channel('playsongs')
             .listen('playsong', (e) => {
-              if(e.data != null) {
+            if(zone_source == 0){
+                $(".song-name").html("กรุณาเลือก Source ก่อน");
+                $(".time-play").html("00:00 / 00:00");
+            }
+            else if(zone_source >= 9 && zone_source <= 16){
+                $(".song-name").html("Local Input");
+                $(".time-play").html("00:00 / 00:00");
+            }
+            else if(e.data != null) {
                 e.data.map(function (r) {
-                  if(zone_source == 0){
-                    $(".song-name").html("กรุณาเลือก source ก่อน");
-                    $(".time-play").html("00:00 / 00:00");
-                  }
-                  else if(zone_source >= 9 && zone_source <= 16){
-                    $(".song-name").html("Local Input");
-                    $(".time-play").html("00:00 / 00:00");
-                  }
-                  if(r.Id == zone_source){
-                    $(".song-name").html(r.Name);
-                    $(".time-play").html(r.DurationTimePlay + "/" + r.DurationTime);
-                    //console.log('playpause',r);
-                    if (r.runmusic == 1) {
-                      $("#play-or-pause").removeClass('bi-play-circle-fill');
-                      $("#play-or-pause").addClass('bi-pause-circle-fill');
-                    } else {
-                      $("#play-or-pause").removeClass('bi-pause-circle-fill');
-                      $("#play-or-pause").addClass('bi-play-circle-fill');
+                    if(r.Id == zone_source){
+                        $(".song-name").html(r.Name);
+                        $(".time-play").html(r.DurationTimePlay + "/" + r.DurationTime);
+                        //console.log('playpause',r);
+                        if (r.runmusic == 1) {
+                            $("#play-or-pause").removeClass('bi-play-circle-fill');
+                            $("#play-or-pause").addClass('bi-pause-circle-fill');
+                        } else {
+                            $("#play-or-pause").removeClass('bi-pause-circle-fill');
+                            $("#play-or-pause").addClass('bi-play-circle-fill');
+                        }
                     }
-                  }
-                  else{
-
-                  }
                 })
-              }else{
+            }else{
                 $(".song-name").html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                 $(".time-play").html("00:00/00:00");
-              }
+            }
             }).error(function(e) {
-
-              for (var i = 0; i <= 16; i++) {
-                  $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
-                  $(".time-play" + i).html("00:00/00:00");
-                }
+                $(".song-name").html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
+                $(".time-play").html("00:00/00:00");
     })
     </script>
 </head>
@@ -1256,7 +1250,7 @@ a:hover {
 
                           <div class="col-lg-12 col-12" id="">
                           <h4 class="title-status" id="source-number">@if($zone->source == 0) None @else Source {{ $zone->source }} @endif</h4>
-                          <p id="song-name" class="song-name">กรูณารอสักครู่</p>
+                          <p id="song-name" class="song-name">กรุณารอสักครู่</p>
                           </div>
 
                             <div class="col-lg-6 col-6" id="col6-mb">

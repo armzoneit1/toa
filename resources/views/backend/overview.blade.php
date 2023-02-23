@@ -44,14 +44,14 @@ console.log('connected!', payload);
                   }
                 })
               }else{
-                for (var i = 0; i <= 16; i++) {
+                for (var i = 1; i <= 8; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
                 }
               }
             }).error(function(e) {
 
-              for (var i = 0; i <= 16; i++) {
+              for (var i = 1; i <= 8; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
                 }
@@ -64,7 +64,7 @@ console.log('connected!', payload);
                 $("#song-name"+r.id).removeClass()
                 $("#song-name"+r.id).addClass("song-name song-name"+r.source)
                 if(r.source == 0){
-                  $(".song-name"+r.source).html("กรุณาเลือก source ก่อน");
+                  $(".song-name"+r.source).html("กรุณาเลือก Source ก่อน");
                   $(".time-play"+r.source).html("00:00 / 00:00");
                 }
                 if(r.source >= 9 && r.source <= 16){
