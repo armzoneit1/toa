@@ -1328,7 +1328,16 @@ tr {
   })
 
   $('.check_day').on("change", function (){
-    if($('#task_loop_day :checkbox:checked').length > 0){
+    let k = $('#task_loop_day :checkbox:checked').length;
+
+    if( (k == 7 && $("#check_all").prop('checked')) || k < 7){
+        $("#check_all").prop('checked', false);
+    }
+    else{
+        $("#check_all").prop('checked', true);
+    }
+
+    if(k > 0){
       $(".check_day").prop('required', false);
     }
     else{
@@ -1530,8 +1539,9 @@ setInterval(() => {
   }
 
     function clearAddData(){
+      setTimeout(() => {
         $('#add_record')
-        .find("input,textarea")
+        .find("input:not(input[type=checkbox]),textarea")
         .val('')
         .end()
         .find("input[type=checkbox], input[type=radio]")
@@ -1539,7 +1549,11 @@ setInterval(() => {
         .end()
         .find("#task_end")
         .prop("readonly",true)
-        .end();
+        .end()
+        .find("select[name='task_repeat']")
+        .val("1")
+        .trigger('change');
+      }, 300);
     }
 
 </script>
