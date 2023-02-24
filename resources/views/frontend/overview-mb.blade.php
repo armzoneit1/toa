@@ -14,8 +14,8 @@
                             if(e.volume != $('#volume-val'+e.id).val()){
                                 let i = e.id;
                                 const range = document.querySelector("#volume"+i+" input[type=range]");
+                              if(range != null){                               
                                 const text = document.querySelector("#text-zone-number"+i);
-
                                 const barHoverBox = document.querySelector("#volume"+i+" .bar-hoverbox");
                                 const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
 
@@ -31,6 +31,7 @@
                                 range.setAttribute("value", value)
                                 text.textContent = Number(value).toFixed(0) + "%";
                                 range.dispatchEvent(new Event("change"))
+                              }
                             }
                             if(e.source != $('#source-zone'+e.id).val()){
                                 $('#source-zone'+e.id).val(e.source);
@@ -647,7 +648,7 @@ a:hover {
         <div class="col-md-12" id="col12-mb">
             <p class="layout-title">
               @foreach($layout as $key => $row)
-                <a href="#layout{{ $row->id }}" onclick="showData({{ $row->id }})" id="layout{{ $row->id }}" class="layout @if($key == 0) active @endif" style="margin-left: 20px; padding: 0px !important;">{{ $row->name }}</a>
+                <a onclick="showData({{ $row->id }})" id="layout{{ $row->id }}" class="layout @if($key == 0) active @endif" style="margin-left: 20px; padding: 0px !important;">{{ $row->name }}</a>
               @endforeach
             </p>
         <div class="layout-img" id="layout-img"></div>
@@ -753,7 +754,7 @@ a:hover {
             zone.html(zone_data);
           }
       });
-      for (var i = 0; i < 15; i++) {
+      for (var i = 0; i < 30; i++) {
           setTimeout(function () {
             $('#fake_click').click();
           }, i * 1000)
@@ -833,6 +834,7 @@ a:hover {
 <script>
   document.addEventListener("click", () => {
     array.forEach(i => {
+      // console.log(document.querySelector("#volume"+i+" input[type=range]"));
       const range = document.querySelector("#volume"+i+" input[type=range]");
       if(range != null){
         const text = document.querySelector("#text-zone-number"+i);
