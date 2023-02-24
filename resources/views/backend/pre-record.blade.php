@@ -877,8 +877,8 @@ tr {
             </div>
           </div>
           <div class="form-group but-form">
-            <label for="exampleInputEmail1" class="label-title">Duration (m)</label>
-            <input type="number" min="1" class="form-control" id="task_duration" aria-describedby="emailHelp" placeholder="Enter Duration" name="task_duration">
+            <label for="exampleInputEmail1" class="label-title">Duration (1-360 m)</label>
+            <input type="number" min="1" max="360" class="form-control" id="task_duration" aria-describedby="emailHelp" placeholder="Enter Duration" name="task_duration">
           </div>
           <div class="row">
             <div class="form-group but-form col-sm-6 col-md-6">
@@ -949,8 +949,8 @@ tr {
             </div>
           </div>
           <div class="form-group but-form">
-            <label for="exampleInputEmail1" class="label-title">Duration (m)</label>
-            <input type="number" min="1" class="form-control" id="task_duration_edit{{ $data->id }}" aria-describedby="emailHelp" value="{{ $data->task_duration }}"  placeholder="Enter Duration" name="task_duration">
+            <label for="exampleInputEmail1" class="label-title">Duration (1-360 m)</label>
+            <input type="number" min="1" max="360" class="form-control" id="task_duration_edit{{ $data->id }}" aria-describedby="emailHelp" value="{{ $data->task_duration }}"  placeholder="Enter Duration" name="task_duration">
           </div>
           <div class="row">
             <div class="form-group but-form col-sm-6 col-md-6">
@@ -1080,8 +1080,8 @@ tr {
                                         </div>
                                       </div>
                                       <div class="form-group but-form">
-                                        <label for="exampleInputEmail1" class="label-title">Duration (m)</label>
-                                        <input type="number" min="1" class="form-control" id="task_duration_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_duration) html2 += `${res.task_duration}`; html2 += `"  placeholder="Enter Duration" name="task_duration">
+                                        <label for="exampleInputEmail1" class="label-title">Duration (1-360 m)</label>
+                                        <input type="number" min="1" max="360" class="form-control" id="task_duration_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_duration) html2 += `${res.task_duration}`; html2 += `"  placeholder="Enter Duration" name="task_duration">
                                       </div>
                                       <div class="row">
                                         <div class="form-group but-form col-sm-6 col-md-6">
