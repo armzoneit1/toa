@@ -14,19 +14,14 @@
                             if(e.volume != $('#volume-val'+e.id).val()){
                                 let i = e.id;
                                 const range = document.querySelector("#volume"+i+" input[type=range]");
-                              if(range != null){                               
+                              if(range != null){
                                 const text = document.querySelector("#text-zone-number"+i);
                                 const barHoverBox = document.querySelector("#volume"+i+" .bar-hoverbox");
                                 const fill = document.querySelector("#volume"+i+" .bar .bar-fill");
 
                                 let value = e.volume;
 
-                                if(value >= 90){
-                                    fill.style.background = "#e91303";
-                                }
-                                else{
-                                    fill.style.background = "#ff8200";
-                                }
+                                fill.style.background = "#ff8200";
                                 fill.style.width = value + "%";
                                 range.setAttribute("value", value)
                                 text.textContent = Number(value).toFixed(0) + "%";
@@ -897,7 +892,11 @@ a:hover {
                 source: source
             },
           success: function(response){
-            // console.log(response)
+            console.log(response);
+            $.ajax({type:"GET",url:'{{url("/broadcast3")}}',success: function(response){}});
+          },
+          error: function(data){
+            $.ajax({type:"GET",url:'{{url("/broadcast3")}}',success: function(response){}});
           }
     });
   }

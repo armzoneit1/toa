@@ -22,12 +22,7 @@
 
                                 let value = e.volume;
 
-                                if(value >= 90){
-                                fill.style.background = "#e91303";
-                                }
-                                else{
                                 fill.style.background = "#ff8200";
-                                }
                                 fill.style.width = value + "%";
                                 range.setAttribute("value", value)
                                 text.textContent = Number(value).toFixed(0) + "%";
@@ -1541,30 +1536,6 @@ a:hover {
       range.dispatchEvent(new Event("change"))
     }
 
-    function adjustVolume(volume){
-      if(volume > 30){
-        new_volume = volume - 100;
-        new_volume = Number(new_volume.toFixed());
-      }
-      else{
-        new_volume = -70;
-      }
-      $.ajax({
-            type: "POST",
-            url: fullUrl + '/volume',
-            data: {
-              volume:volume,
-              set_volume:new_volume
-            },
-            success: function(response){
-              console.log(response);
-            },
-            error: function(error) {
-              console.log(error.responseText);
-            }
-      });
-    }
-
   $(document).ready(function (){
       $.ajax({
           type: "post",
@@ -1728,7 +1699,10 @@ a:hover {
         type: "GET",
         url: fullUrl + '/apply-volume',
         success: function(response){
-          console.log(response);
+            $.ajax({type:"GET",url:'{{url("/broadcast3")}}',success: function(response){}});
+        },
+        error: function(data){
+            $.ajax({type:"GET",url:'{{url("/broadcast3")}}',success: function(response){}});
         }
       });
     }, 300);

@@ -37,11 +37,6 @@ class LayoutPlanController extends Controller
         ]);
     }
 
-    public function genQrcode($id){
-        $zone = \QrCode::size(300)->format('png')->generate("https://192.168.14.18/toa/zone/$id");
-        return $zone;
-    }
-
     public function get_image($id){
         $image = LayoutModel::where('id',$id)->first();
         return $image;

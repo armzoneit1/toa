@@ -1332,7 +1332,7 @@
 
             for(let i = 0; i < response.length; i++){
               var raw_qrcode = new QRCode("qrcode_"+response[i].id);
-              function makeCode () {    
+              function makeCode () {
                 var elText = document.getElementById("url_"+response[i].id);
                 raw_qrcode.makeCode(elText.value);
               }
@@ -1373,6 +1373,10 @@
 <script>
   var fullUrl = window.location.origin + window.location.pathname;
 
+  $(document).ready(function(){
+    $.ajax({type:"GET",url:fullUrl+'/broadcast4/',success: function(response){}});
+    $.ajax({type:"GET",url:fullUrl+'/broadcast5/',success: function(response){}});
+  })
 //   $("#insert-zone-modal").submit(function(e) {
 //       e.preventDefault();
 //       var form = $(this);
@@ -1492,7 +1496,7 @@
                     frame_id:frame_id,
                     output_id:output_id,
                 },
-                success: function(data){                 
+                success: function(data){
                   if(!data.success){
                       div.html(data.error);
                       $('#submit_zone').prop('disabled', true);
@@ -1510,7 +1514,7 @@
         var output_id = $('#output_id'+i).val();
         var div = $('#id_error'+i);
         div.html('');
-        
+
         if(frame_id != ""){
           if(output_id != ""){
             $.ajax({
@@ -1534,7 +1538,7 @@
           }
           else{
             $('#output_id'+i).prop('disabled', false);
-          }          
+          }
         }
         else{
             $('#output_id'+i).prop('disabled', true);

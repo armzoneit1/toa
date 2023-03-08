@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Webpanel as Webpanel;
 use App\Http\Controllers\Member as Member;
 use App\Http\Controllers\Frontend as Frontend;
+use App\Http\Controllers\Functions as Functions;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -88,7 +89,7 @@ Route::group(['middleware' => ['Login']], function () {
             Route::get('/', [Frontend\HomeController::class, 'home']);
             Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
             Route::get('/check-new', [Frontend\HomeController::class, 'checkHome']);
-            Route::post('/select-source/{id}', [Frontend\HomeController::class, 'selectSource']);
+            Route::post('/select-source/{id}', [Functions\FunctionControl::class, 'selectSource']);
         });
 
         Route::get('change_theme', [Webpanel\SetController::class, 'change_theme']);
@@ -98,7 +99,7 @@ Route::group(['middleware' => ['Login']], function () {
             Route::get('/{id}', [Frontend\HomeController::class, 'getImg'])->where(['id' => '[0-9]+']);
             Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
             Route::get('/check-new', [Frontend\HomeController::class, 'checkNewComing']);
-            Route::post('/select-source/{id}', [Frontend\HomeController::class, 'selectSource']);
+            Route::post('/select-source/{id}', [Functions\FunctionControl::class, 'selectSource']);
         });
 
         Route::prefix('push-to-talk')->group(function () {
@@ -113,10 +114,10 @@ Route::group(['middleware' => ['Login']], function () {
 Route::prefix('zone')->group(function () {
     Route::get('/{id}', [Frontend\HomeController::class, 'zone'])->where(['id' => '[0-9]+']);
     Route::get('/{id}/volume', [Frontend\HomeController::class, 'zone'])->where(['id' => '[0-9]+']);
-    Route::post('/{id}/volume', [Frontend\HomeController::class, 'adjustVolume'])->where(['id' => '[0-9]+']);
+    Route::post('/{id}/volume', [Functions\FunctionControl::class, 'adjustVolume'])->where(['id' => '[0-9]+']);
     Route::get('/{id}/this-zone', [Frontend\HomeController::class, 'getZoneById'])->where(['id' => '[0-9]+']);
-    Route::get('/{id}/apply-volume', [Frontend\HomeController::class, 'save'])->where(['id' => '[0-9]+']);
-    Route::post('/{id}/select-source', [Frontend\HomeController::class, 'selectSource'])->where(['id' => '[0-9]+']);
+    Route::get('/{id}/apply-volume', [Functions\FunctionControl::class, 'save'])->where(['id' => '[0-9]+']);
+    Route::post('/{id}/select-source', [Functions\FunctionControl::class, 'selectSource'])->where(['id' => '[0-9]+']);
     Route::get('/{id}/current-song', [Frontend\HomeController::class, 'getCurrentSong']);
     Route::post('/{id}/get_status_play/{source}', [Frontend\HomeController::class, 'getplayandpause']);
     Route::post('/{id}/forwardmusic/{source}', [Frontend\HomeController::class, 'forwardmusic']);

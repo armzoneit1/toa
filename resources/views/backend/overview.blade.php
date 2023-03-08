@@ -56,34 +56,34 @@ console.log('connected!', payload);
                   $(".time-play" + i).html("00:00/00:00");
                 }
     })
-    Echo.channel('checkPlayMusics')
-            .listen('checkPlayMusic', (e) => {
-              //console.log(e);
-              e.data.map(function(r){
-                $("#text-show-source"+r.id).html("Source "+r.source)
-                $("#song-name"+r.id).removeClass()
-                $("#song-name"+r.id).addClass("song-name song-name"+r.source)
-                if(r.source == 0){
-                  $(".song-name"+r.source).html("กรุณาเลือก Source ก่อน");
-                  $(".time-play"+r.source).html("00:00 / 00:00");
-                }
-                if(r.source >= 9 && r.source <= 16){
-                  $(".song-name"+r.source).html("Local Input");
-                  $(".time-play"+r.source).html("00:00 / 00:00");
-                }
-                $("#time-play"+r.id).removeClass()
-                $("#time-play"+r.id).addClass("time-play time-play"+r.source)
-                $("#skip-lefts"+r.id).removeClass()
-                $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
-                $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
-                $("#plays"+r.id).removeClass()
-                $("#plays"+r.id).addClass("play play"+r.source)
-                $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
-                $("#skip-right"+r.id).removeClass()
-                $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
-                $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
-              })
-            })
+    // Echo.channel('checkPlayMusics')
+    //         .listen('checkPlayMusic', (e) => {
+    //           //console.log(e);
+    //           e.data.map(function(r){
+    //             $("#text-show-source"+r.id).html("Source "+r.source)
+    //             $("#song-name"+r.id).removeClass()
+    //             $("#song-name"+r.id).addClass("song-name song-name"+r.source)
+    //             if(r.source == 0){
+    //               $(".song-name"+r.source).html("กรุณาเลือก Source ก่อน");
+    //               $(".time-play"+r.source).html("00:00 / 00:00");
+    //             }
+    //             if(r.source >= 9 && r.source <= 16){
+    //               $(".song-name"+r.source).html("Local Input");
+    //               $(".time-play"+r.source).html("00:00 / 00:00");
+    //             }
+    //             $("#time-play"+r.id).removeClass()
+    //             $("#time-play"+r.id).addClass("time-play time-play"+r.source)
+    //             $("#skip-lefts"+r.id).removeClass()
+    //             $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
+    //             $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
+    //             $("#plays"+r.id).removeClass()
+    //             $("#plays"+r.id).addClass("play play"+r.source)
+    //             $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
+    //             $("#skip-right"+r.id).removeClass()
+    //             $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
+    //             $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
+    //           })
+    //         })
     Echo.channel('zoneselect')
             .listen('zoneselect', (es) => {
                 //console.log(es);
@@ -110,7 +110,33 @@ console.log('connected!', payload);
                       }
                     }
                   });
+
+                    es.data.map(function(r){
+                        $("#text-show-source"+r.id).html("Source "+r.source)
+                        $("#song-name"+r.id).removeClass()
+                        $("#song-name"+r.id).addClass("song-name song-name"+r.source)
+                        if(r.source == 0){
+                        $(".song-name"+r.source).html("กรุณาเลือก Source ก่อน");
+                        $(".time-play"+r.source).html("00:00 / 00:00");
+                        }
+                        if(r.source >= 9 && r.source <= 16){
+                        $(".song-name"+r.source).html("Local Input");
+                        $(".time-play"+r.source).html("00:00 / 00:00");
+                        }
+                        $("#time-play"+r.id).removeClass()
+                        $("#time-play"+r.id).addClass("time-play time-play"+r.source)
+                        $("#skip-lefts"+r.id).removeClass()
+                        $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
+                        $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
+                        $("#plays"+r.id).removeClass()
+                        $("#plays"+r.id).addClass("play play"+r.source)
+                        $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
+                        $("#skip-right"+r.id).removeClass()
+                        $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
+                        $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
+                    })
                 }
+
             })
     // Echo.channel("playsongs").bind("sss");
   </script>
@@ -1247,6 +1273,7 @@ console.log('connected!', payload);
             source: source
         },
       success: function(response){
+        $.ajax({type:"GET",url:fullUrl+'/broadcast3/',success: function(response){}});
         $.ajax({
             type: "GET",
             url: fullUrl + '/zone1/' + id,
@@ -1275,6 +1302,9 @@ console.log('connected!', payload);
               $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
             }
         });
+      },
+      error: function(data){
+        $.ajax({type:"GET",url:fullUrl+'/broadcast3/',success: function(response){}});
       }
     });
   }

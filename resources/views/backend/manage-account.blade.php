@@ -762,7 +762,7 @@ tr {
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/css/light-mode.css') }}">
 @endif
 
-<body onload=" requiredCheck();">
+<body>
   {{-- retrieveData(); --}}
   @include('backend/inc_navbar')
 
@@ -938,7 +938,7 @@ tr {
 @include('backend/modal-setting-project')
 
 @include('backend/script')
- 
+
 <script type="text/javascript" src="{{ asset('public/DataTables/datatables.min.js') }}"></script>
 
 <script>

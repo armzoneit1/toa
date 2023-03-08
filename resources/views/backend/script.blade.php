@@ -357,27 +357,28 @@ Echo.channel('realtimedata')
   })
 
 function playEmer(){
-
   status = 'unready';
-  var chime_up = document.getElementById("chime-up");
-  chime_up.setAttribute("src",`{{ asset('audio/chime_up.mp3') }}`);
-  chime_up.play();
-  console.log('chime up');  
-  console.log(`{{ asset('${queue[0].file}') }}`);
+  setTimeout(function (){
+    var chime_up = document.getElementById("chime-up");
+    chime_up.setAttribute("src",`{{ asset('audio/chime_up.mp3') }}`);
+    chime_up.play();
+    console.log('chime up');
+    console.log(`{{ asset('${queue[0].file}') }}`);
+  }, 2000);
 
   setTimeout(function (){
     var emer = document.getElementById("emergency");
     emer.setAttribute("src",`{{ asset('${queue[0].file}') }}`);
     emer.play();
     console.log("play emergency");
-  }, 6000);
+  }, 8000);
 
   setTimeout(function (){
     var chime_down = document.getElementById("chime-down");
     chime_down.setAttribute("src",`{{ asset('audio/chime_down.mp3') }}`);
     chime_down.play();
     console.log('chime down');
-  }, queue[0].length + 7000);
+  }, queue[0].length + 9000);
 
   setTimeout(function (){
     // $.ajax({
@@ -393,11 +394,11 @@ function playEmer(){
     //     }
     // });
     queue.shift();
-  }, queue[0].length + 8000);
+  }, queue[0].length + 10000);
 
   setTimeout(function (){
     status = 'ready';
-  }, queue[0].length + 13000);
+  }, queue[0].length + 15000);
 
 }
 </script>

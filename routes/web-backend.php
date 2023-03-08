@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Webpanel as Webpanel;
+use App\Http\Controllers\Functions as Functions;
 //====================  ====================
 //================  Backend ================
 //====================  ====================
@@ -45,9 +46,9 @@ Route::group(['middleware' => ['Admin']], function () {
             Route::get('/zone/{id}', [Webpanel\OverviewController::class, 'get_zone'])->where(['id' => '[0-9]+']);
             Route::get('/zone1/{id}', [Webpanel\OverviewController::class, 'get_zone1'])->where(['id' => '[0-9]+']);
             Route::get('/destroy', [Webpanel\OverviewController::class, 'destroy']);
-            Route::post('/volume/{zone_id}', [Webpanel\OverviewController::class, 'adjustVolume']);
-            Route::post('/select-source/{zone_id}', [Webpanel\OverviewController::class, 'selectSource']);
-            Route::get('/apply-volume', [Webpanel\OverviewController::class, 'save']);
+            Route::post('/volume/{zone_id}', [Functions\FunctionControl::class, 'adjustVolume']);
+            Route::post('/select-source/{zone_id}', [Functions\FunctionControl::class, 'selectSource']);
+            Route::get('/apply-volume', [Functions\FunctionControl::class, 'save']);
             Route::post('/song-status/{id}', [Webpanel\OverviewController::class, 'songStatus']);
             Route::get('/current-song', [Webpanel\OverviewController::class, 'getCurrentSong']);
             Route::get('/current-song/{id}', [Webpanel\OverviewController::class, 'getCurrentSong']);
@@ -62,6 +63,10 @@ Route::group(['middleware' => ['Admin']], function () {
             Route::get('/broadcast1',function ()
             {
                 broadcast(new \App\Events\checkPlayMusic("OKOPKAOWO"));
+            });
+            Route::get('/broadcast3',function ()
+            {
+                broadcast(new \App\Events\zoneselect("OKOPKAOWO"));
             });
         });
 
@@ -101,6 +106,14 @@ Route::group(['middleware' => ['Admin']], function () {
             Route::post('/{layout_id}/zone/{id}', [Webpanel\LayoutPlanController::class, 'update_zone'])->where(['layout_id' => '[0-9]+'])->where(['id' => '[0-9]+']);
             Route::get('/{layout_id}/get_zone', [Webpanel\LayoutPlanController::class, 'get_zone'])->where(['layout_id' => '[0-9]+']);
             Route::get('/zone/destroy', [Webpanel\LayoutPlanController::class, 'destroy_zone']);
+            Route::get('/broadcast4',function ()
+            {
+                broadcast(new \App\Events\layoutandzone("OKOPKAOWO"));
+            });
+            Route::get('/broadcast5',function ()
+            {
+                broadcast(new \App\Events\checkhome("OKOPKAOWO"));
+            });
         });
     });
 });

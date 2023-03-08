@@ -20,12 +20,7 @@
 
                                 let value = e.volume;
 
-                                if(value >= 90){
-                                    fill.style.background = "#e91303";
-                                }
-                                else{
-                                    fill.style.background = "#ff8200";
-                                }
+                                fill.style.background = "#ff8200";
                                 fill.style.width = value + "%";
                                 range.setAttribute("value", value)
                                 text.textContent = Number(value).toFixed(0) + "%";
@@ -38,7 +33,7 @@
                     });
                 }
             })
-    
+
     Echo.channel('checkhome')
         .listen('checkhome', (res) => {
             if(typeof res == 'object'){
@@ -52,7 +47,7 @@
                   }
                 }
             }
-        })        
+        })
   </script>
 </head>
 
@@ -687,7 +682,7 @@ input[type=range] {
     <div class="row" id="push-to-talk">
       <div class="col-md-6 col7-mb" id="setting-mb7">
         <a href="#setting" data-bs-toggle="modal" data-bs-target="#setting">
-          <h4 class="title-setting-mb">Setting 
+          <h4 class="title-setting-mb">Setting
             @if(!empty(Auth::check()) && Auth::user()->theme == 'W')
               <img class="icon-setting" src="{{ asset('frontend/images/icon-setting.png') }}">
             @else
@@ -698,7 +693,7 @@ input[type=range] {
       </div>
       <div class="col-md-6 col5-mb" id="about-mb5">
         <a href="#about-us" data-bs-toggle="modal" data-bs-target="#exampleModalToggle3">
-          <h4 class="title-about-mb">About us 
+          <h4 class="title-about-mb">About us
             @if(!empty(Auth::check()) && Auth::user()->theme == 'W')
               <img class="icon-setting" src="{{ asset('frontend/images/icon-about-us.png') }}">
             @else
@@ -838,7 +833,11 @@ input[type=range] {
                 source: source
             },
           success: function(response){
-            // console.log(response)
+            console.log(response);
+            $.ajax({type:"GET",url:'{{url("/broadcast3")}}',success: function(response){}});
+          },
+          error: function(data){
+            $.ajax({type:"GET",url:'{{url("/broadcast3")}}',success: function(response){}});
           }
     });
   }
