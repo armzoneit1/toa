@@ -33,8 +33,7 @@ console.log('connected!', payload);
               if(e.data != null) {
                 e.data.map(function (r) {
                   $(".song-name" + r.Id).html(r.Name);
-                  $(".time-play" + r.Id).html(r.DurationTimePlay + "/" + r.DurationTime);
-                  //console.log('playpause',r);
+                  $(".time-play" + r.Id).html(r.DurationTimePlay + "/" + r.DurationTime);         
                   if (r.runmusic == 1) {
                     $(".play-or-pause" + r.Id).removeClass('bi-play-circle-fill');
                     $(".play-or-pause" + r.Id).addClass('bi-pause-circle-fill');
@@ -47,6 +46,9 @@ console.log('connected!', payload);
                 for (var i = 1; i <= 8; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
+                  $('.play' + i).addClass('disable-link');
+                  $('.skip-left' + i).addClass('disable-link');
+                  $('.skip-right' + i).addClass('disable-link');
                 }
               }
             }).error(function(e) {
@@ -54,7 +56,10 @@ console.log('connected!', payload);
               for (var i = 1; i <= 8; i++) {
                   $(".song-name" + i).html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                   $(".time-play" + i).html("00:00/00:00");
-                }
+                  $('.play' + i).addClass('disable-link');
+                  $('.skip-left' + i).addClass('disable-link');
+                  $('.skip-right' + i).addClass('disable-link');
+              }
     })
     // Echo.channel('checkPlayMusics')
     //         .listen('checkPlayMusic', (e) => {
@@ -100,41 +105,55 @@ console.log('connected!', payload);
 
                     let source_check = $('#zone-source' + e.id).text();
                     if (e.source != source_check) {
-                      if (e.source == 0) {
-                        $('#text-show-source' + e.id).text('None');
-                      } else {
-                        $('#text-show-source' + e.id).text('Source ' + e.source);
-                      }
                       $('#zone-source' + e.id).text(e.source);
                     }
                   }
                 });
 
-                es.data.map(function(r){
-                    $("#text-show-source"+r.id).html("Source "+r.source)
-                    $("#song-name"+r.id).removeClass()
-                    $("#song-name"+r.id).addClass("song-name song-name"+r.source)
+                es.data.map(function(r){                   
+                                  
+                    $("#song-name"+r.id).removeClass();
+                    $("#song-name"+r.id).addClass("song-name song-name"+r.source);
+                    $("#time-play"+r.id).removeClass();
+                    $("#time-play"+r.id).addClass("time-play time-play"+r.source);
                     if(r.source == 0){
                     $(".song-name"+r.source).html("กรุณาเลือก Source ก่อน");
                     $(".time-play"+r.source).html("00:00 / 00:00");
                     }
-                    if(r.source >= 9 && r.source <= 16){
+                    if(r.source >= 9){
                     $(".song-name"+r.source).html("Local Input");
                     $(".time-play"+r.source).html("00:00 / 00:00");
-                    }
-                    $("#time-play"+r.id).removeClass()
-                    $("#time-play"+r.id).addClass("time-play time-play"+r.source)
-                    $("#skip-lefts"+r.id).removeClass()
-                    $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source)
+                    }                    
+                    $("#skip-lefts"+r.id).removeClass();
+                    $("#skip-lefts"+r.id).addClass("skip-left skip-left"+r.source);
                     $("#skip-lefts"+r.id).attr("onclick","previous_song("+r.source+")");
+                    $("#play-or-pause"+r.id).removeClass();
+                    $("#play-or-pause"+r.id).addClass("bi bi-play-circle-fill play-or-pause"+r.source);
                     $("#plays"+r.id).removeClass()
                     $("#plays"+r.id).addClass("play play"+r.source)
                     $("#plays"+r.id).attr("onclick","playorpause_song("+r.source+","+r.id+")");
-                    $("#play-or-pause"+r.id).removeClass()
-                    $("#play-or-pause"+r.id).addClass("bi play-or-pause"+r.source)
-                    $("#skip-right"+r.id).removeClass()
-                    $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source)
+                    $("#skip-right"+r.id).removeClass();
+                    $("#skip-right"+r.id).addClass("skip-right skip-right"+r.source);
                     $("#skip-right"+r.id).attr("onclick","next_song("+r.source+")");
+
+                    if(r.source == 0){
+                      $("#text-show-source"+r.id).html("None");
+                      $('#plays'+r.id).addClass('disable-link');
+                      $('#skip-lefts'+r.id).addClass('disable-link');
+                      $('#skip-right'+r.id).addClass('disable-link');
+                    }
+                    else if(r.source >= 9){
+                      $("#text-show-source"+r.id).html("Source "+r.source);
+                      $('#plays'+r.id).addClass('disable-link');
+                      $('#skip-lefts'+r.id).addClass('disable-link');
+                      $('#skip-right'+r.id).addClass('disable-link');
+                    }
+                    else{
+                      $("#text-show-source"+r.id).html("Source "+r.source);
+                      $('#plays'+r.id).removeClass('disable-link');
+                      $('#skip-lefts'+r.id).removeClass('disable-link');
+                      $('#skip-right'+r.id).removeClass('disable-link');
+                    }
                 })
 
             })
@@ -143,6 +162,9 @@ console.log('connected!', payload);
 </head>
 
 <style>
+  .disable-link{
+    pointer-events: none;
+  }
   .title-top {
     color: #fff;
     float: left;
@@ -710,14 +732,14 @@ console.log('connected!', payload);
             else{
                 for(let i = 0; i < res.length; i++){
                 zone_id.push(res[i].id);
-                    $.ajax({
-                        type: "post",
-                        async: false,
-                        url: fullUrl + '/get_status_play/'+res[i].source,
-                        data:{_token:'{{csrf_token()}}'},
+                    // $.ajax({
+                    //     type: "post",
+                    //     async: false,
+                    //     url: fullUrl + '/get_status_play/'+res[i].source,
+                    //     data:{_token:'{{csrf_token()}}'},
                         //url: 'http://127.0.0.1:83/GetReponsePlayList?PlayerID=' + res[i].source + '&controltype=get_status_music',
                         // data: {source:res[i].source},
-                        success: function(data){
+                        // success: function(data){
                     zone += `<div class="box-zone box-zone-light">
                                     <a href="javascript:void(0);">
                                     <p class="text-zone text-zone-light" onclick="volumeModal(${res[i].id});" data-bs-toggle="modal" data-bs-target="#modal-zone${res[i].id}">${res[i].name}</p>
@@ -757,15 +779,15 @@ console.log('connected!', payload);
                                     </div>
 
                                 </div>`;
-                            var icon_play = "";
+                            // var icon_play = "";
 
 
-                                if(data == "Play")
-                                {
-                                    icon_play = "bi-pause-circle-fill";
-                                }else{
-                                    icon_play = "bi-play-circle-fill";
-                                }
+                            //     if(data == "Play")
+                            //     {
+                            //         icon_play = "bi-pause-circle-fill";
+                            //     }else{
+                            //         icon_play = "bi-play-circle-fill";
+                            //     }
                                 //console.log(icon_play);
 
                         //console.log(icon_play);
@@ -804,9 +826,9 @@ console.log('connected!', payload);
                                             </div>
                                             <div class="col-lg-6 col-6" id="col6">
                                                 <p class="icon-play">
-                                                <a class="skip-left skip-left${res[i].source}" id="skip-lefts${res[i].id}" onclick="previous_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
-                                                <a class="play play${res[i].source}" id="plays${res[i].id}" onclick="playorpause_song(${res[i].source},${res[i].id})" href="javascript:void(0);"><i id="play-or-pause${res[i].id}" class="bi ${icon_play} play-or-pause${res[i].source}"></i></a>
-                                                <a class="skip-right skip-right${res[i].source}" id="skip-right${res[i].id}" onclick="next_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
+                                                <a class="skip-left skip-left${res[i].source}`; if(res[i].source == 0 || res[i].source >= 9) zone += ` disable-link`; zone += `" id="skip-lefts${res[i].id}" onclick="previous_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-backward-fill"></i></a>
+                                                <a class="play play${res[i].source}`; if(res[i].source == 0 || res[i].source >= 9) zone += ` disable-link`; zone += `" id="plays${res[i].id}" onclick="playorpause_song(${res[i].source},${res[i].id})" href="javascript:void(0);"><i id="play-or-pause${res[i].id}" class="bi bi-play-circle-fill play-or-pause${res[i].source}"></i></a>
+                                                <a class="skip-right skip-right${res[i].source}`; if(res[i].source == 0 || res[i].source >= 9) zone += ` disable-link`; zone += `" id="skip-right${res[i].id}" onclick="next_song(${res[i].source})" href="javascript:void(0);"><i class="bi bi-skip-forward-fill"></i></a>
                                                 </p>
                                             </div>
                                             </div>
@@ -858,9 +880,9 @@ console.log('connected!', payload);
                             div.html(zone);
                             }
 
-                        });
+                //         });
 
-                }
+                // }
             }
           }
         });
@@ -1150,7 +1172,10 @@ console.log('connected!', payload);
         type: "GET",
         url: fullUrl + '/apply-volume',
         success: function(response){
-          //console.log(response);
+          $.ajax({type:"GET",url:fullUrl+'/broadcast3/',success: function(res){}});
+        },
+        error: function(data){
+          $.ajax({type:"GET",url:fullUrl+'/broadcast3/',success: function(response){}});
         }
       });
     }, 300);
