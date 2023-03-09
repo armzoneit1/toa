@@ -56,16 +56,29 @@
             if(zone_source == 0){
                 $(".song-name").html("กรุณาเลือก Source ก่อน");
                 $(".time-play").html("00:00 / 00:00");
+                $('.play').addClass('disable-link');
+                $('.skip-left').addClass('disable-link');
+                $('.skip-right').addClass('disable-link');
+                $("#play-or-pause").addClass('bi-play-circle-fill');
+                $("#play-or-pause").removeClass('bi-pause-circle-fill');
             }
             else if(zone_source >= 9 && zone_source <= 16){
                 $(".song-name").html("Local Input");
                 $(".time-play").html("00:00 / 00:00");
+                $('.play').addClass('disable-link');
+                $('.skip-left').addClass('disable-link');
+                $('.skip-right').addClass('disable-link');
+                $("#play-or-pause").addClass('bi-play-circle-fill');
+                $("#play-or-pause").removeClass('bi-pause-circle-fill');
             }
             else if(e.data != null) {
                 e.data.map(function (r) {
                     if(r.Id == zone_source){
                         $(".song-name").html(r.Name);
                         $(".time-play").html(r.DurationTimePlay + "/" + r.DurationTime);
+                        $('.play').removeClass('disable-link');
+                        $('.skip-left').removeClass('disable-link');
+                        $('.skip-right').removeClass('disable-link');
                         //console.log('playpause',r);
                         if (r.runmusic == 1) {
                             $("#play-or-pause").removeClass('bi-play-circle-fill');
@@ -79,15 +92,29 @@
             }else{
                 $(".song-name").html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                 $(".time-play").html("00:00/00:00");
+                $('.play').addClass('disable-link');
+                $('.skip-left').addClass('disable-link');
+                $('.skip-right').addClass('disable-link');
+                $("#play-or-pause").addClass('bi-play-circle-fill');
+                $("#play-or-pause").removeClass('bi-pause-circle-fill');
             }
             }).error(function(e) {
                 $(".song-name").html("ไม่สามารถเชื่อมต่อกับ Multi Player ได้");
                 $(".time-play").html("00:00/00:00");
+                $('.play').addClass('disable-link');
+                $('.skip-left').addClass('disable-link');
+                $('.skip-right').addClass('disable-link');
+                $("#play-or-pause").addClass('bi-play-circle-fill');
+                $("#play-or-pause").removeClass('bi-pause-circle-fill');
     })
     </script>
 </head>
 
 <style>
+  .disable-link{
+    pointer-events: none;
+  }
+
   .title-top {
     color: #fff;
     float: left;
