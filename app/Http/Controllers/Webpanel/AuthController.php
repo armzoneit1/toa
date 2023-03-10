@@ -29,7 +29,6 @@ class AuthController extends Controller
     }
     public function postLogin(Request $request)
     {
-        // dd($request);
         $username = $request->username;
         $password = $request->password;
 
@@ -58,7 +57,9 @@ class AuthController extends Controller
     public function logOut(Request $request)
     {
         if (!Auth::logout()) {
-            $request->session()->flush();
+            Auth::logout();
+            $request->session()->invalidate();
+            $request->session()->regenerateToken();
             return redirect("");
         }
     }
