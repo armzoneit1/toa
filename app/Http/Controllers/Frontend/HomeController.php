@@ -139,7 +139,7 @@ class HomeController extends Controller
             $data->length = $request->length;
 
             if($request->file != ''){
-                $file = FunctionControl::upload_file($request->file,'user-record');
+                $file = FunctionControl::upload_file($request->file, $request->session()->get('username', null));
                 $data->file = $file;
             }
 

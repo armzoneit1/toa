@@ -8,9 +8,9 @@ function connect(){
 // function connect1(){
 //   return axios.get('https://localhost/toa/broadcast1');
 // }
-// function connect2(){
-//   return axios.get('https://localhost/toa/broadcast2');
-// }
+function connect2(){
+  return axios.get('https://localhost/toa/broadcast2');
+}
 // function connect3(){
 //   return axios.get('https://localhost/toa/broadcast3');
 // }
@@ -23,7 +23,7 @@ function connect(){
 
 
 setInterval(()=>{
-  Promise.allSettled([connect()]).then(function (response) {
+  Promise.allSettled([connect(),connect2()]).then(function (response) {
     console.log("Running...");
   }).catch(www=>{
     console.log(www);

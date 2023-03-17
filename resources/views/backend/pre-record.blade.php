@@ -1208,7 +1208,7 @@ tr {
                                     </div>
                                   </div>
                                   <div class="form-group but-form">
-                                    <label for="exampleInputEmail1" class="label-title">Duration (m)</label>
+                                    <label for="exampleInputEmail1" class="label-title">Duration (1-360 m)</label>
                                     <input type="number" min="1" class="form-control" id="task_duration_edit${res.id}" aria-describedby="emailHelp" value="`; if(res.task_duration) html2 += `${res.task_duration}`; html2 += `"  placeholder="Enter Duration" name="task_duration">
                                   </div>
                                   <div class="row">

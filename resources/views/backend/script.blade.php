@@ -301,7 +301,7 @@ $(document).ready(function (){
               checkPlayAudio(i[0]);
           }
       });
-      // console.log(status,queue.length);
+    //   console.log(status,queue);
       if(status == 'ready' && queue.length > 0){
         // for(let i = 1;i <= audio.length;i++){
         array.forEach(i => {
@@ -349,9 +349,19 @@ $(document).ready(function (){
 Echo.channel('realtimedata')
   .listen('realtimedata',(e) => {
     if(e.data != null) {
-      // console.log('emergency',e);
-        if (Date.parse(new Date()) - Date.parse(e.data.date) == 2000){
-          queue.push(e.data);
+        var size = Object.keys(e.data).length;
+
+        if(size > 1){
+            e.data.map(function (i){
+                if (Date.parse(new Date()) - Date.parse(i.date) == 2000){
+                    queue.push(i);
+                }
+            })
+        }
+        else{
+            if (Date.parse(new Date()) - Date.parse(e.data.date) == 2000){
+                queue.push(e.data);
+            }
         }
     }
   })

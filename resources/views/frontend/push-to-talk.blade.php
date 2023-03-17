@@ -892,13 +892,6 @@ a:hover {
 
   <script>
 
-  $(document).ready(function(){
-    for(let i = 1;i <= 5;i++){
-        setTimeout(() => {
-            $.ajax({type:"GET",url:'{{url("/broadcast2")}}',success: function(response){}});
-        }, 1000 * i);
-    }
-  })
 var msg_box = document.getElementById( 'msg_box1' ),
     msg_box2 = document.getElementById( 'msg_box2' ),
     button = document.getElementById( 'button' ),

@@ -25,7 +25,7 @@ class realtimedata implements ShouldBroadcast
     public $data;
     public function __construct($msg)
     {
-        $response = UserRecordModel::orderBy('id', 'desc')->first();
+        $response = UserRecordModel::orderBy('id', 'desc')->take(5)->get();
         $this->msg = $msg;
         $this->data = $response;
     }
