@@ -69,5 +69,6 @@ class Kernel extends HttpKernel
         'Functions' => \App\Http\Middleware\Functions::class,
         'Member' => \App\Http\Middleware\Member::class,
         'Language' => \App\Http\Middleware\Language::class,
+        'forcehttps' => \App\Http\Middleware\ForceHttps::class,
     ];
 }

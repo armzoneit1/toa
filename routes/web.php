@@ -85,27 +85,31 @@ Route::group(['middleware' => ['Login']], function () {
 
     Route::group(['middleware' => ['User']], function () {
 
-        Route::prefix('home')->group(function () {
-            Route::get('/', [Frontend\HomeController::class, 'home']);
-            Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
-            Route::get('/check-new', [Frontend\HomeController::class, 'checkHome']);
-            Route::post('/select-source/{id}', [Functions\FunctionControl::class, 'selectSource']);
-        });
+        Route::middleware(['forcehttps'])->group(function () {
 
-        Route::get('change_theme', [Webpanel\SetController::class, 'change_theme']);
+            Route::prefix('home')->group(function () {
+                Route::get('/', [Frontend\HomeController::class, 'home']);
+                Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
+                Route::get('/check-new', [Frontend\HomeController::class, 'checkHome']);
+                Route::post('/select-source/{id}', [Functions\FunctionControl::class, 'selectSource']);
+            });
 
-        Route::prefix('overview')->group(function () {
-            Route::get('/', [Frontend\HomeController::class, 'overview']);
-            Route::get('/{id}', [Frontend\HomeController::class, 'getImg'])->where(['id' => '[0-9]+']);
-            Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
-            Route::get('/check-new', [Frontend\HomeController::class, 'checkNewComing']);
-            Route::post('/select-source/{id}', [Functions\FunctionControl::class, 'selectSource']);
-        });
+            Route::get('change_theme', [Webpanel\SetController::class, 'change_theme']);
 
-        Route::prefix('push-to-talk')->group(function () {
-            Route::get('/', [Frontend\HomeController::class, 'push_to_talk']);
-            Route::post('/', [Frontend\HomeController::class, 'record']);
-            Route::post('/temp-audio', [Frontend\HomeController::class, 'tempAudio']);
+            Route::prefix('overview')->group(function () {
+                Route::get('/', [Frontend\HomeController::class, 'overview']);
+                Route::get('/{id}', [Frontend\HomeController::class, 'getImg'])->where(['id' => '[0-9]+']);
+                Route::get('/zone/{id}', [Frontend\HomeController::class, 'getZone'])->where(['id' => '[0-9]+']);
+                Route::get('/check-new', [Frontend\HomeController::class, 'checkNewComing']);
+                Route::post('/select-source/{id}', [Functions\FunctionControl::class, 'selectSource']);
+            });
+
+            Route::prefix('push-to-talk')->group(function () {
+                Route::get('/', [Frontend\HomeController::class, 'push_to_talk']);
+                Route::post('/', [Frontend\HomeController::class, 'record']);
+                Route::post('/temp-audio', [Frontend\HomeController::class, 'tempAudio']);
+            });
+            
         });
     });
 
