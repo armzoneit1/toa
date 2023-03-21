@@ -1191,7 +1191,7 @@ a:hover {
                       <i class="bi bi-arrow-left"></i>
         </a> -->
         @if(!empty(Auth::check()))
-        <a href="{{ url('/home') }}" class="navbar-brand mx-auto mx-lg-0"><i class="bi bi-arrow-left"></i> </a>
+        <a href="{{ url()->previous() }}" class="navbar-brand mx-auto mx-lg-0"><i class="bi bi-arrow-left"></i> </a>
         @endif
         <span class="title-over-top">{{ $zone->name }}</span>
       </li>
