@@ -49,6 +49,20 @@ window.onclick = function(event) {
     });
   });
 
+  $('.change_theme_push').click(function(){
+    $.ajax({
+      type: "GET",
+      dataType: "text",
+      url: '{{ url('change_theme_push') }}',
+      success: function( data ) {
+        if(data == 'Success'){
+          console.log(data);
+          window.location.reload();
+        }
+      }
+    });
+  });
+
   $(document).ready(function (){
     $.ajax({
         type: "GET",

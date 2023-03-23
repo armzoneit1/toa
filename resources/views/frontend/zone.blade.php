@@ -74,7 +74,13 @@
             else if(e.data != null) {
                 e.data.map(function (r) {
                     if(r.Id == zone_source){
+                      console.log(r.Name == 'ยังไม่ได้เปิดโปรแกรมเล่นเพลง' || r.Name == 'รอเพลงสักครู่...');
+                      if(r.Name == 'ยังไม่ได้เปิดโปรแกรมเล่นเพลง' || r.Name == 'รอเพลงสักครู่...'){
+                        $(".song-name").html('กรุณารอเพลงสักครู่');
+                      }
+                      else{
                         $(".song-name").html(r.Name);
+                      }
                         $(".time-play").html(r.DurationTimePlay + "/" + r.DurationTime);
                         $('.play').removeClass('disable-link');
                         $('.skip-left').removeClass('disable-link');
@@ -1272,7 +1278,7 @@ a:hover {
 
                           <div class="col-lg-12 col-12" id="">
                           <h4 class="title-status" id="source-number">@if($zone->source == 0) None @else Source {{ $zone->source }} @endif</h4>
-                          <p id="song-name" class="song-name">กรุณารอสักครู่</p>
+                          <p id="song-name" class="song-name">กรุณารอเพลงสักครู่</p>
                           </div>
 
                             <div class="col-lg-6 col-6" id="col6-mb">

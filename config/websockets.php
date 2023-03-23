@@ -29,7 +29,7 @@ return [
             'secret' => env('PUSHER_APP_SECRET'),
             'path' => env('PUSHER_APP_PATH'),
             'capacity' => null,
-            'enable_client_messages' => true,
+            'enable_client_messages' => false,
             'enable_statistics' => true,
         ],
     ],
@@ -116,25 +116,25 @@ return [
          * certificate chain of issuers. The private key also may be contained
          * in a separate file specified by local_pk.
          */
-//        'local_cert' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT', null),
-        'local_cert' => "C:/ssl/toa.crt",
-//        'local_cert' => null,
+        'local_cert' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT', null),
+//        'local_cert' => "C:/ssl/toa.crt",
+        // 'local_cert' => null,
 
         /*
          * Path to local private key file on filesystem in case of separate files for
          * certificate (local_cert) and private key.
          */
-//        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', null),
-        'local_pk' => "C:/ssl/toa.key",
-//        'local_pk' => null,
+        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', null),
+//        'local_pk' => "C:/ssl/toa.key",
+        // 'local_pk' => null,
 
         /*
          * Passphrase for your local_cert file.
          */
-//        'passphrase' => env('LARAVEL_WEBSOCKETS_SSL_PASSPHRASE', null),
+        'passphrase' => env('LARAVEL_WEBSOCKETS_SSL_PASSPHRASE', null),
         'passphrase' => "",
 //        'passphrase' => null,
-        'verify_peer' => false,
+        // 'verify_peer' => false,
 
     ],
 

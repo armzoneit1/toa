@@ -781,7 +781,7 @@ a:hover {
             <div class="container2">
               <label class="switch2">
                 <input type="checkbox" class="hidden" id="audio_setting2"  {{ ( !empty(Auth::check()) ? (Auth::user()->theme == 'B' ? 'checked' : '') : '')  }}>
-                <div class="slider slider-light change_theme" style="cursor: pointer" id="slider">Light</div>
+                <div class="slider slider-light change_theme_push" style="cursor: pointer" id="slider">Light</div>
               </label>
             </div>
           </a>

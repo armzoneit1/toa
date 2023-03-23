@@ -9,13 +9,14 @@ class ForceHttps
 {
     protected $httpsRoutes = [
         'push-to-talk',
+        'change_theme_push'
     ];
 
     public function handle(Request $request, Closure $next)
     {
         $isHttpsRoute = in_array($request->path(), $this->httpsRoutes, true);
 
-        // dd($isHttpsRoute , $request->path());
+        // dd($request->secure() , env('APP_ENV') , $isHttpsRoute);
 
         if (!$request->secure() && env('APP_ENV') === 'production' && $isHttpsRoute) {
             return redirect()->secure(str_replace('toa/', '', $request->getRequestUri()));

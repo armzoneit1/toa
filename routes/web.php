@@ -95,6 +95,7 @@ Route::group(['middleware' => ['Login']], function () {
             });
 
             Route::get('change_theme', [Webpanel\SetController::class, 'change_theme']);
+            Route::get('change_theme_push', [Webpanel\SetController::class, 'change_theme']);
 
             Route::prefix('overview')->group(function () {
                 Route::get('/', [Frontend\HomeController::class, 'overview']);
