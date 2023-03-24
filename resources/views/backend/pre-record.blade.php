@@ -1111,7 +1111,7 @@ tr {
                 let div3 = $('#check-audio-play');
                 let html3 = `<div id="div-audio${res.id}">
                               <p id="rec-name_id${res.id}">${res.task_name}</p>
-                              <p class="text-center" id="rec-date_id${res.id}">`;if(res.task_date == null) html3 += ` - `; else `${res.task_date}`; html3 += `</p>
+                              <p class="text-center" id="rec-date_id${res.id}">`;if(res.task_date == null) html3 += `-`; else html3 += `${res.task_date} `; html3 += `</p>
                               <p class="text-center" id="rec-duration_id${res.id}">`;if(res.task_duration == null) html3 += `-`; else html3 += `${res.task_duration}`; html3 += `</p>
                               <p id="rec-start_id${res.id}">${res.task_start}</p>
                               <p id="rec-end_id${res.id}">`;if(res.task_end == null) html3 += ` - `; else html3 += `${res.task_end}`; html3 += `</p>
