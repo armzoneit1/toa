@@ -204,9 +204,9 @@ class RecordController extends Controller
         $data = PreRecordModel::find($request->id);
         $remove_file = FunctionControl::delete_file($data->file);
 
-        if($remove_file){
+        // if($remove_file){
            $query = PreRecordModel::destroy($request->id);
-        }
+        // }
 
         if (@$query) {
             return true;
