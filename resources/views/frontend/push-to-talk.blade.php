@@ -904,7 +904,7 @@ lang = {
     'stop': 'Stop', //Остановить
     'download': 'Download', //Скачать
     'use_https': 'This application in not working over insecure connection. Try to use HTTPS',
-    'save' : 'Annouce',
+    'save' : 'Announce',
 },
 time, duration, audio_end;
 
