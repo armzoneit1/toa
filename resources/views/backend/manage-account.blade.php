@@ -921,7 +921,7 @@ tr {
                       </div>
 
 
-                      <center><button type="submit" class="btn btn-primary but-sub">Confirm</button></center>
+                      <center><button type="submit" class="btn btn-primary but-sub">Submit</button></center>
                     </form>
 
                   </div>
