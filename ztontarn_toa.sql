@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2023 at 05:36 AM
+-- Generation Time: Apr 07, 2023 at 03:40 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -24,55 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
---
-
-CREATE TABLE `migrations` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `batch` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_about`
---
-
-CREATE TABLE `tb_about` (
-  `id` int(11) NOT NULL,
-  `titleTH` text NOT NULL,
-  `titleEN` text NOT NULL,
-  `titleCN` text NOT NULL,
-  `detailTH` text NOT NULL,
-  `detailEN` text NOT NULL,
-  `detailCN` text NOT NULL,
-  `image1` varchar(255) DEFAULT NULL,
-  `image2` varchar(255) DEFAULT NULL,
-  `image3` varchar(255) DEFAULT NULL,
-  `image4` varchar(255) DEFAULT NULL,
-  `image5` varchar(255) DEFAULT NULL,
-  `createAT` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updateAT` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_amupur`
---
-
-CREATE TABLE `tb_amupur` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `province_code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_th` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_en` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tb_day`
 --
 
@@ -80,6 +31,19 @@ CREATE TABLE `tb_day` (
   `id` int(11) NOT NULL,
   `name` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_day`
+--
+
+INSERT INTO `tb_day` (`id`, `name`) VALUES
+(1, 'Monday'),
+(2, 'Tuesday'),
+(3, 'Wednesday'),
+(4, 'Thursday'),
+(5, 'Friday'),
+(6, 'Saturday'),
+(7, 'Sunday');
 
 -- --------------------------------------------------------
 
@@ -133,42 +97,16 @@ CREATE TABLE `tb_menu` (
   `deleted` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `tb_model`
+-- Dumping data for table `tb_menu`
 --
 
-CREATE TABLE `tb_model` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `product_id` int(11) DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `sort` int(11) DEFAULT NULL,
-  `status` enum('on','off') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `deleted_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_model_list`
---
-
-CREATE TABLE `tb_model_list` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `product_id` int(11) DEFAULT NULL,
-  `model_id` int(11) DEFAULT NULL,
-  `code` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `check_point` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `broken_item` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `sort` int(11) DEFAULT NULL,
-  `status` enum('on','off') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `deleted_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+INSERT INTO `tb_menu` (`id`, `_id`, `name`, `url`, `icon`, `position`, `sort`, `status`, `delete_status`, `created`, `updated`, `deleted`) VALUES
+(1, NULL, 'ผู้ใช้งาน', '/user_add', 'user', 'main', 1, 'on', 'off', '2022-08-04 11:50:41', '2022-08-17 10:28:51', NULL),
+(4, NULL, 'Layout', '/layout', 'layers', 'main', 2, 'on', 'off', '2022-08-09 17:20:57', '2022-08-17 10:28:55', NULL),
+(5, NULL, 'Playlist', '/playlist', 'fast-forward', 'main', 3, 'on', 'off', '2022-08-10 20:38:09', '2022-08-17 10:28:55', NULL),
+(6, NULL, 'Project Setting', '/setting', 'settings', 'main', 4, 'on', 'off', '2022-08-19 16:25:50', '2022-08-19 16:25:50', NULL),
+(7, NULL, 'Pre-Record', '/pre_record', 'mic', 'main', 5, 'on', 'off', '2022-08-19 17:18:54', '2022-08-19 17:18:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -223,16 +161,17 @@ CREATE TABLE `tb_pre_record` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_province`
+-- Table structure for table `tb_pre_record_repeat`
 --
 
-CREATE TABLE `tb_province` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_th` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_en` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `zone` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `tb_pre_record_repeat` (
+  `id` int(11) NOT NULL,
+  `record_id` int(11) NOT NULL,
+  `day_id` int(11) DEFAULT NULL,
+  `repeat_id` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -296,20 +235,12 @@ CREATE TABLE `tb_setting` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `tb_tambon`
+-- Dumping data for table `tb_setting`
 --
 
-CREATE TABLE `tb_tambon` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `amupur_code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `postcode` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_th` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_en` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+INSERT INTO `tb_setting` (`id`, `name`, `image`, `name_image`, `created_at`, `updated_at`) VALUES
+(1, 'The Mall Group', 'upload/layout/layout23082022-112206.png', 'A', '2022-11-01 07:42:31', '2022-11-01 07:42:31');
 
 -- --------------------------------------------------------
 
@@ -321,48 +252,6 @@ CREATE TABLE `tb_task_repeat` (
   `id` int(11) NOT NULL,
   `name` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_translate`
---
-
-CREATE TABLE `tb_translate` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `comment` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_th` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name_en` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `sort` int(11) DEFAULT NULL,
-  `status` enum('on','off') COLLATE utf8mb4_unicode_ci DEFAULT 'on',
-  `delete_status` enum('on','off') COLLATE utf8mb4_unicode_ci DEFAULT 'off',
-  `created` datetime DEFAULT NULL,
-  `updated` datetime DEFAULT NULL,
-  `deleted` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_user`
---
-
-CREATE TABLE `tb_user` (
-  `id` int(11) NOT NULL,
-  `username` varchar(200) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `role` varchar(1) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tb_user`
---
-
-INSERT INTO `tb_user` (`id`, `username`, `password`, `role`, `created_at`, `updated_at`) VALUES
-(1, 'user', '1234', 'U', '2022-08-04 05:27:37', '2022-08-04 06:47:16'),
-(3, 'admin', '1234', 'A', '2022-08-23 07:58:22', '2022-08-23 07:58:22');
 
 -- --------------------------------------------------------
 
@@ -409,35 +298,8 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `role`, `firstname`, `lastname`, `username`, `password`, `remember_token`, `detail`, `status`, `theme`, `last_login`, `created_at`, `updated_at`) VALUES
-(1, 'A', 'Orange', 'Dev', 'admin', '$2y$10$Xrh7POXf2fH2kRtOpQEru.RJkG1yPg45pdd51x/2OqrizQTKnQgDO', NULL, NULL, 'active', 'W', NULL, '2022-06-13 14:53:04', '2023-01-25 13:26:25'),
-(2, 'U', 'Orange', 'User', 'user', '$2y$10$zCTGmUbliM91BgTCaPRGneNacO1vnu7w90DsPg6GK0DeazT6/cTBi', NULL, NULL, 'active', 'W', NULL, NULL, '2023-01-25 13:25:55'),
-(3, 'U', 'Nattachai', 'Supharojanee', 'nattachai', '$2y$10$zCTGmUbliM91BgTCaPRGneNacO1vnu7w90DsPg6GK0DeazT6/cTBi', NULL, NULL, 'active', 'B', NULL, '2022-08-23 21:46:52', '2022-09-01 17:58:14');
-
---
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `migrations`
---
-ALTER TABLE `migrations`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tb_about`
---
-ALTER TABLE `tb_about`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tb_amupur`
---
-ALTER TABLE `tb_amupur`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tb_day`
@@ -464,18 +326,6 @@ ALTER TABLE `tb_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tb_model`
---
-ALTER TABLE `tb_model`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tb_model_list`
---
-ALTER TABLE `tb_model_list`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `tb_music`
 --
 ALTER TABLE `tb_music`
@@ -494,10 +344,13 @@ ALTER TABLE `tb_pre_record`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tb_province`
+-- Indexes for table `tb_pre_record_repeat`
 --
-ALTER TABLE `tb_province`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `tb_pre_record_repeat`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `record_id` (`record_id`),
+  ADD KEY `day_id` (`day_id`),
+  ADD KEY `repeat_id` (`repeat_id`);
 
 --
 -- Indexes for table `tb_record_from_user`
@@ -524,27 +377,9 @@ ALTER TABLE `tb_setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tb_tambon`
---
-ALTER TABLE `tb_tambon`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `tb_task_repeat`
 --
 ALTER TABLE `tb_task_repeat`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tb_translate`
---
-ALTER TABLE `tb_translate`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tb_user`
---
-ALTER TABLE `tb_user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -564,28 +399,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `migrations`
---
-ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_about`
---
-ALTER TABLE `tb_about`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_amupur`
---
-ALTER TABLE `tb_amupur`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `tb_day`
 --
 ALTER TABLE `tb_day`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_layout`
@@ -603,19 +420,7 @@ ALTER TABLE `tb_logs`
 -- AUTO_INCREMENT for table `tb_menu`
 --
 ALTER TABLE `tb_menu`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_model`
---
-ALTER TABLE `tb_model`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_model_list`
---
-ALTER TABLE `tb_model_list`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_music`
@@ -636,10 +441,10 @@ ALTER TABLE `tb_pre_record`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tb_province`
+-- AUTO_INCREMENT for table `tb_pre_record_repeat`
 --
-ALTER TABLE `tb_province`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tb_pre_record_repeat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tb_record_from_user`
@@ -663,31 +468,13 @@ ALTER TABLE `tb_role_list`
 -- AUTO_INCREMENT for table `tb_setting`
 --
 ALTER TABLE `tb_setting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_tambon`
---
-ALTER TABLE `tb_tambon`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_task_repeat`
 --
 ALTER TABLE `tb_task_repeat`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_translate`
---
-ALTER TABLE `tb_translate`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_user`
---
-ALTER TABLE `tb_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tb_zone`
@@ -699,7 +486,19 @@ ALTER TABLE `tb_zone`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tb_pre_record_repeat`
+--
+ALTER TABLE `tb_pre_record_repeat`
+  ADD CONSTRAINT `tb_pre_record_repeat_ibfk_1` FOREIGN KEY (`record_id`) REFERENCES `tb_pre_record` (`id`),
+  ADD CONSTRAINT `tb_pre_record_repeat_ibfk_2` FOREIGN KEY (`day_id`) REFERENCES `tb_day` (`id`),
+  ADD CONSTRAINT `tb_pre_record_repeat_ibfk_3` FOREIGN KEY (`repeat_id`) REFERENCES `tb_task_repeat` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
