@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2023 at 03:40 AM
+-- Generation Time: Apr 11, 2023 at 09:30 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -298,6 +298,14 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `role`, `firstname`, `lastname`, `username`, `password`, `remember_token`, `detail`, `status`, `theme`, `last_login`, `created_at`, `updated_at`) VALUES
+(1, 'A', 'Orange', 'Dev', 'admin', '$2y$10$Xrh7POXf2fH2kRtOpQEru.RJkG1yPg45pdd51x/2OqrizQTKnQgDO', NULL, NULL, 'active', 'B', NULL, '2022-06-13 14:53:04', '2022-10-04 11:06:51'),
+(2, 'U', 'orange', 'user', 'user', '$2y$10$zCTGmUbliM91BgTCaPRGneNacO1vnu7w90DsPg6GK0DeazT6/cTBi', NULL, NULL, 'active', 'B', NULL, NULL, NULL);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -486,7 +494,7 @@ ALTER TABLE `tb_zone`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
